@@ -1,0 +1,123 @@
+<app-dashheader></app-dashheader>
+<div class="rr-dash-topbar">
+  <div class="ui container stackable grid ">
+    <div class="row">
+      <div class="six wide column">
+        <h1 class="ui header rr-font">Start Campaign</h1>
+        <div class="six wide column">
+          <img src="">
+        </div>
+      </div>
+      <hr/>
+    </div>
+
+  </div>
+</div>
+
+<div class="ui container stackable grid rr-addproject">
+  <div class="row">
+    <div class="thirteen wide column">
+      <div class="tiny ui ordered three top attached steps">
+        <div class="{{projectClasses.stepOne}} step">
+          <!--<i class="truck icon"></i>-->
+          <div class="content">
+            <div class="title">Basic</div>
+            <div class="description"> introduce your campaign</div>
+          </div>
+        </div>
+        <div class="{{projectClasses.stepTwo}} step">
+          <!--<i class="payment icon"></i>-->
+          <div class="content">
+            <div class="title">Funding</div>
+            <div class="description">How much do you want to</div>
+          </div>
+        </div>
+        <div class="{{projectClasses.stepThree}} step">
+          <i class="info icon"></i>
+          <div class="content">
+            <div class="title">Display Options</div>
+            <div class="description">How to display campaign on Rotaraise</div>
+          </div>
+        </div>
+      </div>
+      <div class="ui attached segment">
+        <div class="ui grid">
+          <div class="ten wide column">
+            <!--le first form-->
+            <form id="formone" [ngStyle]="{'display':projectClasses.toggleStepOneForm}" class="ui form">
+              <div class="ui error message"></div>
+              <div class="field required">
+                <label class="field-title">Campaign Title</label>
+                <div class="field-sub">What is the title of your campaign</div>
+                <input [(ngModel)]="model.name" name="name" class="ui large input" placeholder="" type="text">
+              </div>
+              <div class="field required">
+                <label class="field-title">Brief Summary</label>
+                <div class="field-sub">Tell us briefly what this campaign is about.</div>
+                <input [(ngModel)]="model.tagline" name="tagline" class="ui large input" placeholder="" type="text">
+              </div>
+
+              <div class="two fields">
+                <div class="field required">
+                  <label class="field-title">FundRaising Start Date</label>
+                  <div class="field-sub">When does the fundraising Start</div>
+                 <datepicker [(ngModel)]="model.fundstart" name="fundstart" [expanded]="true"></datepicker>
+                </div>
+                <div class="field required">
+                  <label class="field-title">FundRaising End Date</label>
+                  <div class="field-sub">When does the fundraising End</div>
+                  <datepicker [(ngModel)]="model.fundend" name="fundend" [expanded]="true"></datepicker>
+                </div>
+              </div>
+              <div class="field">
+                <button class="ui right labeled right floated icon submit button">
+                  <i class="right arrow icon"></i>
+                  Next
+                </button>
+              </div>
+            </form>
+            <!--fini le first form-->
+
+            <!--le second form-->
+            <form id="formtwo" [ngStyle]="{'display':projectClasses.toggleStepOneForm}" class="ui form">
+              <div class="ui error message"></div>
+              <div class="field required">
+                <label class="field-title">Campaign Title</label>
+                <div class="field-sub">What is the title of your campaign</div>
+                <input [(ngModel)]="model.name" name="name" class="ui large input" placeholder="" type="text">
+              </div>
+              <div class="field required">
+                <label class="field-title">Brief Summary</label>
+                <div class="field-sub">Tell us briefly what this campaign is about.</div>
+                <input [(ngModel)]="model.tagline" name="tagline" class="ui large input" placeholder="" type="text">
+              </div>
+
+              <div class="two fields">
+                <div class="field required">
+                  <label class="field-title">FundRaising Start Date</label>
+                  <div class="field-sub">When does the fundraising Start</div>
+                 <datepicker [(ngModel)]="model.fundstart" name="fundstart" [expanded]="true"></datepicker>
+                </div>
+                <div class="field required">
+                  <label class="field-title">FundRaising End Date</label>
+                  <div class="field-sub">When does the fundraising End</div>
+                  <datepicker [(ngModel)]="model.fundend" name="fundend" [expanded]="true"></datepicker>
+                </div>
+              </div>
+              <div class="field">
+                <button class="ui right labeled right floated icon submit button">
+                  <i class="right arrow icon"></i>
+                  Next
+                </button>
+              </div>
+            </form>
+            <!--fini le first form-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<FooterComponent></FooterComponent>

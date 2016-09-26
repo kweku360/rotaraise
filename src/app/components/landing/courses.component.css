@@ -1,0 +1,10 @@
+ul{
+width: 100%;
+display: inline;
+}
+ul li{
+  width: auto;
+  padding: 10px;
+  color: red;
+  border-bottom: 2px solid darkmagenta;
+}
