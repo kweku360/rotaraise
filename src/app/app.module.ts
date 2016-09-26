@@ -23,6 +23,10 @@ import {LoginService} from "./services/login.service";
 import {RegisterService} from "./services/register.service";
 import {routing, appRoutingProviders} from "./routes/app.routing";
 import {DatePickerComponent} from "ng2-datepicker/src/components/ng2-datepicker";
+import {FileuploaderComponent} from "./components/library/v1/fileuploader/fileuploader.component";
+import {CountrylistComponent} from "./components/library/v1/countrylist/countrylist.component";
+
+
 
 @NgModule({
   declarations: [
@@ -36,7 +40,7 @@ import {DatePickerComponent} from "ng2-datepicker/src/components/ng2-datepicker"
     HeaderComponent,
     LogoComponent,
     SliderComponent,
-
+    
     DatePickerComponent,
 
     //parent components - these are routerble
@@ -45,7 +49,9 @@ import {DatePickerComponent} from "ng2-datepicker/src/components/ng2-datepicker"
     RegisterComponent,
     LoginComponent,
     DashboardComponent,
-    ProjectComponent
+    ProjectComponent,
+    FileuploaderComponent,
+    CountrylistComponent
   ],
   imports: [
     BrowserModule,

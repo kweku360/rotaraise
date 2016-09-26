@@ -1,5 +1,5 @@
-/*@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin);*/
-/*@import url(https://fonts.googleapis.com/css?family=Playfair+Display);*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
 body{
   text-align: center;
@@ -11,6 +11,7 @@ body{
   body{
     text-align: inherit;
   }
+
 }
 
 .ui.grid{
@@ -284,6 +285,8 @@ body{
 }
 .rr-addproject{
   margin-top: 30px!important;
+  margin-bottom: 30px!important;
+
 }
 .rr-addproject .field-title{
   font-size: 16px;

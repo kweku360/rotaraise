@@ -35,7 +35,7 @@ export class ProjectComponent implements OnInit {
     //hide other steps
     this.projectClasses.toggleStepOneForm = "none";
     this.projectClasses.toggleStepThreeForm = "none";
-    
+
     this.projectClasses.stepOne = "";
     this.projectClasses.stepTwo = "active";
     this.projectClasses.stepTwo = "";
@@ -50,7 +50,7 @@ export class ProjectComponent implements OnInit {
 
   validateFormOne() {
     var that = this;
-
+    jQuery('.ui.dropdown').dropdown('get value');
     //noinspection TypeScriptValidateTypes
     jQuery('#formone').submit(function (e) {
       e.preventDefault();// usually use this, but below works best here.
@@ -59,6 +59,35 @@ export class ProjectComponent implements OnInit {
     jQuery('#formone').form({
         onSuccess: function () {
           that.step2()
+        },
+        fields: {
+          name: {
+            identifier: 'name',
+            rules: [
+              {type: 'empty', prompt: 'Please enter your project name'},
+            ]
+          },
+          tagline: {
+            identifier: 'tagline',
+            rules: [
+              {type: 'empty', prompt: 'Please enter project tagline'},
+            ]
+          }
+        }
+      }
+    );
+  }
+  validateFormTwo() {
+    var that = this;
+
+    //noinspection TypeScriptValidateTypes
+    jQuery('#formtwo').submit(function (e) {
+      e.preventDefault();// usually use this, but below works best here.
+    });
+    //noinspection TypeScriptUnresolvedFunction
+    jQuery('#formtwo').form({
+        onSuccess: function () {
+        //  that.step2()
         },
         fields: {
           name: {

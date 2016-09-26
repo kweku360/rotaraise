@@ -17,34 +17,13 @@
 <div class="ui container stackable grid rr-addproject">
   <div class="row">
     <div class="thirteen wide column">
-      <div class="tiny ui ordered three top attached steps">
-        <div class="{{projectClasses.stepOne}} step">
-          <!--<i class="truck icon"></i>-->
-          <div class="content">
-            <div class="title">Basic</div>
-            <div class="description"> introduce your campaign</div>
-          </div>
-        </div>
-        <div class="{{projectClasses.stepTwo}} step">
-          <!--<i class="payment icon"></i>-->
-          <div class="content">
-            <div class="title">Funding</div>
-            <div class="description">How much do you want to</div>
-          </div>
-        </div>
-        <div class="{{projectClasses.stepThree}} step">
-          <i class="info icon"></i>
-          <div class="content">
-            <div class="title">Display Options</div>
-            <div class="description">How to display campaign on Rotaraise</div>
-          </div>
-        </div>
-      </div>
-      <div class="ui attached segment">
-        <div class="ui grid">
-          <div class="ten wide column">
-            <!--le first form-->
-            <form id="formone" [ngStyle]="{'display':projectClasses.toggleStepOneForm}" class="ui form">
+      <!--le first form-->
+      <form id="formone" class="ui form">
+        <!--le basics-->
+        <h4 class="ui dividing header">Basic <span>Introduce Your Campaign</span></h4>
+        <div class="ui segment">
+          <div class="ui grid">
+            <div class="ten wide column">
               <div class="ui error message"></div>
               <div class="field required">
                 <label class="field-title">Campaign Title</label>
@@ -61,7 +40,7 @@
                 <div class="field required">
                   <label class="field-title">FundRaising Start Date</label>
                   <div class="field-sub">When does the fundraising Start</div>
-                 <datepicker [(ngModel)]="model.fundstart" name="fundstart" [expanded]="true"></datepicker>
+                  <datepicker [(ngModel)]="model.fundstart" name="fundstart" [expanded]="true"></datepicker>
                 </div>
                 <div class="field required">
                   <label class="field-title">FundRaising End Date</label>
@@ -69,55 +48,114 @@
                   <datepicker [(ngModel)]="model.fundend" name="fundend" [expanded]="true"></datepicker>
                 </div>
               </div>
-              <div class="field">
-                <button class="ui right labeled right floated icon submit button">
-                  <i class="right arrow icon"></i>
-                  Next
-                </button>
-              </div>
-            </form>
-            <!--fini le first form-->
 
-            <!--le second form-->
-            <form id="formtwo" [ngStyle]="{'display':projectClasses.toggleStepOneForm}" class="ui form">
-              <div class="ui error message"></div>
+            </div>
+          </div>
+        </div>
+        <!--fini le basics-->
+        <!--le fund-->
+        <h4 class="ui dividing header">Basic <span>Funding</span></h4>
+        <div class="ui segment">
+          <div class="ui grid">
+            <div class="ten wide column">
+              <div class=" ten wide field required">
+                <label class="field-title">Amount</label>
+                <div class="field-sub">How much money would you like to raise?</div>
+                <div class="ui large right labeled input">
+                  <input type="text" placeholder="currency">
+                  <div class="teal ui dropdown label">
+                    <div class="text">USD</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                      <div class="item">CAD</div>
+                      <div class="item">GBP</div>
+                      <div class="item">GHC</div>
+                      <div class="item">EUR</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--fini le fund-->
+        <!--le display-->
+        <h4 class="ui dividing header">Display  <span>How to display campaign on Rotaraise</span></h4>
+        <div class="ui segment">
+          <div class="ui grid">
+            <div class="ten wide column">
               <div class="field required">
-                <label class="field-title">Campaign Title</label>
+                <label class="field-title">Campaign Display Image</label>
                 <div class="field-sub">What is the title of your campaign</div>
                 <input [(ngModel)]="model.name" name="name" class="ui large input" placeholder="" type="text">
               </div>
               <div class="field required">
-                <label class="field-title">Brief Summary</label>
+                <label class="field-title">Location </label>
                 <div class="field-sub">Tell us briefly what this campaign is about.</div>
-                <input [(ngModel)]="model.tagline" name="tagline" class="ui large input" placeholder="" type="text">
+              </div>
+              <div class="two fields">
+                <div class="field">
+                  <input [(ngModel)]="model.city" name="city" class="ui large input" placeholder="" type="text">
+                </div>
+                <div class="field">
+                  <app-countrylist></app-countrylist>
+                </div>
+              </div>
+              <div class="field required">
+                <label class="field-title">Category</label>
+                <div class="field-sub">What is the title of your campaign</div>
+              </div>
+              <div class="field required">
+                <label class="field-title">Tags</label>
+                <div class="field-sub"></div>
               </div>
 
-              <div class="two fields">
-                <div class="field required">
-                  <label class="field-title">FundRaising Start Date</label>
-                  <div class="field-sub">When does the fundraising Start</div>
-                 <datepicker [(ngModel)]="model.fundstart" name="fundstart" [expanded]="true"></datepicker>
-                </div>
-                <div class="field required">
-                  <label class="field-title">FundRaising End Date</label>
-                  <div class="field-sub">When does the fundraising End</div>
-                  <datepicker [(ngModel)]="model.fundend" name="fundend" [expanded]="true"></datepicker>
-                </div>
-              </div>
               <div class="field">
-                <button class="ui right labeled right floated icon submit button">
-                  <i class="right arrow icon"></i>
-                  Next
-                </button>
+                <label class="field-title">Upload Additional Documents and Images</label>
+                <div class="field-sub"></div>
               </div>
-            </form>
-            <!--fini le first form-->
+            </div>
           </div>
         </div>
-      </div>
+        <!--fini le display-->
+        <div class="field">
+          <button class="ui right labeled right floated icon submit button">
+            <i class="right arrow icon"></i>
+            Submit
+          </button>
+        </div>
+      </form>
+      <!--fini le first form-->
+
     </div>
+
+
   </div>
 </div>
 
 
 <FooterComponent></FooterComponent>
+
+<!--<div class="tiny ui ordered one top attached steps">-->
+<!--<div class="step">-->
+<!--&lt;!&ndash;<i class="truck icon"></i>&ndash;&gt;-->
+<!--<div class="content">-->
+<!--<div class="title">Basic</div>-->
+<!--<div class="description"> introduce your campaign</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="step">-->
+<!--&lt;!&ndash;<i class="payment icon"></i>&ndash;&gt;-->
+<!--<div class="content">-->
+<!--<div class="title">Funding</div>-->
+<!--<div class="description">How much do you want to</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="{{projectClasses.stepThree}} step">-->
+<!--<i class="info icon"></i>-->
+<!--<div class="content">-->
+<!--<div class="title">Display Options</div>-->
+<!--<div class="description">How to display campaign on Rotaraise</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
