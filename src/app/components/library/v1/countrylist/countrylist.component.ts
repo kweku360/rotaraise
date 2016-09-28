@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component,EventEmitter, OnInit, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-countrylist',
@@ -7,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountrylistComponent implements OnInit {
 
+  @Output() country = new EventEmitter<any>();
   constructor() { }
 
   ngOnInit() {
-    jQuery('.ui.dropdown').dropdown('get value');
+   jQuery('.cc')
+      .dropdown({
+        onChange:(value, text, selectedItem)=> {
+          // custom action
+
+          var name = text.split('>').pop().trim();
+
+          //we can now emit selected values
+          this.country.emit({"code":value,"name":name});
+        }
+      })
   }
 
 }

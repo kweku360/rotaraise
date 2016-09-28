@@ -9,7 +9,9 @@ import {ProjectModel} from "../../../models/project";
 })
 export class ProjectComponent implements OnInit {
 
-  model = new ProjectModel(0, "", "", "summer job", "Cant Beat us", "", "", "", "", "", 0, 0, 0, 0, "", 0, "");
+  model = new ProjectModel(0, "", "", "", "","","", "", "", "", "", "", 0, 0, 0, 0, "", 0, "");
+
+  simplefile:boolean = false
 
   projectClasses = {
     toggleStepOneForm: "",
@@ -44,13 +46,13 @@ export class ProjectComponent implements OnInit {
     this.projectClasses.toggleStepTwoForm = "";
   }
 
-  keyCount() {
-
+  onCountry(evt){
+    console.log(evt)
   }
 
   validateFormOne() {
     var that = this;
-    jQuery('.ui.dropdown').dropdown('get value');
+    jQuery('.ui.dropdown').dropdown('get text');
     //noinspection TypeScriptValidateTypes
     jQuery('#formone').submit(function (e) {
       e.preventDefault();// usually use this, but below works best here.

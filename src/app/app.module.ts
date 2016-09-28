@@ -25,6 +25,7 @@ import {routing, appRoutingProviders} from "./routes/app.routing";
 import {DatePickerComponent} from "ng2-datepicker/src/components/ng2-datepicker";
 import {FileuploaderComponent} from "./components/library/v1/fileuploader/fileuploader.component";
 import {CountrylistComponent} from "./components/library/v1/countrylist/countrylist.component";
+import {UPLOAD_DIRECTIVES} from "ng2-uploader/ng2-uploader";
 
 
 
@@ -40,7 +41,7 @@ import {CountrylistComponent} from "./components/library/v1/countrylist/countryl
     HeaderComponent,
     LogoComponent,
     SliderComponent,
-    
+
     DatePickerComponent,
 
     //parent components - these are routerble
@@ -51,7 +52,9 @@ import {CountrylistComponent} from "./components/library/v1/countrylist/countryl
     DashboardComponent,
     ProjectComponent,
     FileuploaderComponent,
-    CountrylistComponent
+    CountrylistComponent,
+
+    UPLOAD_DIRECTIVES
   ],
   imports: [
     BrowserModule,

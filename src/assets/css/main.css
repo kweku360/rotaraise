@@ -252,7 +252,7 @@ body{
 .rr-dash-menu .rr-menu-nav{
   padding-top: 5px;
 }.rr-dash-menu .rr-usermenu{
-   padding-top: 10px;
+   padding-top: 10px!important;
    color: white;
  }
 
@@ -289,11 +289,11 @@ body{
 
 }
 .rr-addproject .field-title{
-  font-size: 16px;
-  color: #2c2c2c;
+  font-size: 16px!important;
+  color: #2c2c2c!important;
 }
 .rr-addproject .field-sub{
   font-size: 15px;
-  color: lightgray;
+  color: #a8a8a2;
   padding:5px 0px;
 }

@@ -1,0 +1,48 @@
+
+.wave{
+  background:
+    linear-gradient(to right, white, white);
+  height: 5px;
+  position: relative;
+}
+.wave::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, lightgreen 13px);
+}
+.wave::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, lightgreen 12px, transparent 13px);
+}
+
+.rr-success-msg {
+  width: 100%;
+  text-align: center;
+  padding: 0!important;
+}
+.rr-success-msg .dub{
+  text-align: center;
+  width: 100%;
+  background-color: lightgreen;
+  padding: 0!important;
+}
+.rr-success-msg .top{
+  width: 100%;
+  background-color: #fff;
+  padding: 0!important;
+}

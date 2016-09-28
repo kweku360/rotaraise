@@ -6,15 +6,15 @@
     </div>
     <div class="eight wide column rr-menu-nav">
       <div style="border: none" class="ui eight item secondary pointing stackable menu">
-        <a routerLink="" routerLinkActive="active" class="item">HOME</a>
-        <a class="item">CAMPAIGN</a>
-        <a class="item">EVENTS</a>
-        <a class="item">BLOG</a>
+        <a routerLink="" routerLinkActive="active"  class="item">HOME</a>
+        <a routerLink="/campaign" routerLinkActive="active" class="item">CAMPAIGN</a>
+        <a routerLink="/events" routerLinkActive="active" class="item">EVENTS</a>
+        <a routerLink="/blog" routerLinkActive="active" class="item">BLOG</a>
         <a class="item ui dropdown">About Us <i class="dropdown icon"></i>
           <div class="menu">
-            <div class="item">How It Works</div>
-            <div class="item">Team</div>
-            <div class="item">Our Impact</div>
+            <div routerLink="/help" routerLinkActive="active" class="item">How It Works</div>
+            <div routerLink="/team" routerLinkActive="active" class="item">Team</div>
+            <div routerLink="/impact" routerLinkActive="active" class="item">Our Impact</div>
           </div>
         </a>
         <a routerLink="/login" routerLinkActive="active" class="item">LOG IN</a>

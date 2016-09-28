@@ -7,12 +7,18 @@
         Sign Up
       </div>
       <h4 class="ui dividing header"></h4>
-
-      <form class="ui form">
+      <div [ngStyle]="{'display':cssClasses.loaderhide}" class="ui negtive message">
+        <i class="close icon"></i>
+        <div class="header">
+          We're sorry we can't apply that discount
+        </div>
+        <p>That offer has expired
+        </p></div>
+      <form ngClass="{{cssClasses.loading}}" class="ui form">
         <div class="ui error message"></div>
         <!--<h4 class="ui dividing header">Shipping Information</h4>-->
         <div class="field ">
-          <div class="blue ui pointing below label">
+          <div class="grey ui header">
             Email Address
           </div>
           <div class="fields {{errorClasses.emailfieldError}}">
@@ -39,7 +45,7 @@
             </div>
             <div class="field">
               <div class="twelve wide field">
-                <input type="password" [(ngModel)]="accountmodel.password" name="password" placeholder="">
+                <input class="ui input" data-tooltip="minimun six characters" data-position="bottom center" type="password" [(ngModel)]="accountmodel.password" name="password" placeholder="">
               </div>
             </div>
           </div>
@@ -92,17 +98,21 @@
      </div>
    </div>
         <div class="two fields">
-          <div class="twelve wide field">
+          <div class="field">
             <div class="blue ui pointing below label">
               City
             </div>
-            <input type="text" [(ngModel)]="model.city" name="city" placeholder="city">
+            <div class="twelve wide field">
+              <input type="text" [(ngModel)]="model.city" name="city" placeholder="city">
+            </div>
           </div>
-          <div class="twelve wide field">
+          <div class="field">
             <div class="blue ui pointing below label">
               Country
             </div>
-
+            <div class="twelve wide field">
+              <app-countrylist></app-countrylist>
+            </div>
           </div>
         </div>
        <div class="two fields">
@@ -137,3 +147,26 @@
 
 </div>
 <FooterComponent></FooterComponent>
+<div class="ui small modal">
+  <div class="rr-success-msg">
+    <div class="one column ui stackable grid">
+      <div class="column top">
+        <br>
+        <i class="check circle huge green icon"></i>
+
+        <h3 class="ui header">Awesome</h3>
+        <h5>You are ready to start using Rotaraise</h5><br><br>
+      </div>
+      <div class="column wave"></div>
+      <div class="column dub"><br>
+        <button class="yellow large ui button">
+          Go to Dashboard
+        </button>
+        <br>
+        <br>
+        <br>
+
+      </div>
+    </div>
+  </div>
+</div>

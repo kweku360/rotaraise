@@ -27,13 +27,12 @@ export class LoginComponent implements OnInit {
     if(this.accountmodel.email != "" || this.accountmodel.password != ""){
       this.loginservice.verifyLogin(this.accountmodel).subscribe(
         function (x) {
-          console.log(x);
+         // console.log(x);
           that.router.navigate(['/dashboard']);
         },
         function (err) {
-          console.log(err);
+        //  console.log(err);
           that.errorClasses.loginerror = "";
-          that.router.navigate(['/dashboard']);
         }
       )
     }

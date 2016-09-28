@@ -3,14 +3,11 @@
  * Test  Auth  Service
  */
 import { Injectable } from '@angular/core';
-import {Http,Response} from "@angular/http"
-import { Headers, RequestOptions } from '@angular/http';
-
 import {ClubInfo} from "../models/clubinfo";
 import {fromPromise} from "rxjs/observable/fromPromise";
+import 'rxjs/add/operator/map';
+import {Http, Headers, RequestOptions, Response} from "@angular/http";
 import {Observable} from "rxjs/Rx";
-//import {Observable} from "rxjs/Rx";
-//import {delay} from 'rxjs/Rx';
 
 
 @Injectable()
@@ -42,7 +39,10 @@ export class RegisterService {
     return fromPromise(firebase.auth().createUserWithEmailAndPassword(accountmodel.email, accountmodel.password))
   }
 
-  secondStream(){
+  secondStream(uid:string,clubinfo:ClubInfo):Observable<string>{
+    clubinfo.useruuid = uid
+    console.log(clubinfo)
+    return this.postDb(clubinfo)
 
   }
 
@@ -59,14 +59,12 @@ export class RegisterService {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
 
-    return this.http.post(this.serverUrl, body, options)
-      .map(this.extractData)
+    return this.http.post(this.serverUrl, body, options).map(this.extractData)
      // .catch(this.handleError);
   }
 
   getTest (): Observable<String> {
-    return this.http.get(this.serverUrl)
-      .map(this.extractData);
+    return this.http.get(this.serverUrl).map(this.extractData);
   }
   private extractData(res: Response) {
     let body = res.json();

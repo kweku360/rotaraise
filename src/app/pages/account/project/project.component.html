@@ -20,22 +20,34 @@
       <!--le first form-->
       <form id="formone" class="ui form">
         <!--le basics-->
-        <h4 class="ui dividing header">Basic <span>Introduce Your Campaign</span></h4>
+        <h2 class="ui dividing header">Basic <span class="sub-head">Introduce Your Campaign</span></h2>
         <div class="ui segment">
-          <div class="ui grid">
+          <div class="ui stackable grid">
             <div class="ten wide column">
               <div class="ui error message"></div>
               <div class="field required">
                 <label class="field-title">Campaign Title</label>
                 <div class="field-sub">What is the title of your campaign</div>
-                <input [(ngModel)]="model.name" name="name" class="ui large input" placeholder="" type="text">
-              </div>
+                <div class="ui large input">
+                  <input [(ngModel)]="model.name" name="name" placeholder="" type="text">
+                </div>
+              </div><br>
+              <div class="field">
+                <label class="field-title">Tagline</label>
+                <div class="field-sub">Short Campaing Tagline</div>
+                <div class="ui large input">
+                  <input [(ngModel)]="model.tagline" name="tagline" placeholder="" type="text">
+                </div>
+              </div><br>
               <div class="field required">
-                <label class="field-title">Brief Summary</label>
-                <div class="field-sub">Tell us briefly what this campaign is about.</div>
-                <input [(ngModel)]="model.tagline" name="tagline" class="ui large input" placeholder="" type="text">
+                <label class="field-title">Campaign Description</label>
+                <div class="field-sub">Tell us what this campaign is about.</div>
+                <div class="ui large input">
+                <textarea rows="3" [(ngModel)]="model.description" name="description" placeholder="" type="text"></textarea>
+                  </div>
               </div>
-
+              <br><br>
+              {{model | json}}
               <div class="two fields">
                 <div class="field required">
                   <label class="field-title">FundRaising Start Date</label>
@@ -54,15 +66,16 @@
         </div>
         <!--fini le basics-->
         <!--le fund-->
-        <h4 class="ui dividing header">Basic <span>Funding</span></h4>
+        <h2 class="ui dividing header">Funding <span class="sub-head"></span></h2>
         <div class="ui segment">
           <div class="ui grid">
             <div class="ten wide column">
-              <div class=" ten wide field required">
+              <div class=" twelve wide field required">
                 <label class="field-title">Amount</label>
                 <div class="field-sub">How much money would you like to raise?</div>
                 <div class="ui large right labeled input">
-                  <input type="text" placeholder="currency">
+                  <input [(ngModel)]="model.targetamt" name="targetamt" type="text" placeholder="currency">
+                  <input [(ngModel)]="model.currency" name="currency" type="hidden">
                   <div class="teal ui dropdown label">
                     <div class="text">USD</div>
                     <i class="dropdown icon"></i>
@@ -80,38 +93,44 @@
         </div>
         <!--fini le fund-->
         <!--le display-->
-        <h4 class="ui dividing header">Display  <span>How to display campaign on Rotaraise</span></h4>
+        <h2 class="ui dividing header">Display  <span class="sub-head">how to display campaign on Rotaraise</span></h2>
         <div class="ui segment">
           <div class="ui grid">
             <div class="ten wide column">
               <div class="field required">
                 <label class="field-title">Campaign Display Image</label>
-                <div class="field-sub">What is the title of your campaign</div>
-                <input [(ngModel)]="model.name" name="name" class="ui large input" placeholder="" type="text">
+                <div class="field-sub">Upload an image that represents your campaign.
+                  640 x 640 recommended image size,</div>
+                <app-fileuploader [simplefile]=false></app-fileuploader>
+                <input type="hidden" name="uploadimg" value="">
               </div>
               <div class="field required">
                 <label class="field-title">Location </label>
-                <div class="field-sub">Tell us briefly what this campaign is about.</div>
+                <div class="field-sub">Choose the location where you are running the campaign.
+                  This location will be visible on your campaign page for your audience to see.</div>
               </div>
               <div class="two fields">
                 <div class="field">
-                  <input [(ngModel)]="model.city" name="city" class="ui large input" placeholder="" type="text">
+                  <input [(ngModel)]="model.city" name="city" class="ui large input" placeholder="city" type="text">
                 </div>
                 <div class="field">
-                  <app-countrylist></app-countrylist>
+                  <input type="hidden" [(ngModel)]="model.country" name="country">
+                  <app-countrylist (country)="onCountry($event)"></app-countrylist>
                 </div>
               </div>
               <div class="field required">
                 <label class="field-title">Category</label>
-                <div class="field-sub">What is the title of your campaign</div>
+                <div class="field-sub">Select a category that best aligns with your campaign.</div>
               </div>
-              <div class="field required">
+              <div class="field">
                 <label class="field-title">Tags</label>
-                <div class="field-sub"></div>
+                <div class="field-sub">Enter keywords that best describe your campaign.separate each keyword with a comma
+                  These tags help with organization and discoverability.</div>
+
               </div>
 
               <div class="field">
-                <label class="field-title">Upload Additional Documents and Images</label>
+                <label class="field-title">Upload Additional Documents and Images (optional)</label>
                 <div class="field-sub"></div>
               </div>
             </div>

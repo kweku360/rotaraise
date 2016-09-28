@@ -15,4 +15,5 @@ interface JQuery {
   dropdown(options?: any): JQuery;
   progress(options?: any): JQuery;
   form(options?: any): JQuery;
+  filer(options?: any): JQuery;
 }

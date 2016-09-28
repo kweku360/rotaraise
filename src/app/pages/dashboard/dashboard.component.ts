@@ -13,9 +13,9 @@ export class DashboardComponent implements OnInit {
   constructor(private authservice:AuthService,private router:Router) { }
 
   logout(){
-    this.authservice.logout();
-    console.log("clicked");
-  }
+  this.authservice.logout();
+  console.log("clicked");
+}
   addProjectClick(){
     this.router.navigate(["/project"]);
   }

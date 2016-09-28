@@ -14,21 +14,11 @@ import {ProjectComponent} from "../pages/account/project/project.component";
 
 
 const appRoutes: Routes = [
-    { path: '', component: LandingComponent
-    // { path: '', component: HeaderComponent,canActivate:[AuthGuard]
-
-    },
+    { path: '', component: LandingComponent},
     { path: 'login', component: LoginComponent},
     { path: 'register', component: RegisterComponent},
     { path: 'dashboard', canActivate: [AuthGuard], component: DashboardComponent},
     { path: 'project', component: ProjectComponent},
-  // { path: 'login', component: LoginComponent,
-  //       children : [
-  //         {path: 'child', component: ChildtestComponent}
-  //       ]
-  //   },
-  // { path: 'crisis-center', component: CrisisListComponent },
-  // { path: 'heroes', component: HeroListComponent }
 ];
 
 export const appRoutingProviders: any[] = [
@@ -36,3 +26,11 @@ AuthGuard,AuthService
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+
+// { path: 'login', component: LoginComponent,
+//       children : [
+//         {path: 'child', component: ChildtestComponent}
+//       ]
+//   },
+// { path: 'crisis-center', component: CrisisListComponent },
+// { path: 'heroes', component: HeroListComponent }
