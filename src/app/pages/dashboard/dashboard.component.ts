@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {AuthService} from "../../services/auth.service";
+import {ProjectService} from "../../services/project.service";
 
 @Component({
   //moduleId: module.id,
@@ -10,16 +11,32 @@ import {AuthService} from "../../services/auth.service";
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private authservice:AuthService,private router:Router) { }
+   projects:any = {meta:"",projects:""};
+  // projects:string = "meteo";
+  // carsList:Array = [];
+  constructor(private authservice:AuthService,private projectservice:ProjectService,private router:Router) { }
 
   logout(){
   this.authservice.logout();
-  console.log("clicked");
 }
   addProjectClick(){
     this.router.navigate(["/project"]);
   }
+
+  loadProjects(){
+  this.projectservice.getProjectsByClub().subscribe(
+      x =>{
+        console.log(x);
+        this.projects = x;
+        // if(this.projects.meta.)
+      },
+      err => {
+        console.log(err);
+      }
+    )
+  }
   ngOnInit() {
+    this.loadProjects()
   }
 
 }

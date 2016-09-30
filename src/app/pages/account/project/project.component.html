@@ -18,7 +18,7 @@
   <div class="row">
     <div class="thirteen wide column">
       <!--le first form-->
-      <form id="formone" class="ui form">
+      <form id="formone" class="ui {{cssClasses.loading}} form">
         <!--le basics-->
         <h2 class="ui dividing header">Basic <span class="sub-head">Introduce Your Campaign</span></h2>
         <div class="ui segment">
@@ -46,18 +46,19 @@
                 <textarea rows="3" [(ngModel)]="model.description" name="description" placeholder="" type="text"></textarea>
                   </div>
               </div>
+              {{datemodel | json}}
               <br><br>
               {{model | json}}
               <div class="two fields">
                 <div class="field required">
                   <label class="field-title">FundRaising Start Date</label>
                   <div class="field-sub">When does the fundraising Start</div>
-                  <datepicker [(ngModel)]="model.fundstart" name="fundstart" [expanded]="true"></datepicker>
+                  <datepicker [(ngModel)]="datemodel.start" name="fundstart" [expanded]="true"></datepicker>
                 </div>
                 <div class="field required">
                   <label class="field-title">FundRaising End Date</label>
                   <div class="field-sub">When does the fundraising End</div>
-                  <datepicker [(ngModel)]="model.fundend" name="fundend" [expanded]="true"></datepicker>
+                  <datepicker [(ngModel)]="datemodel.end" name="fundend" [expanded]="true"></datepicker>
                 </div>
               </div>
 
@@ -80,10 +81,11 @@
                     <div class="text">USD</div>
                     <i class="dropdown icon"></i>
                     <div class="menu">
-                      <div class="item">CAD</div>
-                      <div class="item">GBP</div>
-                      <div class="item">GHC</div>
-                      <div class="item">EUR</div>
+                      <div class="item" data-value="USD">USD</div>
+                      <div class="item" data-value="CAD">CAD</div>
+                      <div class="item" data-value="GBP" >GBP</div>
+                      <div class="item" data-value="GHC">GHC</div>
+                      <div class="item" data-value="EUR">EUR</div>
                     </div>
                   </div>
                 </div>
@@ -101,7 +103,7 @@
                 <label class="field-title">Campaign Display Image</label>
                 <div class="field-sub">Upload an image that represents your campaign.
                   640 x 640 recommended image size,</div>
-                <app-fileuploader [simplefile]=false></app-fileuploader>
+                <app-fileuploader [simplefile]=true [url]="projecturl"></app-fileuploader>
                 <input type="hidden" name="uploadimg" value="">
               </div>
               <div class="field required">
@@ -121,18 +123,29 @@
               <div class="field required">
                 <label class="field-title">Category</label>
                 <div class="field-sub">Select a category that best aligns with your campaign.</div>
+                <div class="ui selection dropdown">
+                  <input type="hidden" [(ngModel)]="model.category" name="category">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Category</div>
+                  <div class="menu">
+                    <div class="item" data-value="Film">Film</div>
+                    <div class="item" data-value="Music">Music</div>
+                  </div>
+                </div>
               </div>
               <div class="field">
                 <label class="field-title">Tags</label>
                 <div class="field-sub">Enter keywords that best describe your campaign.separate each keyword with a comma
                   These tags help with organization and discoverability.</div>
-
+                <div class="ui large input">
+                  <input [(ngModel)]="model.tags" name="tags" placeholder="" type="text">
+                </div>
               </div>
 
-              <div class="field">
-                <label class="field-title">Upload Additional Documents and Images (optional)</label>
-                <div class="field-sub"></div>
-              </div>
+              <!--<div class="field">-->
+                <!--<label class="field-title">Upload Additional Documents and Images (optional)</label>-->
+                <!--<div class="field-sub"></div>-->
+              <!--</div>-->
             </div>
           </div>
         </div>
@@ -154,27 +167,26 @@
 
 
 <FooterComponent></FooterComponent>
+<div class="ui small modal">
+  <div class="rr-success-msg">
+    <div class="one column ui stackable grid">
+      <div class="column top">
+        <br>
+        <h1 class="ui header">Project Created</h1>
+        <h5>Your project will go live once approved by Rotaraise</h5><br><br>
+      </div>
+      <div class="column wave"></div>
+      <div class="column dub"><br>
+        <div class="actions">
+          <button  class="yellow small positive ui button">
+            Ok
+          </button>
+        </div>
 
-<!--<div class="tiny ui ordered one top attached steps">-->
-<!--<div class="step">-->
-<!--&lt;!&ndash;<i class="truck icon"></i>&ndash;&gt;-->
-<!--<div class="content">-->
-<!--<div class="title">Basic</div>-->
-<!--<div class="description"> introduce your campaign</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="step">-->
-<!--&lt;!&ndash;<i class="payment icon"></i>&ndash;&gt;-->
-<!--<div class="content">-->
-<!--<div class="title">Funding</div>-->
-<!--<div class="description">How much do you want to</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="{{projectClasses.stepThree}} step">-->
-<!--<i class="info icon"></i>-->
-<!--<div class="content">-->
-<!--<div class="title">Display Options</div>-->
-<!--<div class="description">How to display campaign on Rotaraise</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
+        <br>
+        <br>
+
+      </div>
+    </div>
+  </div>
+</div>

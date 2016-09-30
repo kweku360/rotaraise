@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AuthService} from "../../services/auth.service";
 
 
 @Component({
@@ -10,12 +11,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  isLoggedOn:boolean = false
+
+  constructor(private authservice:AuthService) { }
 
   ngOnInit() {
     //lets load jq components
     this.loadJqueryComponents()
-
+    this.checkLogin();
+  }
+  
+  checkLogin(){
+    if(this.authservice.isLoggedIn == true){
+      console.log("logged in")
+      this.isLoggedOn  = true;
+    }else{
+      this.isLoggedOn = false;
+      console.log("logged out")
+    }
   }
 
   loadJqueryComponents(){

@@ -14,11 +14,11 @@ import {ProjectComponent} from "../pages/account/project/project.component";
 
 
 const appRoutes: Routes = [
-    { path: '', component: LandingComponent},
+    { path: '',component: LandingComponent},
     { path: 'login', component: LoginComponent},
     { path: 'register', component: RegisterComponent},
     { path: 'dashboard', canActivate: [AuthGuard], component: DashboardComponent},
-    { path: 'project', component: ProjectComponent},
+    { path: 'project', canActivate: [AuthGuard], component: ProjectComponent},
 ];
 
 export const appRoutingProviders: any[] = [

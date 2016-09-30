@@ -2,7 +2,6 @@
  * Created by kweku on 9/21/2016.
  */
 export class ProjectModel{
-
   constructor(
     public id: number,
     public Uuid: string = "",
@@ -16,6 +15,8 @@ export class ProjectModel{
     public category: string = "",
     public city: string = "",
     public country: string = "",
+    public countrycode: string = "",
+    public tags: string = "",
 
     public targetamt: number = 0,
     public currentamt: number = 0,

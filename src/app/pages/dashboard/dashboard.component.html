@@ -23,36 +23,58 @@
       </button>
     </div>
   </div>
+
   <div class="rr-dash-content-box">
     <div class="ui stackable grid">
       <div class="row">
         <div class="two wide column"></div>
         <div class="fourteen wide column">
-          <div class="sixteen wide column rr-subtext-color">Your Current Projects</div>
+          <div class="sixteen wide column rr-subtext-color">Your Current Projects
+          </div>
           <div class="four column ui stackable grid ">
-            <div class="column">
-              <div class="ui card">
-                <div class="content">
-                  <a class="header">Water Project</a>
-                  <div class="meta">
-                    <a>38 days Left</a>
+            <!--//Ultralight Beam-->
+            <div *ngIf="projects.meta.total !=0 ">
+            <div *ngFor="let project of projects.projects.info;let i = index">
+              <div class="column">
+                <div class="ui card">
+                  <div class="content">
+                    <a class="header">{{project.name}}</a>
+                    <div class="meta">
+                      <a>{{project.enddate | daysleft}} Days Left</a>
+                    </div>
+                    <a class="ui green label">
+                      Donations
+                      <div class="detail">{{projects.projects.account[i].donorcount}}</div>
+                    </a>
                   </div>
-                  <a class="ui green label">
-                    Donations
-                    <div class="detail">35 people</div>
-                  </a>
-                </div>
-                <div class="extra centered content" style="text-align: center">
-                  <div class="ui blue progress" id="example2">
-                    <div class="bar"></div>
-                    <div class="label">$200 Donated of $600 Goal</div>
-                  </div>
-                  <div class="ui grey mini  button">
-                    <i class="travel icon"></i> Manage
+                  <div class="extra centered content" style="text-align: center">
+
+                    <div class="ui blue progress"
+                         data-percent="" id="example2">
+                      <div class="bar"></div>
+                      <div class="label">
+                        ${{projects.projects.account[i].amtraised}}
+
+                         Donated of
+
+                        ${{projects.projects.account[i].targetamt}} Goal</div>
+                    </div>
+                    <a routerLink="" ss="ui grey mini  button">
+                      <i class="travel icon"></i> Manage
+                    </a>
                   </div>
                 </div>
               </div>
+              <br><br><br>
             </div>
+            </div>
+            <div *ngIf="projects.meta.total == 0 ">
+              <br><br>
+             <label class="ui label">
+               No Projects.
+             </label>
+            </div>
+           <!--dream-->
           </div>
         </div>
       </div>

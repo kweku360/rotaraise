@@ -10,19 +10,19 @@ import {AuthService} from "../../../../services/auth.service";
 export class DashheaderComponent implements OnInit {
 
   constructor(private authservice:AuthService) { }
-  
-  //userinfo
-  email:string = this.authservice.email;
-  uid:string = this.authservice.Uuid;
+  email:string = "";
+  uid:string = "";
 
   ngOnInit() {
     //declare jquery so semantic ui stuff
     jQuery('.ui.dropdown').dropdown();
+    //userinfo
+   
+    this.email = this.authservice.email;
   }
 
   logout(){
     this.authservice.logout();
-    console.log("clicked");
   }
 
 }

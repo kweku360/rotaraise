@@ -267,6 +267,7 @@ body{
 .rr-dash-content{
   background-color: #eceff1;
   padding-top: 10px;
+  min-height: 350px;
 }
 .rr-dash-content-box{
   margin-bottom: 20px;

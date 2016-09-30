@@ -46,7 +46,8 @@ export class AuthService {
           //change islogged to false
           this.isLoggedIn == false
           //redirect to login or homepage
-          this.router.navigate(['/login']);
+           this.router.navigate(['/login']);
+         // this.router.navigate(['']);
 
           reject(false)
         }
@@ -62,8 +63,9 @@ export class AuthService {
   logout():void {
     firebase.auth().signOut().then(()=> {
       // Sign-out successful.
+      this.isLoggedIn = false
       //redirect to login or homepage
-      this.router.navigate(['']);
+      this.router.navigate(['/']);
     }, error => {
       // An error happened.
       //TODO handle logout error

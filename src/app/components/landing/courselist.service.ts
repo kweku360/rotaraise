@@ -20,7 +20,6 @@ constructor(private http:Http){}
   }
   private extractData(res: Response) {
     let body = res.json();
-    console.log(body)
     return body.data || { };
   }
 

@@ -14,14 +14,16 @@ export class CountrylistComponent implements OnInit {
    jQuery('.cc')
       .dropdown({
         onChange:(value, text, selectedItem)=> {
-          // custom action
-
-          var name = text.split('>').pop().trim();
-
-          //we can now emit selected values
-          this.country.emit({"code":value,"name":name});
+          if (text != null){
+            console.log("flagship called")
+            // custom action
+            var name = text.split('>').pop().trim();
+            //we can now emit selected values
+            this.country.emit({"code":value,"name":name});
+          }
         }
       })
   }
 
 }
+

@@ -16,6 +16,7 @@ export class RegisterComponent implements OnInit {
 
   //we declare model club info -- we can make all fie;ds optional or use null values here
   model = new ClubInfo(0, "", "", "", "", "", "","", "", "", "", "");
+  
   accountmodel = {email: "", password: ""};
   showError:boolean = false;
   showErrorTxt = ""

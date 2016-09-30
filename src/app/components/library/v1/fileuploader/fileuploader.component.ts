@@ -15,6 +15,7 @@ export class FileuploaderComponent implements OnInit {
   private filebox:boolean = true;
 
   @Input() simplefile:boolean;
+  @Input() url:string;
 
   public documentfile:boolean = false;
 
@@ -32,6 +33,7 @@ export class FileuploaderComponent implements OnInit {
       //this.files[0].size gets the size of your file.
       alert(this.files[0].size);
     });
+    console.log(this.url);
     this.zone = new NgZone({enableLongStackTrace: false});
     this.basicOptions = {
       url: 'http://localhost/rotaraise/v1/upload.php',
@@ -40,9 +42,9 @@ export class FileuploaderComponent implements OnInit {
         "title": "cover",
         "description": "cover",
         "type": "cover",
-        "filename": "00904",
+        "filename":  this.url,
         "ext": "jpg",
-        "uuid": "45564",
+        "uuid": this.url,
         "mime": "image/x",
         "size": 0,
       },

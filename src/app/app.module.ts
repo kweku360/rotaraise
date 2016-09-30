@@ -26,6 +26,9 @@ import {DatePickerComponent} from "ng2-datepicker/src/components/ng2-datepicker"
 import {FileuploaderComponent} from "./components/library/v1/fileuploader/fileuploader.component";
 import {CountrylistComponent} from "./components/library/v1/countrylist/countrylist.component";
 import {UPLOAD_DIRECTIVES} from "ng2-uploader/ng2-uploader";
+import {ProjectService} from "./services/project.service";
+import { DaysleftPipe } from './pipes/daysleft.pipe';
+import { PercentagepipePipe } from './pipes/percentagepipe.pipe';
 
 
 
@@ -54,7 +57,11 @@ import {UPLOAD_DIRECTIVES} from "ng2-uploader/ng2-uploader";
     FileuploaderComponent,
     CountrylistComponent,
 
-    UPLOAD_DIRECTIVES
+    UPLOAD_DIRECTIVES,
+
+    DaysleftPipe,
+
+    PercentagepipePipe
   ],
   imports: [
     BrowserModule,
@@ -68,6 +75,7 @@ import {UPLOAD_DIRECTIVES} from "ng2-uploader/ng2-uploader";
     AuthService,
     LoginService,
     RegisterService,
+    ProjectService,
     appRoutingProviders
   ],
   bootstrap: [AppComponent]
