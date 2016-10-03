@@ -1,0 +1,11 @@
+<div *ngIf="!isLoggedOn">
+  <HeaderComponent></HeaderComponent>
+</div>
+<div *ngIf="isLoggedOn">
+  <app-dashheader></app-dashheader>
+</div>
+<SliderComponent></SliderComponent>
+<FeaturedCampaignComponent [projects]="projects" ></FeaturedCampaignComponent>
+<CategoryComponent></CategoryComponent>
+<CampaignAdComponent></CampaignAdComponent>
+<FooterComponent></FooterComponent>

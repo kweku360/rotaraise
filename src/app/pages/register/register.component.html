@@ -1,0 +1,172 @@
+<HeaderComponent></HeaderComponent>
+<div class="ui stackable grid" style="background-color: #f7f5f2;padding-top: 50px">
+
+  <div class="row">
+    <div class="ten wide centered column rr-reg-body">
+      <div class="rr-reg-head">
+        Sign Up
+      </div>
+      <h4 class="ui dividing header"></h4>
+      <div [ngStyle]="{'display':cssClasses.loaderhide}" class="ui negtive message">
+        <i class="close icon"></i>
+        <div class="header">
+          We're sorry we can't apply that discount
+        </div>
+        <p>That offer has expired
+        </p></div>
+      <form ngClass="{{cssClasses.loading}}" class="ui form">
+        <div class="ui error message"></div>
+        <!--<h4 class="ui dividing header">Shipping Information</h4>-->
+        <div class="field ">
+          <div class="grey ui header">
+            Email Address
+          </div>
+          <div class="fields {{errorClasses.emailfieldError}}">
+            <div class="six wide field">
+              <div class="ui small icon input">
+                <input type="text" (blur)="verifyEmail()" id="email"
+                       [(ngModel)]="accountmodel.email" name="email" placeholder="example@gmail.com">
+
+              </div>
+
+            </div>
+            <div [ngStyle]="{'display':cssClasses.loaderhide}"
+                 class="small active ui inline loader" style="margin-top: 5px"></div>
+   <i [ngStyle]="{'display':cssClasses.successicon}" class="icon check green" style="margin-top: 5px"></i>
+            <div class="red ui {{cssClasses.emailtakenhide}} label">
+              Email Address Already in use
+            </div>
+          </div>
+        </div>
+        <div class="two fields">
+          <div class="field">
+            <div class="blue ui pointing below label">
+              Create a password
+            </div>
+            <div class="field">
+              <div class="twelve wide field">
+                <input class="ui input" data-tooltip="minimun six characters" data-position="bottom center" type="password" [(ngModel)]="accountmodel.password" name="password" placeholder="">
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="blue ui pointing below label">
+              Confirm your password
+            </div>
+            <div class="field">
+              <div class="twelve wide field">
+                <input type="password" name="cpassword" placeholder="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="ui dividing header">Club Information</h4>
+        <div class="two fields">
+          <div class="field">
+            <div class="blue ui pointing below label">
+              Club Name
+            </div>
+            <div class="twelve wide field">
+              <input type="text" [(ngModel)]="model.clubname" name="clubname" placeholder="Club Name">
+            </div>
+          </div>
+          <div class="field">
+            <div class="blue ui pointing below label">
+              President Name
+            </div>
+            <div class="twelve wide field">
+              <input type="text" [(ngModel)]="model.president" name="presidentname" placeholder="president name">
+            </div>
+          </div>
+        </div>
+   <div class="two fields">
+     <div class="field">
+       <div class="blue ui pointing below label">
+         District Name
+       </div>
+       <div class="twelve wide field">
+         <input type="text" [(ngModel)]="model.district" name="district" placeholder="district">
+       </div>
+     </div>
+     <div class="field">
+       <div class="blue ui pointing below label">
+         Rotary Sponsor
+       </div>
+       <div class="twelve wide field">
+         <input type="text" [(ngModel)]="model.sponsor" name="sponsor" placeholder="">
+       </div>
+     </div>
+   </div>
+        <div class="two fields">
+          <div class="field">
+            <div class="blue ui pointing below label">
+              City
+            </div>
+            <div class="twelve wide field">
+              <input type="text" [(ngModel)]="model.city" name="city" placeholder="city">
+            </div>
+          </div>
+          <div class="field">
+            <div class="blue ui pointing below label">
+              Country
+            </div>
+            <div class="twelve wide field">
+              <app-countrylist></app-countrylist>
+            </div>
+          </div>
+        </div>
+       <div class="two fields">
+         <div class=" field">
+           <div class="blue ui pointing below label">
+             Phone Number
+           </div>
+           <div class="twelve wide field">
+             <input type="text" [(ngModel)]="model.contact1" name="contact2" placeholder="">
+           </div>
+         </div>
+         <div class=" field">
+           <div class="blue ui pointing below label">
+             Alt Phone Number
+           </div>
+           <div class="twelve wide field">
+             <input type="text" [(ngModel)]="model.contact2" name="contact2" placeholder="">
+           </div>
+         </div>
+       </div>
+
+        <div class="twelve wide field">
+          <label>Brief Club Description</label>
+          <textarea rows="2" [(ngModel)]="model.intro" name="intro"></textarea>
+        </div>
+        <h4 class="ui dividing header"></h4>
+        <div class="ui submit button" tabindex="0">Submit</div>
+
+      </form>
+    </div>
+  </div>
+
+</div>
+<FooterComponent></FooterComponent>
+<div class="ui small modal">
+  <div class="rr-success-msg">
+    <div class="one column ui stackable grid">
+      <div class="column top">
+        <br>
+        <i class="check circle huge green icon"></i>
+
+        <h3 class="ui header">Awesome</h3>
+        <h5>You are ready to start using Rotaraise</h5><br><br>
+      </div>
+      <div class="column wave"></div>
+      <div class="column dub"><br>
+        <button class="yellow large ui button">
+          Go to Dashboard
+        </button>
+        <br>
+        <br>
+        <br>
+
+      </div>
+    </div>
+  </div>
+</div>

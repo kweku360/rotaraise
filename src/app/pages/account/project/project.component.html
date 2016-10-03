@@ -1,0 +1,192 @@
+<app-dashheader></app-dashheader>
+<div class="rr-dash-topbar">
+  <div class="ui container stackable grid ">
+    <div class="row">
+      <div class="six wide column">
+        <h1 class="ui header rr-font">Start Campaign</h1>
+        <div class="six wide column">
+          <img src="">
+        </div>
+      </div>
+      <hr/>
+    </div>
+
+  </div>
+</div>
+
+<div class="ui container stackable grid rr-addproject">
+  <div class="row">
+    <div class="thirteen wide column">
+      <!--le first form-->
+      <form id="formone" class="ui {{cssClasses.loading}} form">
+        <!--le basics-->
+        <h2 class="ui dividing header">Basic <span class="sub-head">Introduce Your Campaign</span></h2>
+        <div class="ui segment">
+          <div class="ui stackable grid">
+            <div class="ten wide column">
+              <div class="ui error message"></div>
+              <div class="field required">
+                <label class="field-title">Campaign Title</label>
+                <div class="field-sub">What is the title of your campaign</div>
+                <div class="ui large input">
+                  <input [(ngModel)]="model.name" name="name" placeholder="" type="text">
+                </div>
+              </div><br>
+              <div class="field">
+                <label class="field-title">Tagline</label>
+                <div class="field-sub">Short Campaing Tagline</div>
+                <div class="ui large input">
+                  <input [(ngModel)]="model.tagline" name="tagline" placeholder="" type="text">
+                </div>
+              </div><br>
+              <div class="field required">
+                <label class="field-title">Campaign Description</label>
+                <div class="field-sub">Tell us what this campaign is about.</div>
+                <div class="ui large input">
+                <textarea rows="3" [(ngModel)]="model.description" name="description" placeholder="" type="text"></textarea>
+                  </div>
+              </div>
+              {{datemodel | json}}
+              <br><br>
+              {{model | json}}
+              <div class="two fields">
+                <div class="field required">
+                  <label class="field-title">FundRaising Start Date</label>
+                  <div class="field-sub">When does the fundraising Start</div>
+                  <datepicker [(ngModel)]="datemodel.start" name="fundstart" [expanded]="true"></datepicker>
+                </div>
+                <div class="field required">
+                  <label class="field-title">FundRaising End Date</label>
+                  <div class="field-sub">When does the fundraising End</div>
+                  <datepicker [(ngModel)]="datemodel.end" name="fundend" [expanded]="true"></datepicker>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--fini le basics-->
+        <!--le fund-->
+        <h2 class="ui dividing header">Funding <span class="sub-head"></span></h2>
+        <div class="ui segment">
+          <div class="ui grid">
+            <div class="ten wide column">
+              <div class=" twelve wide field required">
+                <label class="field-title">Amount</label>
+                <div class="field-sub">How much money would you like to raise?</div>
+                <div class="ui large right labeled input">
+                  <input [(ngModel)]="model.targetamt" name="targetamt" type="text" placeholder="currency">
+                  <input [(ngModel)]="model.currency" name="currency" type="hidden">
+                  <div class="teal ui dropdown label">
+                    <div class="text">USD</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                      <div class="item" data-value="USD">USD</div>
+                      <div class="item" data-value="CAD">CAD</div>
+                      <div class="item" data-value="GBP" >GBP</div>
+                      <div class="item" data-value="GHC">GHC</div>
+                      <div class="item" data-value="EUR">EUR</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--fini le fund-->
+        <!--le display-->
+        <h2 class="ui dividing header">Display  <span class="sub-head">how to display campaign on Rotaraise</span></h2>
+        <div class="ui segment">
+          <div class="ui grid">
+            <div class="ten wide column">
+              <div class="field required">
+                <label class="field-title">Campaign Display Image</label>
+                <div class="field-sub">Upload an image that represents your campaign.
+                  640 x 640 recommended image size,</div>
+                <app-fileuploader [simplefile]=true [url]="projecturl"></app-fileuploader>
+                <input type="hidden" name="uploadimg" value="">
+              </div>
+              <div class="field required">
+                <label class="field-title">Location </label>
+                <div class="field-sub">Choose the location where you are running the campaign.
+                  This location will be visible on your campaign page for your audience to see.</div>
+              </div>
+              <div class="two fields">
+                <div class="field">
+                  <input [(ngModel)]="model.city" name="city" class="ui large input" placeholder="city" type="text">
+                </div>
+                <div class="field">
+                  <input type="hidden" [(ngModel)]="model.country" name="country">
+                  <app-countrylist (country)="onCountry($event)"></app-countrylist>
+                </div>
+              </div>
+              <div class="field required">
+                <label class="field-title">Category</label>
+                <div class="field-sub">Select a category that best aligns with your campaign.</div>
+                <div class="ui selection dropdown">
+                  <input type="hidden" [(ngModel)]="model.category" name="category">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Category</div>
+                  <div class="menu">
+                    <div class="item" data-value="Film">Film</div>
+                    <div class="item" data-value="Music">Music</div>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label class="field-title">Tags</label>
+                <div class="field-sub">Enter keywords that best describe your campaign.separate each keyword with a comma
+                  These tags help with organization and discoverability.</div>
+                <div class="ui large input">
+                  <input [(ngModel)]="model.tags" name="tags" placeholder="" type="text">
+                </div>
+              </div>
+
+              <!--<div class="field">-->
+                <!--<label class="field-title">Upload Additional Documents and Images (optional)</label>-->
+                <!--<div class="field-sub"></div>-->
+              <!--</div>-->
+            </div>
+          </div>
+        </div>
+        <!--fini le display-->
+        <div class="field">
+          <button class="ui right labeled right floated icon submit button">
+            <i class="right arrow icon"></i>
+            Submit
+          </button>
+        </div>
+      </form>
+      <!--fini le first form-->
+
+    </div>
+
+
+  </div>
+</div>
+
+
+<FooterComponent></FooterComponent>
+<div class="ui small modal">
+  <div class="rr-success-msg">
+    <div class="one column ui stackable grid">
+      <div class="column top">
+        <br>
+        <h1 class="ui header">Project Created</h1>
+        <h5>Your project will go live once approved by Rotaraise</h5><br><br>
+      </div>
+      <div class="column wave"></div>
+      <div class="column dub"><br>
+        <div class="actions">
+          <button  class="yellow small positive ui button">
+            Ok
+          </button>
+        </div>
+
+        <br>
+        <br>
+
+      </div>
+    </div>
+  </div>
+</div>

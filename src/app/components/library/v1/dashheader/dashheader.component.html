@@ -1,0 +1,43 @@
+<div class="ui top four column stackable grid rr-dash-menu rr-blur">
+  <div class="row">
+    <div class="one wide column"></div>
+    <div class="two wide column rr-logo-box">
+      <img class="res" src="assets/img/logo_defaultnew.png"/>
+    </div>
+    <div class="eight wide column rr-menu-nav">
+      <div style="border: none" class="ui five item secondary pointing stackable menu">
+        <a routerLink="" routerLinkActive="active" class="item">HOME</a>
+        <a routerLink="/campaign" routerLinkActive="active" class="item">CAMPAIGN</a>
+        <a routerLink="/events" routerLinkActive="active" class="item">EVENTS</a>
+        <a routerLink="/blog" routerLinkActive="active" class="item">BLOG</a>
+        <a class="item ui dropdown">About Us <i class="dropdown icon"></i>
+          <div class="menu">
+            <div routerLink="/help" routerLinkActive="active" class="item">How It Works</div>
+            <div routerLink="/team" routerLinkActive="active" class="item">Team</div>
+            <div routerLink="/impact" routerLinkActive="active" class="item">Our Impact</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="five wide column rr-usermenu">
+      <div class="ui inline dropdown">
+        <div class="inverted text">
+          {{email}}
+          <i class="white large user icon"></i>
+        </div>
+        <i class="inverted dropdown icon"></i>
+        <div class="menu">
+          <div class="item">
+            <h4></h4>
+          </div>
+          <div class="item">
+            <a class="ui button"> Account</a>
+          </div>
+          <div class="item">
+            <a (click)="logout()" class="ui button"> Log Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

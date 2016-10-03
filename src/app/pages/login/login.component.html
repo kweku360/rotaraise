@@ -1,0 +1,45 @@
+<HeaderComponent></HeaderComponent>
+<div class="ui stackable grid" style="background-color: #f7f5f2;padding-top: 50px">
+  <div class="row">
+    <div class="five wide centered column rr-reg-body">
+      <div class="rr-reg-head">
+        Login
+      </div>
+      <h4 class="ui dividing header"></h4>
+      <form class="ui form">
+        <div class="ui {{errorClasses.loginerror}} negative message">
+          <div class="">
+            Wrong Username / Password Combination
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left action input">
+            <button class="ui blue labeled icon button">
+              <i class="mail icon"></i>
+
+            </button>
+            <input type="text" [(ngModel)]="accountmodel.email" name="email" placeholder="Email">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left action input">
+            <button class="ui blue labeled icon button">
+              <i class="lock icon"></i>
+
+            </button>
+            <input type="password" [(ngModel)]="accountmodel.password" name="password" placeholder="Password">
+          </div>
+        </div>
+        <div class="two fields">
+          <div class="field"><a routerLink="/forgotpassword" href="" class="link">forgot Password?</a></div>
+          <div class="field">
+            <div (click)="streamLogin($event)" class="right floated ui blue button" tabindex="0">Login</div></div>
+        </div>
+        <h4 class="ui dividing header"></h4>
+        <div>New to Rotaraise? <a routerLink="/register" class="link"> Sign Up </a></div>
+      </form>
+    </div>
+  </div>
+
+</div>
+<FooterComponent></FooterComponent>

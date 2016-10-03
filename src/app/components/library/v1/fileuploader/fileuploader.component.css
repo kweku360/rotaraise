@@ -1,0 +1,29 @@
+.rr-fileinput-box{
+  width: 200px;
+  height: 200px;
+  border: 1px solid lightblue;
+  margin: 10px;
+  /*centre div*/
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+}
+.inputfile{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.imgbox{
+  width: 200px;
+  height: 220px;
+  margin: 10px;
+}
+.imgbox img{
+  width: 200px;
+  height: 200px;
+}

@@ -1,0 +1,82 @@
+<app-dashheader></app-dashheader>
+<div class="rr-project-menu-box ">
+  <div class="rr-dash-topbar">
+    <div class="ui stackable grid ">
+      <div class="row">
+        <div class="two wide column"></div>
+        <div class="six wide column">
+          <h1 class="ui header rr-font">Campaign / Basics</h1>
+          <h4 class="ui header rr-subtext-color"> </h4>
+        </div>
+        <div class="six wide column">
+          <img src="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui  stackable grid">
+    <div class="row">
+      <div class="three wide column">
+        <app-projectsidebar></app-projectsidebar>
+      </div>
+      <div class="ten wide column">
+        <div class="content">
+          <div class="twelve wide column body">
+            <div class="ui segments">
+              <div class="ui segment">
+                <div class="ui stackable grid">
+                  <div class="four wide column">
+                    <div class="rr-field-title">Campaign Title</div>
+                  </div>
+                  <div class="twelve wide column rr-dimmer">
+                    <!--<div class="rr-field-txt">Water Campaign</div>-->
+                    <i (click)="editName()" class="icon edit"></i>
+                    <div class="ui text shape">
+                      <div class="sides">
+                        <div class="ui header side">Did you know? This side starts visible.</div>
+                        <div class="ui header side">Help, its another side!</div>
+                        <div class="ui header side active">This is the last side</div>
+                      </div>
+                    </div>
+                    <div class="ui inverted dimmer">
+                      <div class="content">
+                        <div class="ui large input">
+                          <input  name="name" placeholder="" type="text">
+                          <a (click)="editName()" class="ui btn">clcik me</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<FooterComponent></FooterComponent>
+
+Dimmed Message! Example
+<div class="ui segment">
+  <h3 class="ui header">
+    Overlayable Section
+  </h3>
+  <div class="ui small images">
+    <img>
+    <img>
+    <img>
+  </div>
+  <p></p>
+  <div class="ui dimmer">
+    <div class="content">
+      <div class="center">
+        <h2 class="ui inverted icon header">
+          <i class="heart icon"></i>
+          Dimmed Message!
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>

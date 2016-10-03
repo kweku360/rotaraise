@@ -1,0 +1,64 @@
+<div  *ngIf="simplefile">
+  <div *ngIf="filebox" class="rr-fileinput-box">
+    <input type="file"
+           (change)="fileInfo($event)"
+           ngFileSelect
+           class="inputfile"
+           id="file"
+           (onPreviewData)="handlePreviewData($event)"
+           [options]="basicOptions"
+           (onUpload)="handleUpload($event)">
+    <label class="ui large label icon" for="file"><i class="icon file"></i> Choose an image</label>
+
+  </div>
+  <div *ngIf="!filebox" class="imgbox">
+    <img [src]="previewData">
+    <button (click)="showFileSelect()" class="ui compact icon button">
+      <i class="edit icon"></i>
+    </button>
+    <button (click)="showFileInput()" class="ui compact icon button">
+      <i class="close icon"></i>
+    </button>
+  </div>
+  <div class="prog">
+    {{ progress }}%
+  </div>
+  <!--<div>-->
+    <!--Response: {{ response | json }}-->
+  <!--</div>-->
+</div>
+<div  *ngIf="documentfile">
+
+  <div class="rr-docs-box">
+    <div class="four column ui stackable grid">
+      <div class="row">
+        <div class="eight wide column">
+          <div class="ui input">
+            <input type="text" name="title" placeholder="Title">
+          </div> <br><br/>
+          <div class="ui input">
+            <textarea rows="2" type="text" name="description" placeholder="Short Description"></textarea>
+          </div>
+        </div>
+        <div class="four wide column">
+          <div class="teal ui dropdown label">
+            <div class="text">file type</div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <div class="item">Excel</div>
+              <div class="item">Word</div>
+              <div class="item">image</div>
+              <div class="item">other</div>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column">
+          <input type="file" name="file" id="docfile" class="inputfile"/>
+          <label class="ui label icon" for="docfile"><i class="icon file"></i> select file</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

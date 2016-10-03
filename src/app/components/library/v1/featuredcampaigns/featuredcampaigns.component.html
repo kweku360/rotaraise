@@ -1,0 +1,105 @@
+<div class="rr-causes">
+  <div class="ui stackable two column grid container ">
+    <div class="column">
+      <h2 class="heading">Causes That Need Your Urgent Attention</h2>
+      <div class="line"></div>
+    </div>
+    <div class="column">
+      <p>
+        Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit mi.
+        Aenean imperdiet lacus sit amet elit porta, et malesuada erat bibendum.
+        Cras sed nunc massa. Quisque tempor dolor sit amet tellus malesuada, malesuada iaculis eros dignissim.
+        Aenean vitae diam id lacus fringilla maximus. Mauris auctor efficitur nisl, non blandit urna fermentum
+        nec.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="rr-causes-item">
+
+  <!--//Ultralight Beam-->
+  <div *ngIf="projects.meta.total !=0 ">
+    <div *ngFor="let project of projects.projects.info;let i = index;" class="ui container link cards">
+      <div class="card">
+        <div class="large image">
+          <img style="min-height: 180px" src="http://localhost/rotaraise/v1/uploads/_z8h26801.png">
+        </div>
+        <div class="content">
+          <div class="header">{{project.name}}</div>
+          <div class="meta">
+            <a>{{project.enddate | daysleft}} Days Left</a>
+          </div>
+          <div class="description">
+            {{projects.projects.display[i].tagline}}
+          </div>
+        </div>
+        <div class="extra content " style="text-align: center">
+          <div [attr.data-percent]="projects.projects.account[i].amtraised / projects.projects.account[i].targetamt * 100" class="ui teal progress homepercent" id="">
+            <div class="bar"></div>
+            <div class="label">{{projects.projects.account[i].amtraised}} Donated of
+              {{loadProgress()}}
+              ${{projects.projects.account[i].targetamt}}
+              Goal</div>
+          </div>
+          <div class="ui center labeled button" tabindex="0">
+            <div class="ui blue button">
+              <i class="heart icon"></i> Donate
+            </div>
+            <a class="ui basic blue left pointing label">
+              {{projects.projects.account[i].donorcount}}
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div *ngIf="projects.meta.total == 0 ">
+    <br><br>
+    <label class="ui label">
+      No Projects.
+    </label>
+  </div>
+</div>
+<div class="ui stackable four column grid rr-stats" style="margin: 0px">
+  <div class="column centered">
+    <div class="ui center statistic">
+      <div class="label rr-stats-label">
+        SUCCESSFUL PROJECTS
+      </div>
+      <div class="value">
+        35
+      </div>
+    </div>
+  </div>
+  <div class="column centered">
+    <div class="ui center statistic">
+      <div class="label rr-stats-label">
+        PEOPLE IMPACTED
+      </div>
+      <div class="value">
+        7908
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui center statistic">
+      <div class="label rr-stats-label">
+        TOTAL AMOUNT RAISED
+      </div>
+      <div class="value">
+        $37000
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui center statistic">
+      <div class="label rr-stats-label">
+        TOTAL CAMPAIGNS
+      </div>
+      <div class="value">
+        90
+      </div>
+    </div>
+  </div>
+</div>

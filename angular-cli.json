@@ -16,9 +16,17 @@
       "mobile": false,
       "styles": [
         "styles.css",
-        "assets/css/loader.css"
+        "assets/css/loader.css",
+        "assets/css/main.css",
+        "assets/css/semantic.min.css",
+        "assets/jqfiler/jquery.filer.css",
+        "assets/jqfiler/themes/theme.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "assets/js/semantic.min.js",
+        "assets/jqfiler/jquery.filer.min.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
