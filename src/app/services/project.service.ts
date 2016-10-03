@@ -14,8 +14,6 @@ import {AuthService} from "./auth.service";
 
 
 
-
-
 @Injectable()
 export class ProjectService {
   constructor(private http:Http,private authservice:AuthService){}
@@ -42,6 +40,10 @@ export class ProjectService {
   }
   getProjectsByClub():Observable<string>{
     var url:string = this.serverUrl+"project/club/"+this.authservice.Uuid;
+    return this.http.get(url).map(this.extractData);
+  }
+  getAllProjects():Observable<string>{
+    var url:string = this.serverUrl+"project";
     return this.http.get(url).map(this.extractData);
   }
 }

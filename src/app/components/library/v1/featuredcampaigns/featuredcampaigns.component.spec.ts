@@ -2,7 +2,6 @@
 
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { addProviders, async, inject } from '@angular/core/testing';
 import { FeaturedcampaignsComponent } from './featuredcampaigns.component';
 
 describe('Component: Featuredcampaigns', () => {

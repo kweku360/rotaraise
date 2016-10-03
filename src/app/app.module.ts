@@ -29,6 +29,9 @@ import {UPLOAD_DIRECTIVES} from "ng2-uploader/ng2-uploader";
 import {ProjectService} from "./services/project.service";
 import { DaysleftPipe } from './pipes/daysleft.pipe';
 import { PercentagepipePipe } from './pipes/percentagepipe.pipe';
+import { OverviewComponent } from './pages/account/campaign/overview/overview.component';
+import { ProjectsidebarComponent } from './components/library/v1/projectsidebar/projectsidebar.component';
+import { BasicComponent } from './pages/account/campaign/basic/basic.component';
 
 
 
@@ -61,7 +64,13 @@ import { PercentagepipePipe } from './pipes/percentagepipe.pipe';
 
     DaysleftPipe,
 
-    PercentagepipePipe
+    PercentagepipePipe,
+
+    OverviewComponent,
+
+    ProjectsidebarComponent,
+
+    BasicComponent
   ],
   imports: [
     BrowserModule,

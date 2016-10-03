@@ -14,6 +14,7 @@ interface JQuery {
   modal(options?: any): JQuery;
   dropdown(options?: any): JQuery;
   progress(options?: any): JQuery;
+  shape(options?: any): JQuery;
   form(options?: any): JQuery;
-  filer(options?: any): JQuery;
+  dimmer(options?: any): JQuery;
 }

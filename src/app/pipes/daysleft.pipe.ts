@@ -16,9 +16,10 @@ export class DaysleftPipe implements PipeTransform {
     // console.log(today);
     // //var d = future.diff(today, 'days')
     // return 10;
-    var future = moment(value).format("MM/DD/YYYY");
-    var start = moment().format("MM/DD/YYYY");
-    var d = future.diff(start, 'days')
+    var future = moment(value);
+    var start = moment();
+    var d = future.diff(start, 'days');
+    return d;
   }
 
 }

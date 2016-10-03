@@ -10,6 +10,8 @@ import { RegisterComponent }  from './../pages/register/register.component';
 import { DashboardComponent }  from './../pages/dashboard/dashboard.component';
 import {AuthService} from "../services/auth.service";
 import {ProjectComponent} from "../pages/account/project/project.component";
+import {OverviewComponent} from "../pages/account/campaign/overview/overview.component";
+import {BasicComponent} from "../pages/account/campaign/basic/basic.component";
 
 
 
@@ -19,6 +21,8 @@ const appRoutes: Routes = [
     { path: 'register', component: RegisterComponent},
     { path: 'dashboard', canActivate: [AuthGuard], component: DashboardComponent},
     { path: 'project', canActivate: [AuthGuard], component: ProjectComponent},
+    { path: 'overview', canActivate: [AuthGuard], component: OverviewComponent},
+    { path: 'basic', canActivate: [AuthGuard], component: BasicComponent}
 ];
 
 export const appRoutingProviders: any[] = [

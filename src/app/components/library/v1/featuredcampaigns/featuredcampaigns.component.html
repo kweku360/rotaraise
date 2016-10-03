@@ -16,65 +16,49 @@
   </div>
 </div>
 <div class="rr-causes-item">
-  <div class="ui container link cards">
-    <div class="card">
-      <div class="large image">
-        <img style="min-height: 180px" src="assets/img/african_school.jpg">
-      </div>
-      <div class="content">
-        <div class="header">Education For All, Ghana</div>
-        <div class="meta">
-          <a>38 days Left</a>
-        </div>
-        <div class="description">
-          Providing Accessible Education to the indigens of kumasi, Ghana
-        </div>
-      </div>
-      <div class="extra content " style="text-align: center">
-        <div class="ui teal progress" id="example2">
-          <div class="bar"></div>
-          <div class="label">$200 Donated of $600 Goal</div>
-        </div>
-        <div class="ui center labeled button" tabindex="0">
-          <div class="ui blue button">
-            <i class="heart icon"></i> Donate
-          </div>
-          <a class="ui basic blue left pointing label">
-            99
-          </a>
-        </div>
-      </div>
 
-    </div>
-    <div class="card">
-      <div class="large image">
-        <img style="min-height: 180px" src="assets/img/water.jpg">
-      </div>
-      <div class="content">
-        <div class="header">Nigeria, Yellow Water</div>
-        <div class="meta">
-          <a>6 Hours Left</a>
+  <!--//Ultralight Beam-->
+  <div *ngIf="projects.meta.total !=0 ">
+    <div *ngFor="let project of projects.projects.info;let i = index;" class="ui container link cards">
+      <div class="card">
+        <div class="large image">
+          <img style="min-height: 180px" src="http://localhost/rotaraise/v1/uploads/_z8h26801.png">
         </div>
-        <div class="description">
-          Yellow Water project goes to nigeria.
-        </div>
-      </div>
-      <div class="extra content " style="text-align: center">
-        <div class="ui teal progress" id="example3">
-          <div class="bar"></div>
-          <div class="label">$342 Donated of $1000 Goal</div>
-        </div>
-        <div class="ui center labeled button" tabindex="0">
-          <div class="ui blue button">
-            <i class="heart icon"></i> Donate
+        <div class="content">
+          <div class="header">{{project.name}}</div>
+          <div class="meta">
+            <a>{{project.enddate | daysleft}} Days Left</a>
           </div>
-          <a class="ui basic blue left pointing label">
-            99
-          </a>
+          <div class="description">
+            {{projects.projects.display[i].tagline}}
+          </div>
         </div>
-      </div>
+        <div class="extra content " style="text-align: center">
+          <div [attr.data-percent]="projects.projects.account[i].amtraised / projects.projects.account[i].targetamt * 100" class="ui teal progress homepercent" id="">
+            <div class="bar"></div>
+            <div class="label">{{projects.projects.account[i].amtraised}} Donated of
+              {{loadProgress()}}
+              ${{projects.projects.account[i].targetamt}}
+              Goal</div>
+          </div>
+          <div class="ui center labeled button" tabindex="0">
+            <div class="ui blue button">
+              <i class="heart icon"></i> Donate
+            </div>
+            <a class="ui basic blue left pointing label">
+              {{projects.projects.account[i].donorcount}}
+            </a>
+          </div>
+        </div>
 
+      </div>
     </div>
+  </div>
+  <div *ngIf="projects.meta.total == 0 ">
+    <br><br>
+    <label class="ui label">
+      No Projects.
+    </label>
   </div>
 </div>
 <div class="ui stackable four column grid rr-stats" style="margin: 0px">

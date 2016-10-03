@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
   //moduleId: module.id,
@@ -8,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeaturedcampaignsComponent implements OnInit {
 
+  @Input()  projects:any = {meta:"",projects:""};
+  
   constructor() { }
 
   ngOnInit() {
+  }
+  loadProgress(){
+    jQuery('.homepercent').progress({});
   }
 
 }

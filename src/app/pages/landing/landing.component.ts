@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService} from "../../services/auth.service";
+import {ProjectService} from "../../services/project.service";
 
 
 @Component({
@@ -12,15 +13,17 @@ import {AuthService} from "../../services/auth.service";
 export class LandingComponent implements OnInit {
 
   isLoggedOn:boolean = false
-
-  constructor(private authservice:AuthService) { }
+  projects:any = {meta:"",projects:""};
+  
+  constructor(private authservice:AuthService,private projectservice:ProjectService) { }
 
   ngOnInit() {
     //lets load jq components
     this.loadJqueryComponents()
     this.checkLogin();
+    this.loadProjects()
   }
-  
+
   checkLogin(){
     if(this.authservice.isLoggedIn == true){
       console.log("logged in")
@@ -31,15 +34,25 @@ export class LandingComponent implements OnInit {
     }
   }
 
-  loadJqueryComponents(){
+  loadProjects(){
+    this.projectservice.getAllProjects().subscribe(
+      x =>{
+        console.log(x);
+        this.projects = x;
+        // if(this.projects.meta.)
+      },
+      err => {
+        console.log(err);
+      }
+    )
+  }
 
+  loadJqueryComponents(){
     jQuery('.ui.dropdown').dropdown('get value');
-    jQuery('#example2').progress({
-      percent: 44
-    });
-    jQuery('#example3').progress({
-      percent: 10
-    });
+    
+  }
+  loadProgress(){
+    jQuery('#homepercent').progress({});
   }
 
 }

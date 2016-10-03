@@ -29,6 +29,7 @@ export class DashboardComponent implements OnInit {
         console.log(x);
         this.projects = x;
         // if(this.projects.meta.)
+     //  this.jQueryEvents()
       },
       err => {
         console.log(err);
@@ -37,6 +38,11 @@ export class DashboardComponent implements OnInit {
   }
   ngOnInit() {
     this.loadProjects()
+  }
+
+  jQueryEvents(){
+    jQuery('.dashpercent').progress({
+    });
   }
 
 }

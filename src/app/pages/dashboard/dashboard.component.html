@@ -1,5 +1,5 @@
 <app-dashheader></app-dashheader>
-<div class="rr-dash-topbar ">
+<div class="rr-dash-topbar">
   <div class="ui stackable grid ">
     <div class="row">
       <div class="two wide column"></div>
@@ -34,7 +34,7 @@
           <div class="four column ui stackable grid ">
             <!--//Ultralight Beam-->
             <div *ngIf="projects.meta.total !=0 ">
-            <div *ngFor="let project of projects.projects.info;let i = index">
+            <div *ngFor="let project of projects.projects.info;let i = index;">
               <div class="column">
                 <div class="ui card">
                   <div class="content">
@@ -49,17 +49,17 @@
                   </div>
                   <div class="extra centered content" style="text-align: center">
 
-                    <div class="ui blue progress"
-                         data-percent="" id="example2">
+                    <div class="ui blue progress dashpercent"
+                          [attr.data-percent]="projects.projects.account[i].amtraised / projects.projects.account[i].targetamt * 100" id="appexample2">
                       <div class="bar"></div>
                       <div class="label">
                         ${{projects.projects.account[i].amtraised}}
 
                          Donated of
-
+                          {{jQueryEvents()}}
                         ${{projects.projects.account[i].targetamt}} Goal</div>
                     </div>
-                    <a routerLink="" ss="ui grey mini  button">
+                    <a routerLink="/overview" ss="ui grey mini  button">
                       <i class="travel icon"></i> Manage
                     </a>
                   </div>
