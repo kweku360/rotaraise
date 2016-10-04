@@ -32,6 +32,12 @@ import { PercentagepipePipe } from './pipes/percentagepipe.pipe';
 import { OverviewComponent } from './pages/account/campaign/overview/overview.component';
 import { ProjectsidebarComponent } from './components/library/v1/projectsidebar/projectsidebar.component';
 import { BasicComponent } from './pages/account/campaign/basic/basic.component';
+import { CampaignsComponent } from './pages/campaigns/campaigns.component';
+import { ResetpasswordComponent } from './pages/resetpassword/resetpassword.component';
+import {WindowrefService} from "./services/windowref.service";
+import { CurrencyComponent } from './components/library/v1/currency/currency.component';
+import { StoryComponent } from './pages/story/story.component';
+import { RichtexteditorComponent } from './components/library/v1/richtexteditor/richtexteditor.component';
 
 
 
@@ -56,8 +62,8 @@ import { BasicComponent } from './pages/account/campaign/basic/basic.component';
     RegisterComponent,
     LoginComponent,
     DashboardComponent,
-    ProjectComponent,
     FileuploaderComponent,
+    ProjectComponent,
     CountrylistComponent,
 
     UPLOAD_DIRECTIVES,
@@ -70,7 +76,7 @@ import { BasicComponent } from './pages/account/campaign/basic/basic.component';
 
     ProjectsidebarComponent,
 
-    BasicComponent
+    BasicComponent, CampaignsComponent, ResetpasswordComponent, CurrencyComponent, StoryComponent, RichtexteditorComponent
   ],
   imports: [
     BrowserModule,
@@ -85,6 +91,7 @@ import { BasicComponent } from './pages/account/campaign/basic/basic.component';
     LoginService,
     RegisterService,
     ProjectService,
+    WindowrefService,
     appRoutingProviders
   ],
   bootstrap: [AppComponent]

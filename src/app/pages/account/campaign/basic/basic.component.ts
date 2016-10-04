@@ -12,7 +12,12 @@ export class BasicComponent implements OnInit {
   ngOnInit() {
   }
 
-  editName(){
-    jQuery(".shape").shape('flip up');
+  editClick(evt){
+    console.log(evt.target.classList)
+    jQuery("#"+evt.target.classList[0]).shape('flip left');
+  }
+
+  cancel(evt){
+    jQuery("#"+evt.target.classList[0]).shape('flip left');
   }
 }

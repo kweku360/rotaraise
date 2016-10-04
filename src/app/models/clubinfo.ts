@@ -11,14 +11,14 @@ export class ClubInfo{
     public city: string,
     public countrycode: string,
     public district: string,
-   
+
     public sponsor: string,
     public intro: string,
     public useruuid: string,
     public created: string,
     public modified: string,
-   public contact1?: number,
-   public contact2?: number
+   public contact1: string,
+   public contact2: string
   ) {  }
 }
 

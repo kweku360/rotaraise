@@ -22,7 +22,7 @@
     <div *ngFor="let project of projects.projects.info;let i = index;" class="ui container link cards">
       <div class="card">
         <div class="large image">
-          <img style="min-height: 180px" src="http://localhost/rotaraise/v1/uploads/_z8h26801.png">
+          <img style="min-height: 180px; max-height: 180px" [attr.src]="url+projects.projects.media[i].filename+'.'+projects.projects.media[i].ext">
         </div>
         <div class="content">
           <div class="header">{{project.name}}</div>
@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="extra content " style="text-align: center">
-          <div [attr.data-percent]="projects.projects.account[i].amtraised / projects.projects.account[i].targetamt * 100" class="ui teal progress homepercent" id="">
+          <div [attr.data-percent]="projects.projects.account[i].amtraised / projects.projects.account[i].targetamt * 100" class="ui small teal progress homepercent" id="">
             <div class="bar"></div>
             <div class="label">{{projects.projects.account[i].amtraised}} Donated of
               {{loadProgress()}}
@@ -68,7 +68,7 @@
         SUCCESSFUL PROJECTS
       </div>
       <div class="value">
-        35
+        0
       </div>
     </div>
   </div>
@@ -78,7 +78,7 @@
         PEOPLE IMPACTED
       </div>
       <div class="value">
-        7908
+        0
       </div>
     </div>
   </div>
@@ -88,7 +88,7 @@
         TOTAL AMOUNT RAISED
       </div>
       <div class="value">
-        $37000
+        0
       </div>
     </div>
   </div>
@@ -98,7 +98,7 @@
         TOTAL CAMPAIGNS
       </div>
       <div class="value">
-        90
+        0
       </div>
     </div>
   </div>

@@ -12,4 +12,8 @@ export class LoginService {
     return fromPromise(firebase.auth().signInWithEmailAndPassword(accountmodel.email, accountmodel.password))
   }
 
+  sendResetEmail(accountmodel:any):Observable<any>{
+    return fromPromise(firebase.auth().sendPasswordResetEmail(accountmodel.email))
+  }
+
 }

@@ -2,4 +2,16 @@
   font-size: 19px;
   line-height: 20px;
   line-height: 16px;
+  margin-top: 10px;
+}
+.rr-field-content{
+  font-size: 19px;
+}
+.rr-shape-shift .side{
+  width: 90%;
+  height: 90%;
+  /*border: 2px solid red;*/
+}
+.rr-shape-shift .shape{
+  width: 100%;
 }

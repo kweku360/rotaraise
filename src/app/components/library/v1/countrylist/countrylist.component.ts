@@ -15,7 +15,6 @@ export class CountrylistComponent implements OnInit {
       .dropdown({
         onChange:(value, text, selectedItem)=> {
           if (text != null){
-            console.log("flagship called")
             // custom action
             var name = text.split('>').pop().trim();
             //we can now emit selected values

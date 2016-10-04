@@ -2,9 +2,11 @@
 // https://github.com/typings/typings
 // https://www.typescriptlang.org/docs/handbook/writing-declaration-files.html
 
+import IAlertifyStatic = alertify.IAlertifyStatic;
 declare var System: any;
 declare var firebase:any;
 declare var jQuery: JQueryStatic;
+declare var alertify: IAlertifyStatic;
 
 //here we declare typings for jquery plugins - Semantic ui js
 //to be specific.
@@ -17,4 +19,5 @@ interface JQuery {
   shape(options?: any): JQuery;
   form(options?: any): JQuery;
   dimmer(options?: any): JQuery;
+  amaran(options?: any): JQuery;
 }

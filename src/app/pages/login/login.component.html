@@ -7,7 +7,7 @@
       </div>
       <h4 class="ui dividing header"></h4>
       <form class="ui form">
-        <div class="ui {{errorClasses.loginerror}} negative message">
+        <div [ngStyle]="{'display':errorClasses.loginerror}" class="ui negative message">
           <div class="">
             Wrong Username / Password Combination
           </div>
@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class="two fields">
-          <div class="field"><a routerLink="/forgotpassword" href="" class="link">forgot Password?</a></div>
+          <div class="field"><a routerLink="/passwordreset" href="" class="link">forgot Password?</a></div>
           <div class="field">
             <div (click)="streamLogin($event)" class="right floated ui blue button" tabindex="0">Login</div></div>
         </div>

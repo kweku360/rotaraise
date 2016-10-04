@@ -2,11 +2,17 @@
 <div class="rr-dash-topbar">
   <div class="ui container stackable grid ">
     <div class="row">
-      <div class="six wide column">
+      <div class="twelve wide column">
         <h1 class="ui header rr-font">Start Campaign</h1>
         <div class="six wide column">
           <img src="">
         </div>
+      </div>
+      <div class="three wide column">
+        <a routerLink="/dashboard" class="ui right labeled right floated icon submit button">
+          <i class="right arrow icon"></i>
+          Dashboard
+        </a>
       </div>
       <hr/>
     </div>
@@ -74,21 +80,7 @@
               <div class=" twelve wide field required">
                 <label class="field-title">Amount</label>
                 <div class="field-sub">How much money would you like to raise?</div>
-                <div class="ui large right labeled input">
-                  <input [(ngModel)]="model.targetamt" name="targetamt" type="text" placeholder="currency">
-                  <input [(ngModel)]="model.currency" name="currency" type="hidden">
-                  <div class="teal ui dropdown label">
-                    <div class="text">USD</div>
-                    <i class="dropdown icon"></i>
-                    <div class="menu">
-                      <div class="item" data-value="USD">USD</div>
-                      <div class="item" data-value="CAD">CAD</div>
-                      <div class="item" data-value="GBP" >GBP</div>
-                      <div class="item" data-value="GHC">GHC</div>
-                      <div class="item" data-value="EUR">EUR</div>
-                    </div>
-                  </div>
-                </div>
+                <app-currency></app-currency>
               </div>
             </div>
           </div>

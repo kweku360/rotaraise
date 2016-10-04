@@ -7,18 +7,17 @@
         Sign Up
       </div>
       <h4 class="ui dividing header"></h4>
-      <div [ngStyle]="{'display':cssClasses.loaderhide}" class="ui negtive message">
+      <div [ngStyle]="{'display':errorClasses.loginerror}" class="ui negative message">
         <i class="close icon"></i>
         <div class="header">
-          We're sorry we can't apply that discount
         </div>
-        <p>That offer has expired
-        </p></div>
+        <p></p></div>
       <form ngClass="{{cssClasses.loading}}" class="ui form">
         <div class="ui error message"></div>
         <!--<h4 class="ui dividing header">Shipping Information</h4>-->
         <div class="field ">
-          <div class="grey ui header">
+          <!--<div class="grey ui sub header">-->
+          <div class="blue ui pointing below label">
             Email Address
           </div>
           <div class="fields {{errorClasses.emailfieldError}}">
@@ -111,7 +110,7 @@
               Country
             </div>
             <div class="twelve wide field">
-              <app-countrylist></app-countrylist>
+              <app-countrylist (country)="onCountry($event)"></app-countrylist>
             </div>
           </div>
         </div>
@@ -159,9 +158,11 @@
       </div>
       <div class="column wave"></div>
       <div class="column dub"><br>
-        <button class="yellow large ui button">
-          Go to Dashboard
-        </button>
+        <div class="actions">
+          <button  class="yellow small positive ui button">
+            Go to Dashboard
+          </button>
+        </div>
         <br>
         <br>
         <br>

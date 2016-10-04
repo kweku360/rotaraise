@@ -32,6 +32,7 @@ export class ProjectService {
      // .catch(this.handleError);
   }
   private extractData(res: Response) {
+    console.log(res);
     let body = res.json();
     return body;
   }

@@ -12,6 +12,8 @@ import {AuthService} from "../services/auth.service";
 import {ProjectComponent} from "../pages/account/project/project.component";
 import {OverviewComponent} from "../pages/account/campaign/overview/overview.component";
 import {BasicComponent} from "../pages/account/campaign/basic/basic.component";
+import {ResetpasswordComponent} from "../pages/resetpassword/resetpassword.component";
+import {StoryComponent} from "../pages/story/story.component";
 
 
 
@@ -22,7 +24,9 @@ const appRoutes: Routes = [
     { path: 'dashboard', canActivate: [AuthGuard], component: DashboardComponent},
     { path: 'project', canActivate: [AuthGuard], component: ProjectComponent},
     { path: 'overview', canActivate: [AuthGuard], component: OverviewComponent},
-    { path: 'basic', canActivate: [AuthGuard], component: BasicComponent}
+    { path: 'basic', canActivate: [AuthGuard], component: BasicComponent},
+    { path: 'story', canActivate: [AuthGuard], component: StoryComponent},
+    { path: 'passwordreset', component: ResetpasswordComponent}
 ];
 
 export const appRoutingProviders: any[] = [

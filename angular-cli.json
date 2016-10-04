@@ -20,12 +20,14 @@
         "assets/css/main.css",
         "assets/css/semantic.min.css",
         "assets/jqfiler/jquery.filer.css",
-        "assets/jqfiler/themes/theme.css"
+        "assets/jqfiler/themes/theme.css",
+        "assets/alerts/alertifyjs/css/alertify.min.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "assets/js/semantic.min.js",
-        "assets/jqfiler/jquery.filer.min.js"
+        "assets/jqfiler/jquery.filer.min.js",
+        "assets/alerts/alertifyjs/alertify.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

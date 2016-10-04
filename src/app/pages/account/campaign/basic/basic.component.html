@@ -6,7 +6,7 @@
         <div class="two wide column"></div>
         <div class="six wide column">
           <h1 class="ui header rr-font">Campaign / Basics</h1>
-          <h4 class="ui header rr-subtext-color"> </h4>
+          <h4 class="ui header rr-subtext-color"></h4>
         </div>
         <div class="six wide column">
           <img src="">
@@ -19,64 +19,114 @@
       <div class="three wide column">
         <app-projectsidebar></app-projectsidebar>
       </div>
-      <div class="ten wide column">
-        <div class="content">
-          <div class="twelve wide column body">
-            <div class="ui segments">
-              <div class="ui segment">
-                <div class="ui stackable grid">
-                  <div class="four wide column">
-                    <div class="rr-field-title">Campaign Title</div>
-                  </div>
-                  <div class="twelve wide column rr-dimmer">
-                    <!--<div class="rr-field-txt">Water Campaign</div>-->
-                    <i (click)="editName()" class="icon edit"></i>
-                    <div class="ui text shape">
-                      <div class="sides">
-                        <div class="ui header side">Did you know? This side starts visible.</div>
-                        <div class="ui header side">Help, its another side!</div>
-                        <div class="ui header side active">This is the last side</div>
-                      </div>
+      <div class="ten wide column" style="margin-top: 40px">
+        <div class="ui segments">
+          <!--le segment-->
+          <div class="ui segment">
+            <div class="ui stackable grid">
+              <div class="four wide column">
+                <div class="rr-field-title">Campaign Title</div>
+              </div>
+              <div class="twelve wide column rr-shape-shift">
+                <!--shape item-->
+                <div class="ui text shape" id="editName">
+                  <div class="sides">
+                    <div class="ui active side">
+                      <span class="rr-field-content">Water Foundation</span>
+                      <button (click)="editClick($event)" class="editName right floated ui icon button" style="margin-left: 20px">
+                        <i class="editName edit icon"></i>
+                      </button>
                     </div>
-                    <div class="ui inverted dimmer">
-                      <div class="content">
-                        <div class="ui large input">
-                          <input  name="name" placeholder="" type="text">
-                          <a (click)="editName()" class="ui btn">clcik me</a>
-                        </div>
+                    <div class="ui side">
+                      <div class="ui input">
+                        <input type="text" value="kankam rules">
                       </div>
+                      <button (click)="editClick($event)" class="editName right floated mini ui button"  style="margin-left: 20px">
+                        save
+                      </button>
+                      <button (click)="cancel($event)" class="editName right floated mini ui button"  style="margin-left: 5px">
+                        cancel
+                      </button>
                     </div>
                   </div>
                 </div>
+                <!--end shape item-->
               </div>
             </div>
           </div>
-      </div>
+          <!--viva le segment-->
+
+          <!--le segment-->
+          <div class="ui segment">
+            <div class="ui stackable grid">
+              <div class="four wide column">
+                <div class="rr-field-title">Campaign Tagline</div>
+              </div>
+              <div class="twelve wide column rr-shape-shift">
+                <!--shape item-->
+                <div class="ui text shape" id="editTag">
+                  <div class="sides">
+                    <div class="ui active side">
+                      <span class="rr-field-content">We love Water</span>
+                      <button (click)="editClick($event)" class="editTag right floated ui icon button" style="margin-left: 20px">
+                        <i class="editTag edit icon"></i>
+                      </button>
+                    </div>
+                    <div class="ui side">
+                      <div class="ui input">
+                        <input type="text" value="We love Water">
+                      </div>
+                      <button (click)="editClick($event)" class="editTag right floated mini ui button"  style="margin-left: 20px">
+                        save
+                      </button>
+                      <button (click)="cancel($event)" class="editTag right floated mini ui button"  style="margin-left: 5px">
+                        cancel
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--end shape item-->
+              </div>
+            </div>
+          </div>
+          <!--viva le segment-->
+          <!--le segment-->
+          <div class="ui segment">
+            <div class="ui stackable grid">
+              <div class="four wide column">
+                <div class="rr-field-title">Funding Amount</div>
+              </div>
+              <div class="twelve wide column rr-shape-shift">
+                <!--shape item-->
+                <div class="ui text shape" id="editAmt">
+                  <div class="sides">
+                    <div class="ui active side">
+                      <label class="rr-field-content">500 USD</label>
+                      <button (click)="editClick($event)" class="editAmt right floated ui icon button" style="margin-left: 20px">
+                        <i class="editAmt edit icon"></i>
+                      </button>
+                    </div>
+                    <div class="ui side">
+                      <app-currency></app-currency>
+                      <button (click)="cancel($event)" class="editAmt right floated mini ui button "  style="margin-left: 5px">
+                        cancel
+                      </button>
+                      <button (click)="editClick($event)" class="editAmt right floated mini ui button"  style="margin-left: 20px">
+                        save
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <!--end shape item-->
+              </div>
+            </div>
+          </div>
+          <!--viva le segment-->
+
+        </div>
       </div>
     </div>
   </div>
 </div>
 <FooterComponent></FooterComponent>
-
-Dimmed Message! Example
-<div class="ui segment">
-  <h3 class="ui header">
-    Overlayable Section
-  </h3>
-  <div class="ui small images">
-    <img>
-    <img>
-    <img>
-  </div>
-  <p></p>
-  <div class="ui dimmer">
-    <div class="content">
-      <div class="center">
-        <h2 class="ui inverted icon header">
-          <i class="heart icon"></i>
-          Dimmed Message!
-        </h2>
-      </div>
-    </div>
-  </div>
-</div>

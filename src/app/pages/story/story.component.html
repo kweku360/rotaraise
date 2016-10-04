@@ -1,0 +1,65 @@
+<app-dashheader></app-dashheader>
+<div class="rr-project-menu-box ">
+  <div class="rr-dash-topbar">
+    <div class="ui stackable grid ">
+      <div class="row">
+        <div class="two wide column"></div>
+        <div class="six wide column">
+          <h1 class="ui header rr-font">Campaign / Basics</h1>
+          <h4 class="ui header rr-subtext-color"></h4>
+        </div>
+        <div class="six wide column">
+          <img src="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui  stackable grid">
+    <div class="row">
+      <div class="three wide column">
+        <app-projectsidebar></app-projectsidebar>
+      </div>
+      <div class="ten wide column" style="margin-top: 40px">
+        <div class="ui segments">
+          <!--le segment-->
+          <div class="ui segment">
+            <div class="ui stackable grid">
+              <div class="four wide column">
+                <div class="rr-field-title">Campaign Description</div>
+              </div>
+              <div class="twelve wide column rr-shape-shift">
+                <!--shape item-->
+                <div class="ui text shape" id="editAmt">
+                  <div class="sides">
+                    <div class="ui active side">
+                      <label class="rr-field-content">
+
+                      </label>
+                      <button (click)="editClick($event)" class="editAmt right floated ui icon button" style="margin-left: 20px">
+                        <i class="editAmt edit icon"></i>
+                      </button>
+                    </div>
+                    <div class="ui side">
+
+                      <button (click)="cancel($event)" class="editAmt right floated mini ui button "  style="margin-left: 5px">
+                        cancel
+                      </button>
+                      <button (click)="editClick($event)" class="editAmt right floated mini ui button"  style="margin-left: 20px">
+                        save
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <!--end shape item-->
+              </div>
+            </div>
+          </div>
+          <!--viva le segment-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<FooterComponent></FooterComponent>

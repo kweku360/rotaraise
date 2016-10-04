@@ -5,6 +5,7 @@ import {FooterComponent} from './../../components/library/v1/footer/footer.compo
 import {RegisterService} from './../../services/register.service';
 import {ClubInfo} from "../../models/clubinfo";
 import {$} from "protractor/globals";
+import {WindowrefService} from "../../services/windowref.service";
 
 @Component({
   //moduleId: module.id,
@@ -15,13 +16,14 @@ import {$} from "protractor/globals";
 export class RegisterComponent implements OnInit {
 
   //we declare model club info -- we can make all fie;ds optional or use null values here
-  model = new ClubInfo(0, "", "", "", "", "", "","", "", "", "", "");
-  
+  model = new ClubInfo(0, "", "", "", "", "", "","", "", "", "", "","","");
+
   accountmodel = {email: "", password: ""};
   showError:boolean = false;
   showErrorTxt = ""
   errorClasses = {
-    emailfieldError: ""
+    emailfieldError: "",
+    loginerror: "none",
   }
 
   cssClasses = {
@@ -31,18 +33,17 @@ export class RegisterComponent implements OnInit {
     loading : ""
   }
 
-  constructor(private registerservice:RegisterService) {
+  onCountry(evt){
+    this.model.country = evt.name;
+    this.model.countrycode = evt.code;
+  }
+  constructor(private winref:WindowrefService,private router:Router,private registerservice:RegisterService) {
   }
 
   ngOnInit() {
     this.validateForm();
 
   }
-
-  get diagnostic() {
-    return JSON.stringify(this.accountmodel);
-  }
-
   //function does live checking of email
   verifyEmail() {
     //checks for user input before checkin
@@ -113,7 +114,12 @@ export class RegisterComponent implements OnInit {
         //Clear form
         jQuery('form').form('clear')
         //show modal
-        jQuery('.ui.modal').modal('show');
+        jQuery('.ui.modal') .modal({
+          closable  : false,
+          onApprove : ()=> {
+            this.router.navigate(["/dashboard"])
+          }
+        }).modal('show');
       },
       err => {
         console.log(err);
@@ -132,8 +138,10 @@ export class RegisterComponent implements OnInit {
 
 
     //noinspection TypeScriptValidateTypes
-    jQuery('.ui.form').submit(function (e) {
+    jQuery('.ui.form').submit((e)=> {
       e.preventDefault();// usually use this, but below works best here.
+      //scroll to top
+      this.winref.scrollTo(0,0);
     });
 
     jQuery('.ui.input').popup()
