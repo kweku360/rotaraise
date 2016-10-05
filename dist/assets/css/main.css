@@ -49,6 +49,7 @@ body{
 .rr-slider-box .rr-desk{
   width: 100%;
   height: 500px;
+  padding: 0px!important;
 }
 .rr-slider-box .rr-mob{
   margin-left: 5px;
