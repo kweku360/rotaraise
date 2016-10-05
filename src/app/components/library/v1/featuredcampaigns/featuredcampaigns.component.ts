@@ -1,4 +1,5 @@
 import {Component, OnInit, Input} from '@angular/core';
+import {environment} from "../../../../../environments/environment";
 
 @Component({
   //moduleId: module.id,
@@ -9,7 +10,7 @@ import {Component, OnInit, Input} from '@angular/core';
 export class FeaturedcampaignsComponent implements OnInit {
 
   @Input()  projects:any = {meta:"",projects:""};
-  url:string = "http://localhost/rotaraise/v1/uploads/";
+  url:string = environment.serverUploadedFile;
   constructor() { }
 
   ngOnInit() {

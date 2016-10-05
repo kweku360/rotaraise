@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  production: true,
+  serverUrl : "http://kweku360.com/rotaapi/index.php/",
+  serverUploadUrl : "http://kweku360.com/rotaapi/upload.php",
+  serverUploadedFile : "http://kweku360.com/rotaapi/uploads/",
 };

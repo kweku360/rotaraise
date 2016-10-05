@@ -29,52 +29,52 @@
       <div class="row">
         <div class="two wide column"></div>
         <div class="fourteen wide column">
-          <div class="sixteen wide column rr-subtext-color">Your Current Projects
+          <div class="sixteen wide column rr-subtext-color">
+            Your Current Projects
           </div>
-          <div class="four column ui stackable grid ">
-            <!--//Ultralight Beam-->
-            <div *ngIf="projects.meta.total !=0 ">
-            <div *ngFor="let project of projects.projects.info;let i = index;">
-              <div class="column">
-                <div class="ui card">
-                  <div class="content">
-                    <a class="header">{{project.name}}</a>
-                    <div class="meta">
-                      <a>{{project.enddate | daysleft}} Days Left</a>
-                    </div>
-                    <a class="ui green label">
-                      Donations
-                      <div class="detail">{{projects.projects.account[i].donorcount}}</div>
-                    </a>
-                  </div>
-                  <div class="extra centered content" style="text-align: center">
+          <div class="ui stackable grid">
+            <div class="row">
+                <!--//Ultralight Beam-->
+                <div *ngIf="projects.meta.total !=0 ">
+                  <div style="float: left" *ngFor="let project of projects.projects;let i = index;">
+                    <div class="ui card" style="height: 250px;margin: 20px;" >
+                      <div class="content">
+                        <a class="header">{{project.info.name}}</a>
+                        <div class="meta">
+                          <a>{{project.info.enddate | daysleft}} Days Left</a>
+                        </div>
 
-                    <div class="ui blue progress dashpercent"
-                          [attr.data-percent]="projects.projects.account[i].amtraised / projects.projects.account[i].targetamt * 100" id="appexample2">
-                      <div class="bar"></div>
-                      <div class="label">
-                        ${{projects.projects.account[i].amtraised}}
+                      </div>
+                      <div class="extra centered content" style="text-align: center">
+                        <a class="ui green label">
+                          Donations
+                          <div class="detail">{{project.account.donorcount}}</div>
+                        </a>
+                        <div class="ui blue progress dashpercent"
+                             [attr.data-percent]="project.account.amtraised / project.account.targetamt * 100" id="appexample2">
+                          <div class="bar"></div>
+                          <div class="label">
+                            ${{project.account.amtraised}}
 
-                         Donated of
-                          {{jQueryEvents()}}
-                        ${{projects.projects.account[i].targetamt}} Goal</div>
+                            Donated of
+                            {{jQueryEvents()}}
+                            ${{project.account.targetamt}} Goal</div>
+                        </div>
+                        <a routerLink="/overview" class="ui grey mini  button">
+                          <i class="travel icon"></i> Manage
+                        </a>
+                      </div>
                     </div>
-                    <a routerLink="/overview" ss="ui grey mini  button">
-                      <i class="travel icon"></i> Manage
-                    </a>
                   </div>
                 </div>
-              </div>
-              <br><br><br>
+                <div *ngIf="projects.meta.total == 0 ">
+                  <br><br>
+                  <label class="ui label">
+                    No Projects.
+                  </label>
+                </div>
+                <!--dream-->
             </div>
-            </div>
-            <div *ngIf="projects.meta.total == 0 ">
-              <br><br>
-             <label class="ui label">
-               No Projects.
-             </label>
-            </div>
-           <!--dream-->
           </div>
         </div>
       </div>

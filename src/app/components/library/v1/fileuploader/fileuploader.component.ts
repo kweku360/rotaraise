@@ -1,4 +1,5 @@
 import {Component, OnInit, NgZone, Input} from '@angular/core';
+import {environment} from "../../../../../environments/environment";
 
 @Component({
   selector: 'app-fileuploader',
@@ -36,7 +37,7 @@ export class FileuploaderComponent implements OnInit {
     console.log(this.url);
     this.zone = new NgZone({enableLongStackTrace: false});
     this.basicOptions = {
-      url: 'http://localhost/rotaraise/v1/upload.php',
+      url: environment.serverUploadUrl,
       previewUrl: true,
       data: {
         "title": "cover",

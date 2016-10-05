@@ -4,5 +4,9 @@
 // The list of which env maps to which file can be found in `angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  serverUrl : "http://localhost/rotaraise/v1/", //localhost
+  serverUploadUrl : "http://localhost/rotaraise/v1/upload.php",
+  serverUploadedFile : "http://localhost/rotaraise/v1/uploads/",
+
 };

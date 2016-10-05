@@ -11,13 +11,14 @@ import {Http, Headers, RequestOptions, Response} from "@angular/http";
 import {Observable} from "rxjs/Rx";
 import {ProjectModel} from "../models/project";
 import {AuthService} from "./auth.service";
+import {environment} from "../../environments/environment";
 
 
 
 @Injectable()
 export class ProjectService {
   constructor(private http:Http,private authservice:AuthService){}
-  private serverUrl = "http://localhost/rotaraise/v1/"
+  private serverUrl = environment.serverUrl;
 
   saveNewProject(project:ProjectModel):Observable<string>{
     console.log("three")
@@ -32,8 +33,7 @@ export class ProjectService {
      // .catch(this.handleError);
   }
   private extractData(res: Response) {
-    console.log(res);
-    let body = res.json();
+    let body = res.json()
     return body;
   }
   generateProjectUrl(){

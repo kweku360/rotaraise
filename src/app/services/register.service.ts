@@ -8,12 +8,13 @@ import {fromPromise} from "rxjs/observable/fromPromise";
 import 'rxjs/add/operator/map';
 import {Http, Headers, RequestOptions, Response} from "@angular/http";
 import {Observable} from "rxjs/Rx";
+import {environment} from "../../environments/environment";
 
 
 @Injectable()
 export class RegisterService {
   constructor(private http:Http){}
-  private serverUrl = "http://localhost/rotaraise/v1/clubinfo"
+  private serverUrl = environment.serverUrl;
 
   saveFireBase(accountmodel:any,clubinfo:ClubInfo):any {
     var that = this;
@@ -64,7 +65,7 @@ export class RegisterService {
   }
 
   getTest (): Observable<String> {
-    return this.http.get(this.serverUrl).map(this.extractData);
+    return this.http.get(this.serverUrl+"clubinfo").map(this.extractData);
   }
   private extractData(res: Response) {
     let body = res.json();

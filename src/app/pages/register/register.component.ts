@@ -114,7 +114,7 @@ export class RegisterComponent implements OnInit {
         //Clear form
         jQuery('form').form('clear')
         //show modal
-        jQuery('.ui.modal') .modal({
+        jQuery('.rr-register-modal') .modal({
           closable  : false,
           onApprove : ()=> {
             this.router.navigate(["/dashboard"])
