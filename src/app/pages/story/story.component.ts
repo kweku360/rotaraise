@@ -10,6 +10,12 @@ export class StoryComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    var quill = new Quill('#rr-editor', {
+      modules: {
+
+      },
+      theme: 'snow'
+    });
   }
 
 }

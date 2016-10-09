@@ -54,6 +54,38 @@ export class AuthService {
       })
     })
   }
+  /**
+   * this method is a variation of the checkAuth()
+   * it verifies authentication for non-dashboard
+   * routes.it is implemented by the gateman service
+   * @params url
+   * @return Promise<boolean>
+   */
+  gateAuth(url):Promise<boolean> {
+    return new Promise((resolve, reject)=> {
+      firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+          //change  isloggged in to true
+          this.isLoggedIn = true
+         // console.log(user)
+          //we set user credentials
+          this.email = user.email
+          this.Uuid = user.uid
+
+          //resolve promise
+          resolve(true)
+        } else {
+          //change islogged to false
+          this.isLoggedIn == false
+          //redirect to login or homepage
+          // this.router.navigate(['/login']);
+         // this.router.navigate(['']);
+
+          resolve(true)
+        }
+      })
+    })
+  }
 
   /**
    * this method logs out the user and redirects to home

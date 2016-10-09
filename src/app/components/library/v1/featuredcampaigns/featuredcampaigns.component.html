@@ -16,12 +16,12 @@
   </div>
 </div>
 <div class="rr-causes-item">
-  <div class="ui stackable grid">
+  <div class="four column ui stackable grid">
     <div class="row">
       <!--//Ultralight Beam-->
       <div *ngIf="projects.meta.total !=0 ">
-        <div style="float: left" class="ui cards link" *ngFor="let project of projects.projects;let i = index;">
-          <div class="ui card" style="margin: 10px;height: 430px">
+        <div style="float:left;margin: 0px!important;" class="column ui cards" *ngFor="let project of projects.projects;let i = index;">
+          <div class="ui card" style="margin-left: 20px;height: 430px">
             <div class="large image">
               <img style="min-height: 180px; max-height: 180px" [attr.src]="url+project.media[0].filename+'.'+project.media[0].ext">
             </div>
@@ -42,19 +42,18 @@
                   ${{project.account.targetamt}}
                   Goal</div>
               </div>
-              <div class="ui center labeled button" tabindex="0">
+              <a (click)="getDetails(project.info.urlcode)" class="ui center labeled button" tabindex="0">
                 <div class="ui blue button">
                   <i class="heart icon"></i> Donate
                 </div>
-                <a class="ui basic blue left pointing label">
+                <a  class="ui basic blue left pointing label">
                   {{project.account.donorcount}}
                 </a>
-              </div>
+              </a>
             </div>
 
           </div>
         </div>
-        <div style="clear: both;"></div>
       </div>
       <div *ngIf="projects.meta.total == 0 ">
         <br><br>

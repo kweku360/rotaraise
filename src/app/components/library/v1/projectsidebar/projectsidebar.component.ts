@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-projectsidebar',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projectsidebar.component.css']
 })
 export class ProjectsidebarComponent implements OnInit {
-
-  constructor() { }
+  @Input()  projecturl:string = "";
+  
+  constructor(private router:Router) { }
 
   ngOnInit() {
-  }
+}
 
+  goBasic(){
+    this.router.navigate(["myaccount/campaign/basic",this.projecturl]);
+  }
 }

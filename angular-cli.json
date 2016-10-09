@@ -15,19 +15,23 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css",
         "assets/css/loader.css",
+        "styles.css",
         "assets/css/main.css",
         "assets/css/semantic.min.css",
         "assets/jqfiler/jquery.filer.css",
         "assets/jqfiler/themes/theme.css",
-        "assets/alerts/alertifyjs/css/alertify.min.css"
+        "assets/alerts/alertifyjs/css/alertify.min.css",
+        "../node_modules/quill/dist/quill.core.css",
+        "../node_modules/quill/dist/quill.snow.css",
+        "../node_modules/quill/dist/quill.bubble.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "assets/js/semantic.min.js",
         "assets/jqfiler/jquery.filer.min.js",
-        "assets/alerts/alertifyjs/alertify.min.js"
+        "assets/alerts/alertifyjs/alertify.min.js",
+        "../node_modules/quill/dist/quill.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

@@ -12,27 +12,17 @@ import {ProjectService} from "../../services/project.service";
 })
 export class LandingComponent implements OnInit {
 
-  isLoggedOn:boolean = false
+  isLoggedOn:boolean = this.authservice.isLoggedIn;
   projects:any = {meta:"",projects:""};
-  
+ 
   constructor(private authservice:AuthService,private projectservice:ProjectService) { }
 
   ngOnInit() {
     //lets load jq components
     this.loadJqueryComponents()
-    this.checkLogin();
     this.loadProjects()
   }
 
-  checkLogin(){
-    if(this.authservice.isLoggedIn == true){
-      console.log("logged in")
-      this.isLoggedOn  = true;
-    }else{
-      this.isLoggedOn = false;
-      console.log("logged out")
-    }
-  }
 
   loadProjects(){
     this.projectservice.getAllProjects().subscribe(

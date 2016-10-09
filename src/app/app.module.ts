@@ -38,6 +38,8 @@ import {WindowrefService} from "./services/windowref.service";
 import { CurrencyComponent } from './components/library/v1/currency/currency.component';
 import { StoryComponent } from './pages/story/story.component';
 import { RichtexteditorComponent } from './components/library/v1/richtexteditor/richtexteditor.component';
+import {GatemanService} from "./services/gateman.service";
+import { CampaigndetailComponent } from './pages/campaigndetail/campaigndetail.component';
 
 
 
@@ -76,7 +78,7 @@ import { RichtexteditorComponent } from './components/library/v1/richtexteditor/
 
     ProjectsidebarComponent,
 
-    BasicComponent, CampaignsComponent, ResetpasswordComponent, CurrencyComponent, StoryComponent, RichtexteditorComponent
+    BasicComponent, CampaignsComponent, ResetpasswordComponent, CurrencyComponent, StoryComponent, RichtexteditorComponent, CampaigndetailComponent
   ],
   imports: [
     BrowserModule,
@@ -92,6 +94,7 @@ import { RichtexteditorComponent } from './components/library/v1/richtexteditor/
     RegisterService,
     ProjectService,
     WindowrefService,
+    GatemanService,
     appRoutingProviders
   ],
   bootstrap: [AppComponent]

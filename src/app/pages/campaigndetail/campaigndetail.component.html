@@ -1,0 +1,188 @@
+<HeaderComponent></HeaderComponent>
+<div *ngFor="let project of project.projects;let i = index;">
+  <div class="rr-campaign-page">
+    <div class="one column ui container stackable grid " style="text-align: center">
+      <div class="row">
+        <div class="column">
+          <h1 class="ui header rr-head">
+            {{project.info.name}}
+          </h1>
+          <h5 class="ui header rr-suthor">
+            By {{project.clubinfo.clubname}}
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="ui container stackable grid" style="text-align: center">
+      <div class="row">
+        <div class="ten wide column">
+          <img class="rr-cover-img" [attr.src]="url+project.media[0].filename+'.'+project.media[0].ext">
+          <div class="ui tall raised segment">
+            <div class="ui icon label left floated">
+              <i class="link icon"></i>
+              Link : {{link+project.info.urlcode}}
+            </div>
+            <span class="rr-url"></span>
+
+                  <span class="right floated">
+                      <button class="ui circular facebook icon button">
+                        <i class="facebook icon"></i>
+                    </button>
+                    <button class="ui circular twitter icon button">
+                        <i class="twitter icon"></i>
+                    </button>
+                    <button class="ui circular linkedin icon button">
+                        <i class="linkedin icon"></i>
+                    </button>
+                    <button class="ui circular google plus icon button">
+                        <i class="google plus icon"></i>
+                    </button>
+
+                  </span>
+          </div>
+        </div>
+        <div class="six wide column">
+          <h3>{{project.display.tagline}}</h3>
+          <div class="ui horizontal statistics">
+            <div class="statistic">
+              <div class="value">
+                {{project.account.donorcount}}
+              </div>
+              <div class="label">
+                Donors
+              </div>
+            </div>
+            <div class="statistic">
+              <div class="value">
+                ${{project.account.amtraised}}
+              </div>
+              <div class="label">
+                raised
+              </div>
+            </div>
+            <div class="statistic">
+              <div class="value">
+                {{project.info.enddate | daysleft}}
+              </div>
+              <div class="label">
+                Days to Go
+              </div>
+            </div>
+          </div>
+          <div [attr.data-percent]="project.account.amtraised / project.account.targetamt * 100" class="ui green progress" id="camprogress">
+            <div  class="bar">
+              <div class="progress">{{project.account.amtraised / project.account.targetamt * 100}}%</div>
+              <!---->
+            </div>
+            <h3 class="label">${{project.account.targetamt}} Goal</h3>
+          </div>
+          <br><br>
+          <button class="large ui button"><i class="icon heart red"></i>DONATE NOW</button>
+        </div>
+      </div>
+    </div>
+    <div class="rr-campaign-tab-box">
+      <div class="ui container stackable grid">
+        <div class="row">
+          <div class="eleven wide column">
+            <div class="ui top attached tabular menu">
+              <a class="active item" data-tab="first">Story</a>
+              <a class="item" data-tab="second">Updates</a>
+              <a class="item" data-tab="third">Comments</a>
+              <a class="item" data-tab="third">Documents</a>
+            </div>
+            <div class="ui bottom attached active tab segment" data-tab="first">
+              inherQuests believes that in order for there to be more financially empowered women in the
+              world, education should start at an early age. Through our one-of-a-kind financial literacy
+              subscription box, we are revolutionizing how girls learn about money and basic financial
+              concepts.
+
+              Through our experiential learning curriculum, which is filled with fun games and engaging
+              activities called "Quests," we enable girls to establish a strong foundation for life-long
+              financial independence and well-being.
+              inherQuests believes that in order for there to be more financially empowered women in the
+              world, education should start at an early age. Through our one-of-a-kind financial literacy
+              subscription box, we are revolutionizing how girls learn about money and basic financial
+              concepts.
+
+              Through our experiential learning curriculum, which is filled with fun games and engaging
+              activities called "Quests," we enable girls to establish a strong foundation for life-long
+              financial independence and well-being.
+              inherQuests believes that in order for there to be more financially empowered women in the
+              world, education should start at an early age. Through our one-of-a-kind financial literacy
+              subscription box, we are revolutionizing how girls learn about money and basic financial
+              concepts.
+
+              Through our experiential learning curriculum, which is filled with fun games and engaging
+              activities called "Quests," we enable girls to establish a strong foundation for life-long
+              financial independence and well-being.
+              inherQuests believes that in order for there to be more financially empowered women in the
+              world, education should start at an early age. Through our one-of-a-kind financial literacy
+              subscription box, we are revolutionizing how girls learn about money and basic financial
+              concepts.
+
+              Through our experiential learning curriculum, which is filled with fun games and engaging
+              activities called "Quests," we enable girls to establish a strong foundation for life-long
+              financial independence and well-being.
+              inherQuests believes that in order for there to be more financially empowered women in the
+              world, education should start at an early age. Through our one-of-a-kind financial literacy
+              subscription box, we are revolutionizing how girls learn about money and basic financial
+              concepts.
+
+              Through our experiential learning curriculum, which is filled with fun games and engaging
+              activities called "Quests," we enable girls to establish a strong foundation for life-long
+              financial independence and well-being.
+
+
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="second">
+              Second
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="third">
+              Third
+            </div>
+          </div>
+          <div class="five wide column">
+            <br>
+            <h3 class="ui horizontal divider header">
+              <i class="heart red icon"></i>
+              Donors
+            </h3>
+            <div class="ui card">
+              <div class="content">
+                <div class="header">$23 - Johnny Depp</div>
+                <div class="description">
+                  <p>10 minutes Ago</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="left floated like"><i class="like icon"></i>Like</span>
+                <span class="right floated"><i class="blue facebook icon"></i>share</span>
+              </div>
+            </div>
+            <div class="ui card">
+              <div class="content">
+                <div class="header">$23 - Johnny Depp</div>
+                <div class="description">
+                  <p>10 minutes Ago</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="left floated like"><i class="like icon"></i>Like</span>
+                <span class="right floated"><i class="blue facebook icon"></i>share</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ {{loadjQuery()}}
+</div>
+<div *ngIf="project.meta.total == 0 ">
+  <br><br>
+  <label class="ui label">
+    Sorry Invalid Campaign Url
+  </label>
+</div>
+<FooterComponent></FooterComponent>

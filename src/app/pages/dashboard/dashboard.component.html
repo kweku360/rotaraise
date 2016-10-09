@@ -60,7 +60,7 @@
                             {{jQueryEvents()}}
                             ${{project.account.targetamt}} Goal</div>
                         </div>
-                        <a routerLink="/overview" class="ui grey mini  button">
+                        <a (click)="manageProjectClick(project.info.urlcode)" class="ui grey mini  button">
                           <i class="travel icon"></i> Manage
                         </a>
                       </div>

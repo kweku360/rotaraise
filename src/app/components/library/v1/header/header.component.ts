@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AuthService} from "../../../../services/auth.service";
 
 @Component({
   //moduleId: module.id,
@@ -8,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService:AuthService) { }
+
+  isLoggedOn:boolean = this.authService.isLoggedIn;
 
   ngOnInit() {
-    jQuery('.ui.dropdown').dropdown('get value');
+   
   }
-
+//fix for ngIf and other directives - loads jquery plugins after angular renders components
+  loadJQuery(){
+    jQuery('.rr-about').dropdown('get value');
+  }
+  
+  logout(){
+    this.authService.logout();
+  }
 }

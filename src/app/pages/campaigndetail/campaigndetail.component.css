@@ -1,0 +1,15 @@
+.rr-campaign-tab-box {
+  width: 100%;
+  padding-top: 30px;
+  background-color: #f7f7f9;
+  margin-top: 30px;
+}
+.rr-campaign-page{
+  border-top: 2px solid lightgray;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+.rr-cover-img{
+  width: 100%;
+  height: 370px;
+}

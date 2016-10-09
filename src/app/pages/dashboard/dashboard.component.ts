@@ -23,6 +23,10 @@ export class DashboardComponent implements OnInit {
     this.router.navigate(["/project"]);
   }
 
+  manageProjectClick(id:string){
+    this.router.navigate(["myaccount/campaign/overview",id]);
+  }
+
   loadProjects(){
   this.projectservice.getProjectsByClub().subscribe(
       x =>{

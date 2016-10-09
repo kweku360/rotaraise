@@ -47,5 +47,9 @@ export class ProjectService {
     var url:string = this.serverUrl+"project";
     return this.http.get(url).map(this.extractData);
   }
+  getOneProject(id:string):Observable<string>{
+    var url:string = this.serverUrl+"project/"+id
+    return this.http.get(url).map(this.extractData);
+  }
 }
 

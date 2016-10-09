@@ -14,19 +14,23 @@ import {OverviewComponent} from "../pages/account/campaign/overview/overview.com
 import {BasicComponent} from "../pages/account/campaign/basic/basic.component";
 import {ResetpasswordComponent} from "../pages/resetpassword/resetpassword.component";
 import {StoryComponent} from "../pages/story/story.component";
+import {GatemanService} from "../services/gateman.service";
+import {CampaigndetailComponent} from "../pages/campaigndetail/campaigndetail.component";
 
 
 
 const appRoutes: Routes = [
-    { path: '',component: LandingComponent},
+    { path: '',canActivate: [GatemanService],component: LandingComponent},
     { path: 'login', component: LoginComponent},
     { path: 'register', component: RegisterComponent},
+    { path: 'campaign/:id', component: CampaigndetailComponent},
     { path: 'dashboard', canActivate: [AuthGuard], component: DashboardComponent},
     { path: 'project', canActivate: [AuthGuard], component: ProjectComponent},
-    { path: 'overview', canActivate: [AuthGuard], component: OverviewComponent},
-    { path: 'basic', canActivate: [AuthGuard], component: BasicComponent},
-    { path: 'story', canActivate: [AuthGuard], component: StoryComponent},
+    { path: 'myaccount/campaign/overview/:id', canActivate: [AuthGuard], component: OverviewComponent},
+    { path: 'myaccount/campaign/basic/:id', canActivate: [AuthGuard], component: BasicComponent},
+    { path: 'myaccount/campaign/story/:id', canActivate: [AuthGuard], component: StoryComponent},
     { path: 'passwordreset', component: ResetpasswordComponent}
+
 ];
 
 export const appRoutingProviders: any[] = [

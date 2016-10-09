@@ -6,7 +6,7 @@
         <div class="two wide column"></div>
         <div class="six wide column">
           <h1 class="ui header rr-font">Overview</h1>
-          <h4 class="ui header rr-subtext-color"> </h4>
+          <h4 class="ui header rr-subtext-color"></h4>
         </div>
         <div class="six wide column">
           <img src="">
@@ -14,37 +14,35 @@
       </div>
     </div>
   </div>
-  <div class="ui  stackable grid">
-    <div class="row">
-      <div class="three wide column">
-        <app-projectsidebar></app-projectsidebar>
-      </div>
-      <div class="thirteen wide column">
-        <div class="content">
-          <div class="sixteen wide column body">
-            <div class="ui items">
-              <div class="item">
-                <div class="large image">
-                  <img src="public/img/african_school.jpg">
-                </div>
-                <div class="content">
-                  <a class="header">Header</a>
-                  <div class="meta">
-                    <span>About Project</span>
+  <div *ngFor="let project of project.projects;let i = index;">
+    <div class="ui  stackable grid">
+      <div class="row">
+        <div class="three wide column">
+          <app-projectsidebar [projecturl]="project.info.urlcode"></app-projectsidebar>
+        </div>
+        <div class="eleven wide column">
+          <div class="content">
+            <div class="sixteen wide column body">
+              <div class="ui items">
+                <div class="item">
+                  <div class="large image">
+                    <img [attr.src]="url+ect.media[0].filename+'.'+project.media[0].ext">
                   </div>
-                  <div class="description">
-                    <p>
-                      Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit mi.
-                      Aenean imperdiet lacus sit amet elit porta, et malesuada erat bibendum.
-                      Cras sed nunc massa. Quisque tempor dolor sit amet tellus malesuada, malesuada iaculis eros dignissim.
-                      Aenean vitae diam id lacus fringilla maximus. Mauris auctor efficitur nisl, non blandit urna fermentum
-                      nec.
-                    </p>
-                  </div>
-                  <div class="extra">
-                    created 5th January 2016  &nbsp; &nbsp;
-                    <a class="green ui tag label">verified</a> &nbsp; &nbsp;
-                    <a class="teal ui tag label">in progress</a> &nbsp; &nbsp; &nbsp;
+                  <div class="content">
+                    <a class="header">{{project.info.name}}</a>
+                    <div class="meta">
+                      <span>About Project</span>
+                    </div>
+                    <div class="description">
+                      <p>
+                        {{project.display.description}}
+                      </p>
+                    </div>
+                    <div class="extra">
+                      created 5th January 2016 &nbsp; &nbsp;
+                      <a class="green ui tag label">verified</a> &nbsp; &nbsp;
+                      <a class="teal ui tag label">in progress</a> &nbsp; &nbsp; &nbsp;
+                    </div>
                   </div>
                 </div>
               </div>

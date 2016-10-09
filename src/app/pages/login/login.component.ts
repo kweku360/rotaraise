@@ -22,11 +22,6 @@ export class LoginComponent implements OnInit {
   }
 
   streamLogin(event) {
-   
-    jQuery("this").amaran({
-      'message'   :'My positioning example.',
-      'position'  :'top right'
-    });
     event.preventDefault()
     var that = this;// context swap
     if(this.accountmodel.email != "" || this.accountmodel.password != ""){
