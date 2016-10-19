@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {ProjectService} from "../../services/project.service";
 import {ActivatedRoute, Params} from "@angular/router";
-import {environment} from "../../../environments/environment.prod";
+import {environment} from "../../../environments/environment";
+
 
 @Component({
   selector: 'app-campaigndetail',
@@ -14,7 +15,7 @@ export class CampaigndetailComponent implements OnInit {
 
   project:any = {meta:"",projects:""};
   url = environment.serverUploadedFile;
-  link = environment.serverUrl+"campaign/"
+  link = environment.projecturl+"campaign/"
   ngOnInit() {
         //gets the route params
     this.route.params.forEach((params: Params) => {

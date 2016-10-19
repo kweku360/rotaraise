@@ -2837,8 +2837,8 @@ var DomAdapter = (function () {
 
 "use strict";
 "use strict";
-var root_1 = __webpack_require__(62);
-var toSubscriber_1 = __webpack_require__(776);
+var root_1 = __webpack_require__(63);
+var toSubscriber_1 = __webpack_require__(775);
 var observable_1 = __webpack_require__(229);
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
@@ -6315,7 +6315,7 @@ var SetWrapper = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(772);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(771);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(22);
@@ -6612,7 +6612,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var isFunction_1 = __webpack_require__(385);
 var Subscription_1 = __webpack_require__(225);
-var Observer_1 = __webpack_require__(762);
+var Observer_1 = __webpack_require__(761);
 var rxSubscriber_1 = __webpack_require__(230);
 /**
  * Implements the {@link Observer} interface and extends the
@@ -7389,7 +7389,7 @@ var NavigationCancelingError = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_concatAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_concatAll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_every__ = __webpack_require__(382);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_every___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_every__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_last__ = __webpack_require__(769);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_last__ = __webpack_require__(768);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_last___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_operator_last__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__);
@@ -7546,7 +7546,7 @@ var ctx      = __webpack_require__(78)
   , IObject  = __webpack_require__(96)
   , toObject = __webpack_require__(36)
   , toLength = __webpack_require__(31)
-  , asc      = __webpack_require__(557);
+  , asc      = __webpack_require__(556);
 module.exports = function(TYPE, $create){
   var IS_MAP        = TYPE == 1
     , IS_FILTER     = TYPE == 2
@@ -7610,7 +7610,7 @@ module.exports = __webpack_require__(20) ? function(object, key, value){
 var Map     = __webpack_require__(363)
   , $export = __webpack_require__(1)
   , shared  = __webpack_require__(145)('metadata')
-  , store   = shared.store || (shared.store = new (__webpack_require__(678)));
+  , store   = shared.store || (shared.store = new (__webpack_require__(677)));
 
 var getOrCreateMetadataMap = function(target, targetKey, create){
   var targetMetadata = store.get(target);
@@ -8457,6 +8457,28 @@ var SetWrapper = (function () {
 /* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
+// The file contents for the current environment will overwrite these during build.
+// The build system defaults to the dev environment which uses `environment.ts`, but if you do
+// `ng build --env=prod` then `environment.prod.ts` will be used instead.
+// The list of which env maps to which file can be found in `angular-cli.json`.
+var environment = {
+    production: false,
+    // serverUrl : "http://localhost/rotaraise/v1/", //localhost
+    // serverUploadUrl : "http://localhost/rotaraise/v1/upload.php",
+    // serverUploadedFile : "http://localhost/rotaraise/v1/uploads/", 
+    projecturl: "http://www.rotaraise.com/demo/",
+    serverUrl: "http://www.rotaraise.com/demo/api/index.php/",
+    serverUploadUrl: "http://www.rotaraise.com/demo/api/upload.php",
+    serverUploadedFile: "http://www.rotaraise.com/demo/api/uploads/",
+};
+
+
+/***/ },
+/* 61 */
+/***/ function(module, exports, __webpack_require__) {
+
 var META     = __webpack_require__(100)('meta')
   , isObject = __webpack_require__(8)
   , has      = __webpack_require__(26)
@@ -8512,7 +8534,7 @@ var meta = module.exports = {
 };
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 var pIE            = __webpack_require__(143)
@@ -8533,7 +8555,7 @@ exports.f = __webpack_require__(20) ? gOPD : function getOwnPropertyDescriptor(O
 };
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8555,7 +8577,7 @@ if (freeGlobal && (freeGlobal.global === freeGlobal || freeGlobal.window === fre
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(54)))
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8613,7 +8635,7 @@ var NgControl = (function (_super) {
 //# sourceMappingURL=ng_control.js.map
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9178,7 +9200,7 @@ var UrlParser = (function () {
 //# sourceMappingURL=url_tree.js.map
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9187,7 +9209,7 @@ var UrlParser = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__auth_service__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(60);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ProjectService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9253,24 +9275,6 @@ var ProjectService = (function () {
     return ProjectService;
     var _a, _b;
 }());
-
-
-/***/ },
-/* 66 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `angular-cli.json`.
-var environment = {
-    production: false,
-    serverUrl: "http://localhost/rotaraise/v1/",
-    serverUploadUrl: "http://localhost/rotaraise/v1/upload.php",
-    serverUploadedFile: "http://localhost/rotaraise/v1/uploads/",
-};
 
 
 /***/ },
@@ -10662,7 +10666,7 @@ var EventManagerPlugin = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__ = __webpack_require__(374);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__url_tree__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__url_tree__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_collection__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_tree__ = __webpack_require__(202);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RouterState; });
@@ -11219,7 +11223,7 @@ var Observable_1 = __webpack_require__(14);
 var Subscriber_1 = __webpack_require__(42);
 var Subscription_1 = __webpack_require__(225);
 var ObjectUnsubscribedError_1 = __webpack_require__(383);
-var SubjectSubscription_1 = __webpack_require__(763);
+var SubjectSubscription_1 = __webpack_require__(762);
 var rxSubscriber_1 = __webpack_require__(230);
 /**
  * @class SubjectSubscriber<T>
@@ -17584,7 +17588,7 @@ var NgModelGroup = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__control_value_accessor__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_control__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_control__ = __webpack_require__(64);
 /* unused harmony export RADIO_VALUE_ACCESSOR */
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return RadioControlRegistry; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RadioControlValueAccessor; });
@@ -19969,7 +19973,7 @@ var DOCUMENT = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* OpaqueToke
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_mergeAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operator_mergeAll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_mergeMap__ = __webpack_require__(227);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operator_mergeMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_reduce__ = __webpack_require__(771);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_reduce__ = __webpack_require__(770);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_reduce___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_operator_reduce__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__apply_redirects__ = __webpack_require__(505);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__config__ = __webpack_require__(506);
@@ -19980,7 +19984,7 @@ var DOCUMENT = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* OpaqueToke
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__router_outlet_map__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__router_state__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__shared__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__url_tree__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__url_tree__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__utils_collection__ = __webpack_require__(48);
 /* unused harmony export NavigationStart */
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return NavigationEnd; });
@@ -27734,7 +27738,7 @@ var AbstractControlDirective = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__control_container__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_control__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_control__ = __webpack_require__(64);
 /* unused harmony export AbstractControlStatus */
 /* unused harmony export ngControlStatusHost */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NgControlStatus; });
@@ -27868,7 +27872,7 @@ var NgControlStatusGroup = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__abstract_form_group_directive__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__control_container__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__control_value_accessor__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng_control__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng_control__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ng_form__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ng_model_group__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared__ = __webpack_require__(57);
@@ -28176,7 +28180,7 @@ var NumberValueAccessor = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__validators__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_value_accessor__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ng_control__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ng_control__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__reactive_errors__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared__ = __webpack_require__(57);
 /* unused harmony export formControlBinding */
@@ -28332,7 +28336,7 @@ var FormControlDirective = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__abstract_form_group_directive__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_container__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__control_value_accessor__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng_control__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng_control__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__reactive_errors__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__form_group_directive__ = __webpack_require__(91);
@@ -30317,7 +30321,7 @@ var global            = __webpack_require__(12)
   , $export           = __webpack_require__(1)
   , redefine          = __webpack_require__(27)
   , redefineAll       = __webpack_require__(217)
-  , meta              = __webpack_require__(60)
+  , meta              = __webpack_require__(61)
   , forOf             = __webpack_require__(141)
   , anInstance        = __webpack_require__(205)
   , isObject          = __webpack_require__(8)
@@ -30611,7 +30615,7 @@ module.exports = {
   set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
     function(test, buggy, set){
       try {
-        set = __webpack_require__(78)(Function.call, __webpack_require__(61).f(Object.prototype, '__proto__').set, 2);
+        set = __webpack_require__(78)(Function.call, __webpack_require__(62).f(Object.prototype, '__proto__').set, 2);
         set(test, []);
         buggy = !(test instanceof Array);
       } catch(e){ buggy = true; }
@@ -34912,7 +34916,7 @@ module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u20
     return _moment;
 
 }));
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(785)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(784)(module)))
 
 /***/ },
 /* 224 */
@@ -34957,11 +34961,11 @@ exports.OuterSubscriber = OuterSubscriber;
 "use strict";
 "use strict";
 var isArray_1 = __webpack_require__(232);
-var isObject_1 = __webpack_require__(774);
+var isObject_1 = __webpack_require__(773);
 var isFunction_1 = __webpack_require__(385);
-var tryCatch_1 = __webpack_require__(777);
+var tryCatch_1 = __webpack_require__(776);
 var errorObject_1 = __webpack_require__(384);
-var UnsubscriptionError_1 = __webpack_require__(773);
+var UnsubscriptionError_1 = __webpack_require__(772);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -35399,7 +35403,7 @@ exports.MergeMapSubscriber = MergeMapSubscriber;
 
 "use strict";
 "use strict";
-var root_1 = __webpack_require__(62);
+var root_1 = __webpack_require__(63);
 var Symbol = root_1.root.Symbol;
 if (typeof Symbol === 'function') {
     if (Symbol.iterator) {
@@ -35437,7 +35441,7 @@ else {
 
 "use strict";
 "use strict";
-var root_1 = __webpack_require__(62);
+var root_1 = __webpack_require__(63);
 function getSymbolObservable(context) {
     var $$observable;
     var Symbol = context.Symbol;
@@ -35465,7 +35469,7 @@ exports.$$observable = getSymbolObservable(root_1.root);
 
 "use strict";
 "use strict";
-var root_1 = __webpack_require__(62);
+var root_1 = __webpack_require__(63);
 var Symbol = root_1.root.Symbol;
 exports.$$rxSubscriber = (typeof Symbol === 'function' && typeof Symbol.for === 'function') ?
     Symbol.for('rxSubscriber') : '@@rxSubscriber';
@@ -35520,12 +35524,12 @@ exports.isArray = Array.isArray || (function (x) { return x && typeof x.length =
 
 "use strict";
 "use strict";
-var root_1 = __webpack_require__(62);
+var root_1 = __webpack_require__(63);
 var isArray_1 = __webpack_require__(232);
 var isPromise_1 = __webpack_require__(386);
 var Observable_1 = __webpack_require__(14);
 var iterator_1 = __webpack_require__(228);
-var InnerSubscriber_1 = __webpack_require__(760);
+var InnerSubscriber_1 = __webpack_require__(759);
 var observable_1 = __webpack_require__(229);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
@@ -49019,7 +49023,7 @@ var RouterOutlet = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__router_config_loader__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__router_outlet_map__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__router_state__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__url_tree__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__url_tree__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__utils_collection__ = __webpack_require__(48);
 /* unused harmony export ROUTER_CONFIGURATION */
 /* unused harmony export ROUTER_FORROOT_GUARD */
@@ -49558,8 +49562,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(735),
-            styles: [__webpack_require__(705)]
+            template: __webpack_require__(734),
+            styles: [__webpack_require__(704)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -49573,8 +49577,8 @@ var AppComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_project_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_project_service__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(24);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BasicComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -49670,8 +49674,8 @@ var BasicComponent = (function () {
     BasicComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-basic',
-            template: __webpack_require__(749),
-            styles: [__webpack_require__(719)]
+            template: __webpack_require__(748),
+            styles: [__webpack_require__(718)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_project_service__["a" /* ProjectService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_project_service__["a" /* ProjectService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */]) === 'function' && _b) || Object])
     ], BasicComponent);
@@ -49687,8 +49691,8 @@ var BasicComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_project_service__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_project_service__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(60);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return OverviewComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -49730,8 +49734,8 @@ var OverviewComponent = (function () {
     OverviewComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-overview',
-            template: __webpack_require__(750),
-            styles: [__webpack_require__(720)]
+            template: __webpack_require__(749),
+            styles: [__webpack_require__(719)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_project_service__["a" /* ProjectService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_project_service__["a" /* ProjectService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _b) || Object])
     ], OverviewComponent);
@@ -49747,7 +49751,7 @@ var OverviewComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_project__ = __webpack_require__(530);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_project_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_project_service__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_auth_service__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_moment__ = __webpack_require__(223);
@@ -49859,8 +49863,8 @@ var ProjectComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             //moduleId: module.id,
             selector: 'app-project',
-            template: __webpack_require__(751),
-            styles: [__webpack_require__(721)],
+            template: __webpack_require__(750),
+            styles: [__webpack_require__(720)],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_project_service__["a" /* ProjectService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_project_service__["a" /* ProjectService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]) === 'function' && _c) || Object])
     ], ProjectComponent);
@@ -49875,9 +49879,9 @@ var ProjectComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_project_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_project_service__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment_prod__ = __webpack_require__(536);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(60);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CampaigndetailComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -49897,8 +49901,8 @@ var CampaigndetailComponent = (function () {
         this.projectservice = projectservice;
         this.route = route;
         this.project = { meta: "", projects: "" };
-        this.url = __WEBPACK_IMPORTED_MODULE_3__environments_environment_prod__["a" /* environment */].serverUploadedFile;
-        this.link = __WEBPACK_IMPORTED_MODULE_3__environments_environment_prod__["a" /* environment */].serverUrl + "campaign/";
+        this.url = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].serverUploadedFile;
+        this.link = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].projecturl + "campaign/";
     }
     CampaigndetailComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -49925,8 +49929,8 @@ var CampaigndetailComponent = (function () {
     CampaigndetailComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-campaigndetail',
-            template: __webpack_require__(752),
-            styles: [__webpack_require__(722)]
+            template: __webpack_require__(751),
+            styles: [__webpack_require__(721)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_project_service__["a" /* ProjectService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_project_service__["a" /* ProjectService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */]) === 'function' && _b) || Object])
     ], CampaigndetailComponent);
@@ -49943,7 +49947,7 @@ var CampaigndetailComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_auth_service__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_project_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_project_service__ = __webpack_require__(66);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DashboardComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -49997,8 +50001,8 @@ var DashboardComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             //moduleId: module.id,
             selector: 'app-dashboard',
-            template: __webpack_require__(754),
-            styles: [__webpack_require__(724)],
+            template: __webpack_require__(753),
+            styles: [__webpack_require__(723)],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_project_service__["a" /* ProjectService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_project_service__["a" /* ProjectService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _c) || Object])
     ], DashboardComponent);
@@ -50014,7 +50018,7 @@ var DashboardComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_project_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_project_service__ = __webpack_require__(66);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return LandingComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -50060,8 +50064,8 @@ var LandingComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             //moduleId: module.id,
             selector: 'app-landing',
-            template: __webpack_require__(755),
-            styles: [__webpack_require__(725)],
+            template: __webpack_require__(754),
+            styles: [__webpack_require__(724)],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_project_service__["a" /* ProjectService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_project_service__["a" /* ProjectService */]) === 'function' && _b) || Object])
     ], LandingComponent);
@@ -50119,8 +50123,8 @@ var LoginComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             //moduleId: module.id,
             selector: 'app-login',
-            template: __webpack_require__(756),
-            styles: [__webpack_require__(726)],
+            template: __webpack_require__(755),
+            styles: [__webpack_require__(725)],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_login_service__["a" /* LoginService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_login_service__["a" /* LoginService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object])
     ], LoginComponent);
@@ -50374,8 +50378,8 @@ var RegisterComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             //moduleId: module.id,
             selector: 'app-register',
-            template: __webpack_require__(757),
-            styles: [__webpack_require__(727)],
+            template: __webpack_require__(756),
+            styles: [__webpack_require__(726)],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__services_windowref_service__["a" /* WindowrefService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_windowref_service__["a" /* WindowrefService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_register_service__["a" /* RegisterService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_register_service__["a" /* RegisterService */]) === 'function' && _c) || Object])
     ], RegisterComponent);
@@ -50433,8 +50437,8 @@ var ResetpasswordComponent = (function () {
     ResetpasswordComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-resetpassword',
-            template: __webpack_require__(758),
-            styles: [__webpack_require__(728)]
+            template: __webpack_require__(757),
+            styles: [__webpack_require__(727)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_login_service__["a" /* LoginService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_login_service__["a" /* LoginService */]) === 'function' && _a) || Object])
     ], ResetpasswordComponent);
@@ -50472,8 +50476,8 @@ var StoryComponent = (function () {
     StoryComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-story',
-            template: __webpack_require__(759),
-            styles: [__webpack_require__(729)]
+            template: __webpack_require__(758),
+            styles: [__webpack_require__(728)]
         }), 
         __metadata('design:paramtypes', [])
     ], StoryComponent);
@@ -50532,7 +50536,7 @@ var GatemanService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(375);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(60);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RegisterService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -50733,7 +50737,7 @@ module.exports = function(that, callbackfn, aLen, memo, isRight){
 'use strict';
 var aFunction  = __webpack_require__(67)
   , isObject   = __webpack_require__(8)
-  , invoke     = __webpack_require__(561)
+  , invoke     = __webpack_require__(560)
   , arraySlice = [].slice
   , factories  = {};
 
@@ -50800,7 +50804,7 @@ var dP          = __webpack_require__(17).f
   , step        = __webpack_require__(350)
   , setSpecies  = __webpack_require__(219)
   , DESCRIPTORS = __webpack_require__(20)
-  , fastKey     = __webpack_require__(60).fastKey
+  , fastKey     = __webpack_require__(61).fastKey
   , SIZE        = DESCRIPTORS ? '_s' : 'size';
 
 var getEntry = function(that, key){
@@ -51489,16 +51493,16 @@ var global         = __webpack_require__(12)
   , DESCRIPTORS    = __webpack_require__(20)
   , $export        = __webpack_require__(1)
   , redefine       = __webpack_require__(27)
-  , META           = __webpack_require__(60).KEY
+  , META           = __webpack_require__(61).KEY
   , $fails         = __webpack_require__(5)
   , shared         = __webpack_require__(145)
   , setToStringTag = __webpack_require__(144)
   , uid            = __webpack_require__(100)
   , wks            = __webpack_require__(10)
   , wksExt         = __webpack_require__(360)
-  , wksDefine      = __webpack_require__(565)
-  , keyOf          = __webpack_require__(562)
-  , enumKeys       = __webpack_require__(560)
+  , wksDefine      = __webpack_require__(564)
+  , keyOf          = __webpack_require__(561)
+  , enumKeys       = __webpack_require__(559)
   , isArray        = __webpack_require__(211)
   , anObject       = __webpack_require__(4)
   , toIObject      = __webpack_require__(35)
@@ -51506,7 +51510,7 @@ var global         = __webpack_require__(12)
   , createDesc     = __webpack_require__(69)
   , _create        = __webpack_require__(79)
   , gOPNExt        = __webpack_require__(354)
-  , $GOPD          = __webpack_require__(61)
+  , $GOPD          = __webpack_require__(62)
   , $DP            = __webpack_require__(17)
   , $keys          = __webpack_require__(80)
   , gOPD           = $GOPD.f
@@ -51827,7 +51831,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(14);
 var ScalarObservable_1 = __webpack_require__(379);
 var EmptyObservable_1 = __webpack_require__(377);
-var isScheduler_1 = __webpack_require__(775);
+var isScheduler_1 = __webpack_require__(774);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -52033,7 +52037,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var root_1 = __webpack_require__(62);
+var root_1 = __webpack_require__(63);
 var Observable_1 = __webpack_require__(14);
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -52219,7 +52223,7 @@ exports.ScalarObservable = ScalarObservable;
 
 "use strict";
 "use strict";
-var FromObservable_1 = __webpack_require__(765);
+var FromObservable_1 = __webpack_require__(764);
 exports.from = FromObservable_1.FromObservable.create;
 //# sourceMappingURL=from.js.map
 
@@ -52438,11 +52442,11 @@ webpackEmptyContext.id = 388;
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__(537);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__(536);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__polyfills_ts__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(487);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app___ = __webpack_require__(528);
 
 
@@ -61806,7 +61810,7 @@ var NgZoneImpl = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__directives_select_control_value_accessor__ = __webpack_require__(129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__directives_select_multiple_control_value_accessor__ = __webpack_require__(130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__directives_validators__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__directives_ng_control__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__directives_ng_control__ = __webpack_require__(64);
 /* unused harmony export SHARED_FORM_DIRECTIVES */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return TEMPLATE_DRIVEN_DIRECTIVES; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return REACTIVE_DRIVEN_DIRECTIVES; });
@@ -62023,7 +62027,7 @@ var ReactiveFormsModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_control_container__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_control_value_accessor__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_default_value_accessor__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_ng_control__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_ng_control__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_ng_control_status__ = __webpack_require__(185);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_ng_form__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_ng_model__ = __webpack_require__(186);
@@ -63579,11 +63583,11 @@ function sanitizeStyle(value) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch__ = __webpack_require__(767);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch__ = __webpack_require__(766);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatAll__ = __webpack_require__(381);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatAll__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_first__ = __webpack_require__(768);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_first__ = __webpack_require__(767);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_first___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_operator_first__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__);
@@ -63593,7 +63597,7 @@ function sanitizeStyle(value) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_util_EmptyError___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_util_EmptyError__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__router_config_loader__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__url_tree__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__url_tree__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__utils_collection__ = __webpack_require__(48);
 /* harmony export (immutable) */ exports["a"] = applyRedirects;
 /**
@@ -64087,7 +64091,7 @@ function equalRouteSnapshots(a, b) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__shared__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__url_tree__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__url_tree__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_collection__ = __webpack_require__(48);
 /* harmony export (immutable) */ exports["a"] = createUrlTree;
 /**
@@ -64388,7 +64392,7 @@ function compare(path, params, segment) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__router_outlet_map__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__router_state__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__url_tree__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__url_tree__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__private_export__ = __webpack_require__(510);
 /* unused harmony reexport RouterLink */
 /* unused harmony reexport RouterLinkWithHref */
@@ -64469,7 +64473,7 @@ var __router_private__ = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router_state__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__url_tree__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__url_tree__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_collection__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_tree__ = __webpack_require__(202);
 /* harmony export (immutable) */ exports["a"] = recognize;
@@ -64935,8 +64939,8 @@ var DatePickerComponent = (function () {
     DatePickerComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'datepicker',
-            template: __webpack_require__(703),
-            styles: [__webpack_require__(704)],
+            template: __webpack_require__(702),
+            styles: [__webpack_require__(703)],
             providers: [CALENDAR_VALUE_ACCESSOR]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["h" /* ViewContainerRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["h" /* ViewContainerRef */]) === 'function' && _a) || Object])
@@ -65001,7 +65005,7 @@ var UPLOAD_DIRECTIVES = [
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_library_v1_fileuploader_fileuploader_component__ = __webpack_require__(521);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_library_v1_countrylist_countrylist_component__ = __webpack_require__(517);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_ng2_uploader_ng2_uploader__ = __webpack_require__(513);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__services_project_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__services_project_service__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pipes_daysleft_pipe__ = __webpack_require__(532);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pipes_percentagepipe_pipe__ = __webpack_require__(533);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_account_campaign_overview_overview_component__ = __webpack_require__(323);
@@ -65148,8 +65152,8 @@ var CampaignadComponent = (function () {
     CampaignadComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'CampaignAdComponent',
-            template: __webpack_require__(736),
-            styles: [__webpack_require__(706)]
+            template: __webpack_require__(735),
+            styles: [__webpack_require__(705)]
         }), 
         __metadata('design:paramtypes', [])
     ], CampaignadComponent);
@@ -65183,8 +65187,8 @@ var CategoryComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             //moduleId: module.id,
             selector: 'CategoryComponent',
-            template: __webpack_require__(737),
-            styles: [__webpack_require__(707)]
+            template: __webpack_require__(736),
+            styles: [__webpack_require__(706)]
         }), 
         __metadata('design:paramtypes', [])
     ], CategoryComponent);
@@ -65234,8 +65238,8 @@ var CountrylistComponent = (function () {
     CountrylistComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-countrylist',
-            template: __webpack_require__(738),
-            styles: [__webpack_require__(708)]
+            template: __webpack_require__(737),
+            styles: [__webpack_require__(707)]
         }), 
         __metadata('design:paramtypes', [])
     ], CountrylistComponent);
@@ -65284,8 +65288,8 @@ var CurrencyComponent = (function () {
     CurrencyComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-currency',
-            template: __webpack_require__(739),
-            styles: [__webpack_require__(709)]
+            template: __webpack_require__(738),
+            styles: [__webpack_require__(708)]
         }), 
         __metadata('design:paramtypes', [])
     ], CurrencyComponent);
@@ -65331,8 +65335,8 @@ var DashheaderComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             //moduleId: module.id,
             selector: 'app-dashheader',
-            template: __webpack_require__(740),
-            styles: [__webpack_require__(710)]
+            template: __webpack_require__(739),
+            styles: [__webpack_require__(709)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object])
     ], DashheaderComponent);
@@ -65347,7 +65351,7 @@ var DashheaderComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(24);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return FeaturedcampaignsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -65384,8 +65388,8 @@ var FeaturedcampaignsComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             //moduleId: module.id,
             selector: 'FeaturedCampaignComponent',
-            template: __webpack_require__(741),
-            styles: [__webpack_require__(711)]
+            template: __webpack_require__(740),
+            styles: [__webpack_require__(710)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _a) || Object])
     ], FeaturedcampaignsComponent);
@@ -65400,7 +65404,7 @@ var FeaturedcampaignsComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(60);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return FileuploaderComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -65482,8 +65486,8 @@ var FileuploaderComponent = (function () {
     FileuploaderComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-fileuploader',
-            template: __webpack_require__(742),
-            styles: [__webpack_require__(712)]
+            template: __webpack_require__(741),
+            styles: [__webpack_require__(711)]
         }), 
         __metadata('design:paramtypes', [])
     ], FileuploaderComponent);
@@ -65517,8 +65521,8 @@ var FooterComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             //moduleId: module.id,
             selector: 'FooterComponent',
-            template: __webpack_require__(743),
-            styles: [__webpack_require__(713)]
+            template: __webpack_require__(742),
+            styles: [__webpack_require__(712)]
         }), 
         __metadata('design:paramtypes', [])
     ], FooterComponent);
@@ -65563,8 +65567,8 @@ var HeaderComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             //moduleId: module.id,
             selector: 'HeaderComponent',
-            template: __webpack_require__(744),
-            styles: [__webpack_require__(714)],
+            template: __webpack_require__(743),
+            styles: [__webpack_require__(713)],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object])
     ], HeaderComponent);
@@ -65599,8 +65603,8 @@ var LogoComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             //moduleId: module.id,
             selector: 'app-logo',
-            template: __webpack_require__(745),
-            styles: [__webpack_require__(715)]
+            template: __webpack_require__(744),
+            styles: [__webpack_require__(714)]
         }), 
         __metadata('design:paramtypes', [])
     ], LogoComponent);
@@ -65644,8 +65648,8 @@ var ProjectsidebarComponent = (function () {
     ProjectsidebarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-projectsidebar',
-            template: __webpack_require__(746),
-            styles: [__webpack_require__(716)]
+            template: __webpack_require__(745),
+            styles: [__webpack_require__(715)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _a) || Object])
     ], ProjectsidebarComponent);
@@ -65679,8 +65683,8 @@ var RichtexteditorComponent = (function () {
     RichtexteditorComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-richtexteditor',
-            template: __webpack_require__(747),
-            styles: [__webpack_require__(717)]
+            template: __webpack_require__(746),
+            styles: [__webpack_require__(716)]
         }), 
         __metadata('design:paramtypes', [])
     ], RichtexteditorComponent);
@@ -65719,8 +65723,8 @@ var SliderComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             //moduleId: module.id,
             selector: 'SliderComponent',
-            template: __webpack_require__(748),
-            styles: [__webpack_require__(718)]
+            template: __webpack_require__(747),
+            styles: [__webpack_require__(717)]
         }), 
         __metadata('design:paramtypes', [])
     ], SliderComponent);
@@ -65853,8 +65857,8 @@ var CampaignsComponent = (function () {
     CampaignsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-campaigns',
-            template: __webpack_require__(753),
-            styles: [__webpack_require__(723)]
+            template: __webpack_require__(752),
+            styles: [__webpack_require__(722)]
         }), 
         __metadata('design:paramtypes', [])
     ], CampaignsComponent);
@@ -66046,54 +66050,37 @@ var AuthGuard = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
-var environment = {
-    production: true,
-    // serverUrl : "http://kweku360.com/rotaapi/index.php/",
-    // serverUploadUrl : "http://kweku360.com/rotaapi/upload.php",
-    // serverUploadedFile : "http://kweku360.com/rotaapi/uploads/",
-    serverUrl: "http://localhost/rotaraise/v1/",
-    serverUploadUrl: "http://localhost/rotaraise/v1/upload.php",
-    serverUploadedFile: "http://localhost/rotaraise/v1/uploads/",
-};
-
-
-/***/ },
-/* 537 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__ = __webpack_require__(551);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__ = __webpack_require__(550);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__ = __webpack_require__(544);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__ = __webpack_require__(543);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__ = __webpack_require__(540);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__ = __webpack_require__(539);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__ = __webpack_require__(546);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__ = __webpack_require__(545);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__ = __webpack_require__(545);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__ = __webpack_require__(544);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__ = __webpack_require__(543);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__ = __webpack_require__(542);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__ = __webpack_require__(542);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__ = __webpack_require__(541);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__ = __webpack_require__(550);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__ = __webpack_require__(549);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__ = __webpack_require__(539);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__ = __webpack_require__(538);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__ = __webpack_require__(538);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__ = __webpack_require__(537);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__ = __webpack_require__(548);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__ = __webpack_require__(547);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__ = __webpack_require__(541);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__ = __webpack_require__(540);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__ = __webpack_require__(549);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__ = __webpack_require__(548);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__ = __webpack_require__(547);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__ = __webpack_require__(546);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__ = __webpack_require__(552);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__ = __webpack_require__(551);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__ = __webpack_require__(786);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__ = __webpack_require__(785);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__);
 
 
@@ -66114,55 +66101,55 @@ var environment = {
 
 
 /***/ },
-/* 538 */
+/* 537 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(148);
-__webpack_require__(575);
-__webpack_require__(573);
-__webpack_require__(579);
-__webpack_require__(576);
-__webpack_require__(582);
-__webpack_require__(584);
+__webpack_require__(574);
 __webpack_require__(572);
 __webpack_require__(578);
-__webpack_require__(569);
-__webpack_require__(583);
-__webpack_require__(567);
+__webpack_require__(575);
 __webpack_require__(581);
-__webpack_require__(580);
-__webpack_require__(574);
-__webpack_require__(577);
-__webpack_require__(566);
-__webpack_require__(568);
+__webpack_require__(583);
 __webpack_require__(571);
+__webpack_require__(577);
+__webpack_require__(568);
+__webpack_require__(582);
+__webpack_require__(566);
+__webpack_require__(580);
+__webpack_require__(579);
+__webpack_require__(573);
+__webpack_require__(576);
+__webpack_require__(565);
+__webpack_require__(567);
 __webpack_require__(570);
-__webpack_require__(585);
+__webpack_require__(569);
+__webpack_require__(584);
 __webpack_require__(362);
 module.exports = __webpack_require__(11).Array;
+
+/***/ },
+/* 538 */
+/***/ function(module, exports, __webpack_require__) {
+
+__webpack_require__(585);
+__webpack_require__(587);
+__webpack_require__(586);
+__webpack_require__(589);
+__webpack_require__(588);
+module.exports = Date;
 
 /***/ },
 /* 539 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(586);
-__webpack_require__(588);
-__webpack_require__(587);
 __webpack_require__(590);
-__webpack_require__(589);
-module.exports = Date;
-
-/***/ },
-/* 540 */
-/***/ function(module, exports, __webpack_require__) {
-
-__webpack_require__(591);
-__webpack_require__(593);
 __webpack_require__(592);
+__webpack_require__(591);
 module.exports = __webpack_require__(11).Function;
 
 /***/ },
-/* 541 */
+/* 540 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(147);
@@ -66172,9 +66159,10 @@ __webpack_require__(363);
 module.exports = __webpack_require__(11).Map;
 
 /***/ },
-/* 542 */
+/* 541 */
 /***/ function(module, exports, __webpack_require__) {
 
+__webpack_require__(593);
 __webpack_require__(594);
 __webpack_require__(595);
 __webpack_require__(596);
@@ -66191,16 +66179,16 @@ __webpack_require__(606);
 __webpack_require__(607);
 __webpack_require__(608);
 __webpack_require__(609);
-__webpack_require__(610);
 module.exports = __webpack_require__(11).Math;
 
 /***/ },
-/* 543 */
+/* 542 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(611);
+__webpack_require__(610);
+__webpack_require__(620);
 __webpack_require__(621);
-__webpack_require__(622);
+__webpack_require__(611);
 __webpack_require__(612);
 __webpack_require__(613);
 __webpack_require__(614);
@@ -66209,74 +66197,73 @@ __webpack_require__(616);
 __webpack_require__(617);
 __webpack_require__(618);
 __webpack_require__(619);
-__webpack_require__(620);
 module.exports = __webpack_require__(11).Number;
+
+/***/ },
+/* 543 */
+/***/ function(module, exports, __webpack_require__) {
+
+__webpack_require__(370);
+__webpack_require__(623);
+__webpack_require__(625);
+__webpack_require__(624);
+__webpack_require__(627);
+__webpack_require__(629);
+__webpack_require__(634);
+__webpack_require__(628);
+__webpack_require__(626);
+__webpack_require__(636);
+__webpack_require__(635);
+__webpack_require__(631);
+__webpack_require__(632);
+__webpack_require__(630);
+__webpack_require__(622);
+__webpack_require__(633);
+__webpack_require__(637);
+__webpack_require__(147);
+
+module.exports = __webpack_require__(11).Object;
 
 /***/ },
 /* 544 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(370);
-__webpack_require__(624);
-__webpack_require__(626);
-__webpack_require__(625);
-__webpack_require__(628);
-__webpack_require__(630);
-__webpack_require__(635);
-__webpack_require__(629);
-__webpack_require__(627);
-__webpack_require__(637);
-__webpack_require__(636);
-__webpack_require__(632);
-__webpack_require__(633);
-__webpack_require__(631);
-__webpack_require__(623);
-__webpack_require__(634);
 __webpack_require__(638);
-__webpack_require__(147);
-
-module.exports = __webpack_require__(11).Object;
+module.exports = __webpack_require__(11).parseFloat;
 
 /***/ },
 /* 545 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(639);
-module.exports = __webpack_require__(11).parseFloat;
+module.exports = __webpack_require__(11).parseInt;
 
 /***/ },
 /* 546 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(640);
-module.exports = __webpack_require__(11).parseInt;
+__webpack_require__(641);
+__webpack_require__(642);
+__webpack_require__(643);
+__webpack_require__(644);
+__webpack_require__(647);
+__webpack_require__(645);
+__webpack_require__(646);
+__webpack_require__(648);
+__webpack_require__(649);
+__webpack_require__(650);
+__webpack_require__(651);
+__webpack_require__(653);
+__webpack_require__(652);
+module.exports = __webpack_require__(11).Reflect;
 
 /***/ },
 /* 547 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(641);
-__webpack_require__(642);
-__webpack_require__(643);
-__webpack_require__(644);
-__webpack_require__(645);
-__webpack_require__(648);
-__webpack_require__(646);
-__webpack_require__(647);
-__webpack_require__(649);
-__webpack_require__(650);
-__webpack_require__(651);
-__webpack_require__(652);
 __webpack_require__(654);
-__webpack_require__(653);
-module.exports = __webpack_require__(11).Reflect;
-
-/***/ },
-/* 548 */
-/***/ function(module, exports, __webpack_require__) {
-
 __webpack_require__(655);
-__webpack_require__(656);
 __webpack_require__(364);
 __webpack_require__(365);
 __webpack_require__(366);
@@ -66285,7 +66272,7 @@ __webpack_require__(368);
 module.exports = __webpack_require__(11).RegExp;
 
 /***/ },
-/* 549 */
+/* 548 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(147);
@@ -66295,31 +66282,31 @@ __webpack_require__(369);
 module.exports = __webpack_require__(11).Set;
 
 /***/ },
-/* 550 */
+/* 549 */
 /***/ function(module, exports, __webpack_require__) {
 
+__webpack_require__(665);
+__webpack_require__(669);
+__webpack_require__(676);
+__webpack_require__(148);
+__webpack_require__(660);
+__webpack_require__(661);
 __webpack_require__(666);
 __webpack_require__(670);
-__webpack_require__(677);
-__webpack_require__(148);
-__webpack_require__(661);
-__webpack_require__(662);
-__webpack_require__(667);
-__webpack_require__(671);
-__webpack_require__(673);
+__webpack_require__(672);
+__webpack_require__(656);
 __webpack_require__(657);
 __webpack_require__(658);
 __webpack_require__(659);
-__webpack_require__(660);
+__webpack_require__(662);
 __webpack_require__(663);
 __webpack_require__(664);
-__webpack_require__(665);
+__webpack_require__(667);
 __webpack_require__(668);
-__webpack_require__(669);
-__webpack_require__(672);
+__webpack_require__(671);
+__webpack_require__(673);
 __webpack_require__(674);
 __webpack_require__(675);
-__webpack_require__(676);
 __webpack_require__(365);
 __webpack_require__(366);
 __webpack_require__(367);
@@ -66327,7 +66314,7 @@ __webpack_require__(368);
 module.exports = __webpack_require__(11).String;
 
 /***/ },
-/* 551 */
+/* 550 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(370);
@@ -66335,23 +66322,23 @@ __webpack_require__(147);
 module.exports = __webpack_require__(11).Symbol;
 
 /***/ },
-/* 552 */
+/* 551 */
 /***/ function(module, exports, __webpack_require__) {
 
+__webpack_require__(678);
 __webpack_require__(679);
-__webpack_require__(680);
-__webpack_require__(682);
 __webpack_require__(681);
-__webpack_require__(684);
+__webpack_require__(680);
 __webpack_require__(683);
+__webpack_require__(682);
+__webpack_require__(684);
 __webpack_require__(685);
 __webpack_require__(686);
-__webpack_require__(687);
 module.exports = __webpack_require__(11).Reflect;
 
 
 /***/ },
-/* 553 */
+/* 552 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66383,7 +66370,7 @@ module.exports = [].copyWithin || function copyWithin(target/*= 0*/, start/*= 0,
 };
 
 /***/ },
-/* 554 */
+/* 553 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66404,7 +66391,7 @@ module.exports = function fill(value /*, start = 0, end = @length */){
 };
 
 /***/ },
-/* 555 */
+/* 554 */
 /***/ function(module, exports, __webpack_require__) {
 
 var forOf = __webpack_require__(141);
@@ -66417,7 +66404,7 @@ module.exports = function(iter, ITERATOR){
 
 
 /***/ },
-/* 556 */
+/* 555 */
 /***/ function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(8)
@@ -66438,24 +66425,24 @@ module.exports = function(original){
 };
 
 /***/ },
-/* 557 */
+/* 556 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-var speciesConstructor = __webpack_require__(556);
+var speciesConstructor = __webpack_require__(555);
 
 module.exports = function(original, length){
   return new (speciesConstructor(original))(length);
 };
 
 /***/ },
-/* 558 */
+/* 557 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 'use strict';
 var redefineAll       = __webpack_require__(217)
-  , getWeak           = __webpack_require__(60).getWeak
+  , getWeak           = __webpack_require__(61).getWeak
   , anObject          = __webpack_require__(4)
   , isObject          = __webpack_require__(8)
   , anInstance        = __webpack_require__(205)
@@ -66538,7 +66525,7 @@ module.exports = {
 };
 
 /***/ },
-/* 559 */
+/* 558 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66553,7 +66540,7 @@ module.exports = function(hint){
 };
 
 /***/ },
-/* 560 */
+/* 559 */
 /***/ function(module, exports, __webpack_require__) {
 
 // all enumerable object keys, includes symbols
@@ -66573,7 +66560,7 @@ module.exports = function(it){
 };
 
 /***/ },
-/* 561 */
+/* 560 */
 /***/ function(module, exports) {
 
 // fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -66594,7 +66581,7 @@ module.exports = function(fn, args, that){
 };
 
 /***/ },
-/* 562 */
+/* 561 */
 /***/ function(module, exports, __webpack_require__) {
 
 var getKeys   = __webpack_require__(80)
@@ -66609,7 +66596,7 @@ module.exports = function(object, el){
 };
 
 /***/ },
-/* 563 */
+/* 562 */
 /***/ function(module, exports, __webpack_require__) {
 
 // all object keys, includes non-enumerable and symbols
@@ -66624,7 +66611,7 @@ module.exports = Reflect && Reflect.ownKeys || function ownKeys(it){
 };
 
 /***/ },
-/* 564 */
+/* 563 */
 /***/ function(module, exports) {
 
 // 7.2.9 SameValue(x, y)
@@ -66633,7 +66620,7 @@ module.exports = Object.is || function is(x, y){
 };
 
 /***/ },
-/* 565 */
+/* 564 */
 /***/ function(module, exports, __webpack_require__) {
 
 var global         = __webpack_require__(12)
@@ -66647,18 +66634,18 @@ module.exports = function(name){
 };
 
 /***/ },
-/* 566 */
+/* 565 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 var $export = __webpack_require__(1);
 
-$export($export.P, 'Array', {copyWithin: __webpack_require__(553)});
+$export($export.P, 'Array', {copyWithin: __webpack_require__(552)});
 
 __webpack_require__(95)('copyWithin');
 
 /***/ },
-/* 567 */
+/* 566 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66674,18 +66661,18 @@ $export($export.P + $export.F * !__webpack_require__(34)([].every, true), 'Array
 });
 
 /***/ },
-/* 568 */
+/* 567 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 var $export = __webpack_require__(1);
 
-$export($export.P, 'Array', {fill: __webpack_require__(554)});
+$export($export.P, 'Array', {fill: __webpack_require__(553)});
 
 __webpack_require__(95)('fill');
 
 /***/ },
-/* 569 */
+/* 568 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66701,7 +66688,7 @@ $export($export.P + $export.F * !__webpack_require__(34)([].filter, true), 'Arra
 });
 
 /***/ },
-/* 570 */
+/* 569 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66721,7 +66708,7 @@ $export($export.P + $export.F * forced, 'Array', {
 __webpack_require__(95)(KEY);
 
 /***/ },
-/* 571 */
+/* 570 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66741,7 +66728,7 @@ $export($export.P + $export.F * forced, 'Array', {
 __webpack_require__(95)(KEY);
 
 /***/ },
-/* 572 */
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66758,7 +66745,7 @@ $export($export.P + $export.F * !STRICT, 'Array', {
 });
 
 /***/ },
-/* 573 */
+/* 572 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66802,7 +66789,7 @@ $export($export.S + $export.F * !__webpack_require__(349)(function(iter){ Array.
 
 
 /***/ },
-/* 574 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66823,7 +66810,7 @@ $export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(34)($nati
 });
 
 /***/ },
-/* 575 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
@@ -66832,7 +66819,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Array', {isArray: __webpack_require__(211)});
 
 /***/ },
-/* 576 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66850,7 +66837,7 @@ $export($export.P + $export.F * (__webpack_require__(96) != Object || !__webpack
 });
 
 /***/ },
-/* 577 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66878,7 +66865,7 @@ $export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(34)($nati
 });
 
 /***/ },
-/* 578 */
+/* 577 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66894,7 +66881,7 @@ $export($export.P + $export.F * !__webpack_require__(34)([].map, true), 'Array',
 });
 
 /***/ },
-/* 579 */
+/* 578 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66919,7 +66906,7 @@ $export($export.S + $export.F * __webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 580 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66935,7 +66922,7 @@ $export($export.P + $export.F * !__webpack_require__(34)([].reduceRight, true), 
 });
 
 /***/ },
-/* 581 */
+/* 580 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66951,7 +66938,7 @@ $export($export.P + $export.F * !__webpack_require__(34)([].reduce, true), 'Arra
 });
 
 /***/ },
-/* 582 */
+/* 581 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66985,7 +66972,7 @@ $export($export.P + $export.F * __webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 583 */
+/* 582 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67001,7 +66988,7 @@ $export($export.P + $export.F * !__webpack_require__(34)([].some, true), 'Array'
 });
 
 /***/ },
-/* 584 */
+/* 583 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67030,13 +67017,13 @@ $export($export.P + $export.F * (fails(function(){
 });
 
 /***/ },
-/* 585 */
+/* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(219)('Array');
 
 /***/ },
-/* 586 */
+/* 585 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.3.3.1 / 15.9.4.4 Date.now()
@@ -67045,7 +67032,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Date', {now: function(){ return new Date().getTime(); }});
 
 /***/ },
-/* 587 */
+/* 586 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67079,7 +67066,7 @@ $export($export.P + $export.F * (fails(function(){
 });
 
 /***/ },
-/* 588 */
+/* 587 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67099,16 +67086,16 @@ $export($export.P + $export.F * __webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 589 */
+/* 588 */
 /***/ function(module, exports, __webpack_require__) {
 
 var TO_PRIMITIVE = __webpack_require__(10)('toPrimitive')
   , proto        = Date.prototype;
 
-if(!(TO_PRIMITIVE in proto))__webpack_require__(51)(proto, TO_PRIMITIVE, __webpack_require__(559));
+if(!(TO_PRIMITIVE in proto))__webpack_require__(51)(proto, TO_PRIMITIVE, __webpack_require__(558));
 
 /***/ },
-/* 590 */
+/* 589 */
 /***/ function(module, exports, __webpack_require__) {
 
 var DateProto    = Date.prototype
@@ -67124,7 +67111,7 @@ if(new Date(NaN) + '' != INVALID_DATE){
 }
 
 /***/ },
-/* 591 */
+/* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
@@ -67133,7 +67120,7 @@ var $export = __webpack_require__(1);
 $export($export.P, 'Function', {bind: __webpack_require__(338)});
 
 /***/ },
-/* 592 */
+/* 591 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67152,7 +67139,7 @@ if(!(HAS_INSTANCE in FunctionProto))__webpack_require__(17).f(FunctionProto, HAS
 }});
 
 /***/ },
-/* 593 */
+/* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
 var dP         = __webpack_require__(17).f
@@ -67182,7 +67169,7 @@ NAME in FProto || __webpack_require__(20) && dP(FProto, NAME, {
 });
 
 /***/ },
-/* 594 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.3 Math.acosh(x)
@@ -67205,7 +67192,7 @@ $export($export.S + $export.F * !($acosh
 });
 
 /***/ },
-/* 595 */
+/* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.5 Math.asinh(x)
@@ -67220,7 +67207,7 @@ function asinh(x){
 $export($export.S + $export.F * !($asinh && 1 / $asinh(0) > 0), 'Math', {asinh: asinh});
 
 /***/ },
-/* 596 */
+/* 595 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.7 Math.atanh(x)
@@ -67235,7 +67222,7 @@ $export($export.S + $export.F * !($atanh && 1 / $atanh(-0) < 0), 'Math', {
 });
 
 /***/ },
-/* 597 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.9 Math.cbrt(x)
@@ -67249,7 +67236,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 598 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.11 Math.clz32(x)
@@ -67262,7 +67249,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 599 */
+/* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.12 Math.cosh(x)
@@ -67276,7 +67263,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 600 */
+/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.14 Math.expm1(x)
@@ -67286,7 +67273,7 @@ var $export = __webpack_require__(1)
 $export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', {expm1: $expm1});
 
 /***/ },
-/* 601 */
+/* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.16 Math.fround(x)
@@ -67317,7 +67304,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 602 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.17 Math.hypot([value1[, value2[, … ]]])
@@ -67347,7 +67334,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 603 */
+/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.18 Math.imul(x, y)
@@ -67369,7 +67356,7 @@ $export($export.S + $export.F * __webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 604 */
+/* 603 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.21 Math.log10(x)
@@ -67382,7 +67369,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 605 */
+/* 604 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.20 Math.log1p(x)
@@ -67391,7 +67378,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Math', {log1p: __webpack_require__(351)});
 
 /***/ },
-/* 606 */
+/* 605 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.22 Math.log2(x)
@@ -67404,7 +67391,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 607 */
+/* 606 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.28 Math.sign(x)
@@ -67413,7 +67400,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Math', {sign: __webpack_require__(216)});
 
 /***/ },
-/* 608 */
+/* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.30 Math.sinh(x)
@@ -67433,7 +67420,7 @@ $export($export.S + $export.F * __webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 609 */
+/* 608 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.33 Math.tanh(x)
@@ -67450,7 +67437,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 610 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.34 Math.trunc(x)
@@ -67463,7 +67450,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 611 */
+/* 610 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67475,7 +67462,7 @@ var global            = __webpack_require__(12)
   , toPrimitive       = __webpack_require__(70)
   , fails             = __webpack_require__(5)
   , gOPN              = __webpack_require__(98).f
-  , gOPD              = __webpack_require__(61).f
+  , gOPD              = __webpack_require__(62).f
   , dP                = __webpack_require__(17).f
   , $trim             = __webpack_require__(146).trim
   , NUMBER            = 'Number'
@@ -67538,7 +67525,7 @@ if(!$Number(' 0o1') || !$Number('0b1') || $Number('+0x1')){
 }
 
 /***/ },
-/* 612 */
+/* 611 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.1 Number.EPSILON
@@ -67547,7 +67534,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Number', {EPSILON: Math.pow(2, -52)});
 
 /***/ },
-/* 613 */
+/* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.2 Number.isFinite(number)
@@ -67561,7 +67548,7 @@ $export($export.S, 'Number', {
 });
 
 /***/ },
-/* 614 */
+/* 613 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.3 Number.isInteger(number)
@@ -67570,7 +67557,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Number', {isInteger: __webpack_require__(346)});
 
 /***/ },
-/* 615 */
+/* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.4 Number.isNaN(number)
@@ -67583,7 +67570,7 @@ $export($export.S, 'Number', {
 });
 
 /***/ },
-/* 616 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.5 Number.isSafeInteger(number)
@@ -67598,7 +67585,7 @@ $export($export.S, 'Number', {
 });
 
 /***/ },
-/* 617 */
+/* 616 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.6 Number.MAX_SAFE_INTEGER
@@ -67607,7 +67594,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Number', {MAX_SAFE_INTEGER: 0x1fffffffffffff});
 
 /***/ },
-/* 618 */
+/* 617 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.10 Number.MIN_SAFE_INTEGER
@@ -67616,7 +67603,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Number', {MIN_SAFE_INTEGER: -0x1fffffffffffff});
 
 /***/ },
-/* 619 */
+/* 618 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export     = __webpack_require__(1)
@@ -67625,7 +67612,7 @@ var $export     = __webpack_require__(1)
 $export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {parseFloat: $parseFloat});
 
 /***/ },
-/* 620 */
+/* 619 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export   = __webpack_require__(1)
@@ -67634,7 +67621,7 @@ var $export   = __webpack_require__(1)
 $export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parseInt: $parseInt});
 
 /***/ },
-/* 621 */
+/* 620 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67753,7 +67740,7 @@ $export($export.P + $export.F * (!!$toFixed && (
 });
 
 /***/ },
-/* 622 */
+/* 621 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67777,7 +67764,7 @@ $export($export.P + $export.F * ($fails(function(){
 });
 
 /***/ },
-/* 623 */
+/* 622 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.3.1 Object.assign(target, source)
@@ -67786,7 +67773,7 @@ var $export = __webpack_require__(1);
 $export($export.S + $export.F, 'Object', {assign: __webpack_require__(352)});
 
 /***/ },
-/* 624 */
+/* 623 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(1)
@@ -67794,7 +67781,7 @@ var $export = __webpack_require__(1)
 $export($export.S, 'Object', {create: __webpack_require__(79)});
 
 /***/ },
-/* 625 */
+/* 624 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(1);
@@ -67802,7 +67789,7 @@ var $export = __webpack_require__(1);
 $export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(353)});
 
 /***/ },
-/* 626 */
+/* 625 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(1);
@@ -67810,12 +67797,12 @@ var $export = __webpack_require__(1);
 $export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperty: __webpack_require__(17).f});
 
 /***/ },
-/* 627 */
+/* 626 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.5 Object.freeze(O)
 var isObject = __webpack_require__(8)
-  , meta     = __webpack_require__(60).onFreeze;
+  , meta     = __webpack_require__(61).onFreeze;
 
 __webpack_require__(41)('freeze', function($freeze){
   return function freeze(it){
@@ -67824,12 +67811,12 @@ __webpack_require__(41)('freeze', function($freeze){
 });
 
 /***/ },
-/* 628 */
+/* 627 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
 var toIObject                 = __webpack_require__(35)
-  , $getOwnPropertyDescriptor = __webpack_require__(61).f;
+  , $getOwnPropertyDescriptor = __webpack_require__(62).f;
 
 __webpack_require__(41)('getOwnPropertyDescriptor', function(){
   return function getOwnPropertyDescriptor(it, key){
@@ -67838,7 +67825,7 @@ __webpack_require__(41)('getOwnPropertyDescriptor', function(){
 });
 
 /***/ },
-/* 629 */
+/* 628 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.7 Object.getOwnPropertyNames(O)
@@ -67847,7 +67834,7 @@ __webpack_require__(41)('getOwnPropertyNames', function(){
 });
 
 /***/ },
-/* 630 */
+/* 629 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 Object.getPrototypeOf(O)
@@ -67861,7 +67848,7 @@ __webpack_require__(41)('getPrototypeOf', function(){
 });
 
 /***/ },
-/* 631 */
+/* 630 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.11 Object.isExtensible(O)
@@ -67874,7 +67861,7 @@ __webpack_require__(41)('isExtensible', function($isExtensible){
 });
 
 /***/ },
-/* 632 */
+/* 631 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.12 Object.isFrozen(O)
@@ -67887,7 +67874,7 @@ __webpack_require__(41)('isFrozen', function($isFrozen){
 });
 
 /***/ },
-/* 633 */
+/* 632 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.13 Object.isSealed(O)
@@ -67900,15 +67887,15 @@ __webpack_require__(41)('isSealed', function($isSealed){
 });
 
 /***/ },
-/* 634 */
+/* 633 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.3.10 Object.is(value1, value2)
 var $export = __webpack_require__(1);
-$export($export.S, 'Object', {is: __webpack_require__(564)});
+$export($export.S, 'Object', {is: __webpack_require__(563)});
 
 /***/ },
-/* 635 */
+/* 634 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 Object.keys(O)
@@ -67922,12 +67909,12 @@ __webpack_require__(41)('keys', function(){
 });
 
 /***/ },
-/* 636 */
+/* 635 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.15 Object.preventExtensions(O)
 var isObject = __webpack_require__(8)
-  , meta     = __webpack_require__(60).onFreeze;
+  , meta     = __webpack_require__(61).onFreeze;
 
 __webpack_require__(41)('preventExtensions', function($preventExtensions){
   return function preventExtensions(it){
@@ -67936,12 +67923,12 @@ __webpack_require__(41)('preventExtensions', function($preventExtensions){
 });
 
 /***/ },
-/* 637 */
+/* 636 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.17 Object.seal(O)
 var isObject = __webpack_require__(8)
-  , meta     = __webpack_require__(60).onFreeze;
+  , meta     = __webpack_require__(61).onFreeze;
 
 __webpack_require__(41)('seal', function($seal){
   return function seal(it){
@@ -67950,7 +67937,7 @@ __webpack_require__(41)('seal', function($seal){
 });
 
 /***/ },
-/* 638 */
+/* 637 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.3.19 Object.setPrototypeOf(O, proto)
@@ -67958,7 +67945,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(218).set});
 
 /***/ },
-/* 639 */
+/* 638 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export     = __webpack_require__(1)
@@ -67967,7 +67954,7 @@ var $export     = __webpack_require__(1)
 $export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parseFloat});
 
 /***/ },
-/* 640 */
+/* 639 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export   = __webpack_require__(1)
@@ -67976,7 +67963,7 @@ var $export   = __webpack_require__(1)
 $export($export.G + $export.F * (parseInt != $parseInt), {parseInt: $parseInt});
 
 /***/ },
-/* 641 */
+/* 640 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.1 Reflect.apply(target, thisArgument, argumentsList)
@@ -67997,7 +67984,7 @@ $export($export.S + $export.F * !__webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 642 */
+/* 641 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
@@ -68049,7 +68036,7 @@ $export($export.S + $export.F * (NEW_TARGET_BUG || ARGS_BUG), 'Reflect', {
 });
 
 /***/ },
-/* 643 */
+/* 642 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
@@ -68076,12 +68063,12 @@ $export($export.S + $export.F * __webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 644 */
+/* 643 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.4 Reflect.deleteProperty(target, propertyKey)
 var $export  = __webpack_require__(1)
-  , gOPD     = __webpack_require__(61).f
+  , gOPD     = __webpack_require__(62).f
   , anObject = __webpack_require__(4);
 
 $export($export.S, 'Reflect', {
@@ -68092,7 +68079,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 645 */
+/* 644 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68124,11 +68111,11 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 646 */
+/* 645 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
-var gOPD     = __webpack_require__(61)
+var gOPD     = __webpack_require__(62)
   , $export  = __webpack_require__(1)
   , anObject = __webpack_require__(4);
 
@@ -68139,7 +68126,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 647 */
+/* 646 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.8 Reflect.getPrototypeOf(target)
@@ -68154,11 +68141,11 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 648 */
+/* 647 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.6 Reflect.get(target, propertyKey [, receiver])
-var gOPD           = __webpack_require__(61)
+var gOPD           = __webpack_require__(62)
   , getPrototypeOf = __webpack_require__(53)
   , has            = __webpack_require__(26)
   , $export        = __webpack_require__(1)
@@ -68180,7 +68167,7 @@ function get(target, propertyKey/*, receiver*/){
 $export($export.S, 'Reflect', {get: get});
 
 /***/ },
-/* 649 */
+/* 648 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.9 Reflect.has(target, propertyKey)
@@ -68193,7 +68180,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 650 */
+/* 649 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.10 Reflect.isExtensible(target)
@@ -68209,16 +68196,16 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 651 */
+/* 650 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.11 Reflect.ownKeys(target)
 var $export = __webpack_require__(1);
 
-$export($export.S, 'Reflect', {ownKeys: __webpack_require__(563)});
+$export($export.S, 'Reflect', {ownKeys: __webpack_require__(562)});
 
 /***/ },
-/* 652 */
+/* 651 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.12 Reflect.preventExtensions(target)
@@ -68239,7 +68226,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 653 */
+/* 652 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.14 Reflect.setPrototypeOf(target, proto)
@@ -68259,12 +68246,12 @@ if(setProto)$export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 654 */
+/* 653 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
 var dP             = __webpack_require__(17)
-  , gOPD           = __webpack_require__(61)
+  , gOPD           = __webpack_require__(62)
   , getPrototypeOf = __webpack_require__(53)
   , has            = __webpack_require__(26)
   , $export        = __webpack_require__(1)
@@ -68295,7 +68282,7 @@ function set(target, propertyKey, V/*, receiver*/){
 $export($export.S, 'Reflect', {set: set});
 
 /***/ },
-/* 655 */
+/* 654 */
 /***/ function(module, exports, __webpack_require__) {
 
 var global            = __webpack_require__(12)
@@ -68343,7 +68330,7 @@ if(__webpack_require__(20) && (!CORRECT_NEW || __webpack_require__(5)(function()
 __webpack_require__(219)('RegExp');
 
 /***/ },
-/* 656 */
+/* 655 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68374,7 +68361,7 @@ if(__webpack_require__(5)(function(){ return $toString.call({source: 'a', flags:
 }
 
 /***/ },
-/* 657 */
+/* 656 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68387,7 +68374,7 @@ __webpack_require__(28)('anchor', function(createHTML){
 });
 
 /***/ },
-/* 658 */
+/* 657 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68400,7 +68387,7 @@ __webpack_require__(28)('big', function(createHTML){
 });
 
 /***/ },
-/* 659 */
+/* 658 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68413,7 +68400,7 @@ __webpack_require__(28)('blink', function(createHTML){
 });
 
 /***/ },
-/* 660 */
+/* 659 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68426,7 +68413,7 @@ __webpack_require__(28)('bold', function(createHTML){
 });
 
 /***/ },
-/* 661 */
+/* 660 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68441,7 +68428,7 @@ $export($export.P, 'String', {
 });
 
 /***/ },
-/* 662 */
+/* 661 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68467,7 +68454,7 @@ $export($export.P + $export.F * __webpack_require__(208)(ENDS_WITH), 'String', {
 });
 
 /***/ },
-/* 663 */
+/* 662 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68480,7 +68467,7 @@ __webpack_require__(28)('fixed', function(createHTML){
 });
 
 /***/ },
-/* 664 */
+/* 663 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68493,7 +68480,7 @@ __webpack_require__(28)('fontcolor', function(createHTML){
 });
 
 /***/ },
-/* 665 */
+/* 664 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68506,7 +68493,7 @@ __webpack_require__(28)('fontsize', function(createHTML){
 });
 
 /***/ },
-/* 666 */
+/* 665 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export        = __webpack_require__(1)
@@ -68534,7 +68521,7 @@ $export($export.S + $export.F * (!!$fromCodePoint && $fromCodePoint.length != 1)
 });
 
 /***/ },
-/* 667 */
+/* 666 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68552,7 +68539,7 @@ $export($export.P + $export.F * __webpack_require__(208)(INCLUDES), 'String', {
 });
 
 /***/ },
-/* 668 */
+/* 667 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68565,7 +68552,7 @@ __webpack_require__(28)('italics', function(createHTML){
 });
 
 /***/ },
-/* 669 */
+/* 668 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68578,7 +68565,7 @@ __webpack_require__(28)('link', function(createHTML){
 });
 
 /***/ },
-/* 670 */
+/* 669 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export   = __webpack_require__(1)
@@ -68601,7 +68588,7 @@ $export($export.S, 'String', {
 });
 
 /***/ },
-/* 671 */
+/* 670 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(1);
@@ -68612,7 +68599,7 @@ $export($export.P, 'String', {
 });
 
 /***/ },
-/* 672 */
+/* 671 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68625,7 +68612,7 @@ __webpack_require__(28)('small', function(createHTML){
 });
 
 /***/ },
-/* 673 */
+/* 672 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68649,7 +68636,7 @@ $export($export.P + $export.F * __webpack_require__(208)(STARTS_WITH), 'String',
 });
 
 /***/ },
-/* 674 */
+/* 673 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68662,7 +68649,7 @@ __webpack_require__(28)('strike', function(createHTML){
 });
 
 /***/ },
-/* 675 */
+/* 674 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68675,7 +68662,7 @@ __webpack_require__(28)('sub', function(createHTML){
 });
 
 /***/ },
-/* 676 */
+/* 675 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68688,7 +68675,7 @@ __webpack_require__(28)('sup', function(createHTML){
 });
 
 /***/ },
-/* 677 */
+/* 676 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68701,16 +68688,16 @@ __webpack_require__(146)('trim', function($trim){
 });
 
 /***/ },
-/* 678 */
+/* 677 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 'use strict';
 var each         = __webpack_require__(49)(0)
   , redefine     = __webpack_require__(27)
-  , meta         = __webpack_require__(60)
+  , meta         = __webpack_require__(61)
   , assign       = __webpack_require__(352)
-  , weak         = __webpack_require__(558)
+  , weak         = __webpack_require__(557)
   , isObject     = __webpack_require__(8)
   , getWeak      = meta.getWeak
   , isExtensible = Object.isExtensible
@@ -68763,7 +68750,7 @@ if(new $WeakMap().set((Object.freeze || Object)(tmp), 7).get(tmp) != 7){
 }
 
 /***/ },
-/* 679 */
+/* 678 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata                  = __webpack_require__(52)
@@ -68776,7 +68763,7 @@ metadata.exp({defineMetadata: function defineMetadata(metadataKey, metadataValue
 }});
 
 /***/ },
-/* 680 */
+/* 679 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(52)
@@ -68796,11 +68783,11 @@ metadata.exp({deleteMetadata: function deleteMetadata(metadataKey, target /*, ta
 }});
 
 /***/ },
-/* 681 */
+/* 680 */
 /***/ function(module, exports, __webpack_require__) {
 
 var Set                     = __webpack_require__(369)
-  , from                    = __webpack_require__(555)
+  , from                    = __webpack_require__(554)
   , metadata                = __webpack_require__(52)
   , anObject                = __webpack_require__(4)
   , getPrototypeOf          = __webpack_require__(53)
@@ -68820,7 +68807,7 @@ metadata.exp({getMetadataKeys: function getMetadataKeys(target /*, targetKey */)
 }});
 
 /***/ },
-/* 682 */
+/* 681 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(52)
@@ -68842,7 +68829,7 @@ metadata.exp({getMetadata: function getMetadata(metadataKey, target /*, targetKe
 }});
 
 /***/ },
-/* 683 */
+/* 682 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata                = __webpack_require__(52)
@@ -68855,7 +68842,7 @@ metadata.exp({getOwnMetadataKeys: function getOwnMetadataKeys(target /*, targetK
 }});
 
 /***/ },
-/* 684 */
+/* 683 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(52)
@@ -68869,7 +68856,7 @@ metadata.exp({getOwnMetadata: function getOwnMetadata(metadataKey, target /*, ta
 }});
 
 /***/ },
-/* 685 */
+/* 684 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(52)
@@ -68890,7 +68877,7 @@ metadata.exp({hasMetadata: function hasMetadata(metadataKey, target /*, targetKe
 }});
 
 /***/ },
-/* 686 */
+/* 685 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(52)
@@ -68904,7 +68891,7 @@ metadata.exp({hasOwnMetadata: function hasOwnMetadata(metadataKey, target /*, ta
 }});
 
 /***/ },
-/* 687 */
+/* 686 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata                  = __webpack_require__(52)
@@ -68924,6 +68911,7 @@ metadata.exp({metadata: function metadata(metadataKey, metadataValue){
 }});
 
 /***/ },
+/* 687 */,
 /* 688 */,
 /* 689 */,
 /* 690 */,
@@ -68936,8 +68924,7 @@ metadata.exp({metadata: function metadata(metadataKey, metadataValue){
 /* 697 */,
 /* 698 */,
 /* 699 */,
-/* 700 */,
-/* 701 */
+/* 700 */
 /***/ function(module, exports) {
 
 // shim for using process in browser
@@ -69123,29 +69110,35 @@ process.umask = function() { return 0; };
 
 
 /***/ },
-/* 702 */,
-/* 703 */
+/* 701 */,
+/* 702 */
 /***/ function(module, exports) {
 
 module.exports = "<div [class]=\"class\">\n  <input type=\"hidden\" [(ngModel)]=\"viewDate\">\n  <div class=\"ui-kit-calendar-input\" [class.opened]=\"opened || expanded\" (click)=\"toggle()\">\n    <span [class.opened]=\"opened || expanded\">{{ viewDate }}</span>\n    <i class=\"calendar icon\"></i>\n  </div>\n  <div class=\"ui-kit-calendar-cal-container\" [class.opened]=\"opened\">\n    <div class=\"ui-kit-calendar-cal-top\">\n      <i class=\"angle double left icon\" (click)=\"prevMonth()\"></i>\n      <span>{{ date.format('MMMM YYYY') }}</span>\n      <i class=\"angle double right icon\" (click)=\"nextMonth()\"></i>\n    </div>\n    <div class=\"ui-kit-calendar-day-names\">\n      <span>Mon</span>\n      <span>Tue</span>\n      <span>Wed</span>\n      <span>Thu</span>\n      <span>Fri</span>\n      <span>Sat</span>\n      <span>Sun</span>\n    </div>\n    <div class=\"ui-kit-calendar-days\">\n      <span *ngFor=\"let d of days; let i = index;\"\n            (click)=\"selectDate($event, i)\"\n            [class.today]=\"d.today\"\n            [class.is-active]=\"d.selected\">\n        {{ d.day }}\n      </span>\n    </div>\n  </div>\n</div>\n"
 
 /***/ },
-/* 704 */
+/* 703 */
 /***/ function(module, exports) {
 
 module.exports = ".ui-kit-calendar-container {\n  position: relative;\n  width: 230px;\n  margin: 0 10px 0 0;\n  display: block;\n  float: left;\n  z-index: 99; }\n  .ui-kit-calendar-container .ui-kit-calendar-input {\n    border: 1px solid #aec9de;\n    border-radius: 10px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 70px;\n    height: 40px;\n    background: #fcfcff;\n    cursor: pointer;\n    text-align: center;\n    font-size: 0;\n    transition: all 300ms ease; }\n    .ui-kit-calendar-container .ui-kit-calendar-input i {\n      color: #505b71;\n      font-size: 20px; }\n    .ui-kit-calendar-container .ui-kit-calendar-input.opened {\n      width: 170px;\n      border: 1px solid #44c8f9;\n      color: #44c8f9;\n      background: rgba(68, 200, 249, 0.15);\n      font-size: 12px; }\n      .ui-kit-calendar-container .ui-kit-calendar-input.opened i {\n        color: #44c8f9; }\n    .ui-kit-calendar-container .ui-kit-calendar-input span {\n      display: none; }\n      .ui-kit-calendar-container .ui-kit-calendar-input span.opened {\n        display: inline;\n        margin-right: 10px; }\n  .ui-kit-calendar-container .ui-kit-calendar-cal-container {\n    position: absolute;\n    top: 55px;\n    /*right: 0;*/\n    color: #fff;\n    background: #44c8f9;\n    display: inline-block;\n    width: 100%;\n    border-radius: 3px;\n    visibility: hidden;\n    opacity: 0;\n    transition: visibility 0s, opacity 300ms linear 300ms; }\n    .ui-kit-calendar-container .ui-kit-calendar-cal-container.opened {\n      visibility: visible;\n      opacity: 1; }\n    .ui-kit-calendar-container .ui-kit-calendar-cal-container:after {\n      position: absolute;\n      top: -15px;\n      right: 28px;\n      content: \"\";\n      width: 0;\n      height: 0;\n      border-top: 15px solid transparent;\n      border-bottom: 15px solid transparent;\n      border-left: 15px solid #44c8f9;\n      transform: rotate(-90deg); }\n    .ui-kit-calendar-container .ui-kit-calendar-cal-container .ui-kit-calendar-cal-top {\n      width: 100%;\n      height: 40px;\n      line-height: 40px; }\n      .ui-kit-calendar-container .ui-kit-calendar-cal-container .ui-kit-calendar-cal-top i {\n        display: block;\n        float: left;\n        font-size: 16px;\n        /*width: 30px;*/\n        width: 15%;\n        height: 40px;\n        text-align: center;\n        cursor: pointer; }\n      .ui-kit-calendar-container .ui-kit-calendar-cal-container .ui-kit-calendar-cal-top span {\n        display: block;\n        float: left;\n        width: 55%;\n        height: 40px;\n        font-size: 14px;\n        text-align: center; }\n    .ui-kit-calendar-container .ui-kit-calendar-cal-container .ui-kit-calendar-day-names {\n      width: 100%;\n      height: 23px;\n      background: #35b1e2; }\n      .ui-kit-calendar-container .ui-kit-calendar-cal-container .ui-kit-calendar-day-names span {\n        font-size: 10px;\n        line-height: 23px;\n        text-align: center;\n        display: block;\n        float: left;\n        width: calc(100% / 7);\n        height: 23px; }\n    .ui-kit-calendar-container .ui-kit-calendar-cal-container .ui-kit-calendar-days {\n      width: 100%;\n      padding: 5px 0;\n      margin-bottom: 15px; }\n      .ui-kit-calendar-container .ui-kit-calendar-cal-container .ui-kit-calendar-days span {\n        font-size: 12px;\n        display: block;\n        float: left;\n        text-align: center;\n        height: 40px;\n        line-height: 40px;\n        width: calc(100% / 7);\n        cursor: pointer;\n        border-radius: 50%; }\n        .ui-kit-calendar-container .ui-kit-calendar-cal-container .ui-kit-calendar-days span.today {\n          border: 1px solid #fff; }\n        .ui-kit-calendar-container .ui-kit-calendar-cal-container .ui-kit-calendar-days span:hover, .ui-kit-calendar-container .ui-kit-calendar-cal-container .ui-kit-calendar-days span.is-active {\n          background: #fff;\n          color: #44c8f9; }\n  .ui-kit-calendar-container .ui-kit-calendar-input {\n    border: 1px solid #aec9de;\n    border-radius: 10px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 70px;\n    height: 40px;\n    background: #fcfcff;\n    cursor: pointer;\n    text-align: center;\n    font-size: 0;\n    transition: all 300ms ease; }\n    .ui-kit-calendar-container .ui-kit-calendar-input i {\n      color: #505b71;\n      font-size: 20px; }\n    .ui-kit-calendar-container .ui-kit-calendar-input.opened {\n      width: 170px;\n      border: 1px solid #44c8f9;\n      color: #44c8f9;\n      background: rgba(68, 200, 249, 0.15);\n      font-size: 12px; }\n      .ui-kit-calendar-container .ui-kit-calendar-input.opened i {\n        color: #44c8f9; }\n    .ui-kit-calendar-container .ui-kit-calendar-input span {\n      display: none; }\n      .ui-kit-calendar-container .ui-kit-calendar-input span.opened {\n        display: inline;\n        margin-right: 10px; }\n  .ui-kit-calendar-container.danger .ui-kit-calendar-input.opened {\n    color: #e2747e;\n    background: rgba(226, 116, 126, 0.15);\n    border: 1px solid #e2747e; }\n    .ui-kit-calendar-container.danger .ui-kit-calendar-input.opened i {\n      color: #e2747e; }\n  .ui-kit-calendar-container.danger .ui-kit-calendar-cal-container {\n    background: #e2747e; }\n    .ui-kit-calendar-container.danger .ui-kit-calendar-cal-container:after {\n      border-left: 15px solid #e2747e; }\n    .ui-kit-calendar-container.danger .ui-kit-calendar-cal-container .ui-kit-calendar-day-names {\n      background: #c72938; }\n    .ui-kit-calendar-container.danger .ui-kit-calendar-cal-container .ui-kit-calendar-days span:hover, .ui-kit-calendar-container.danger .ui-kit-calendar-cal-container .ui-kit-calendar-days span.is-active {\n      color: #e2747e; }\n  .ui-kit-calendar-container.warning .ui-kit-calendar-input.opened {\n    color: #f4bf4d;\n    background: rgba(244, 191, 77, 0.15);\n    border: 1px solid #f4bf4d; }\n    .ui-kit-calendar-container.warning .ui-kit-calendar-input.opened i {\n      color: #f4bf4d; }\n  .ui-kit-calendar-container.warning .ui-kit-calendar-cal-container {\n    background: #f4bf4d; }\n    .ui-kit-calendar-container.warning .ui-kit-calendar-cal-container:after {\n      border-left: 15px solid #f4bf4d; }\n    .ui-kit-calendar-container.warning .ui-kit-calendar-cal-container .ui-kit-calendar-day-names {\n      background: #ce910d; }\n    .ui-kit-calendar-container.warning .ui-kit-calendar-cal-container .ui-kit-calendar-days span:hover, .ui-kit-calendar-container.warning .ui-kit-calendar-cal-container .ui-kit-calendar-days span.is-active {\n      color: #f4bf4d; }\n  .ui-kit-calendar-container.success .ui-kit-calendar-input.opened {\n    color: #3fc59d;\n    background: rgba(63, 197, 157, 0.15);\n    border: 1px solid #3fc59d; }\n    .ui-kit-calendar-container.success .ui-kit-calendar-input.opened i {\n      color: #3fc59d; }\n  .ui-kit-calendar-container.success .ui-kit-calendar-cal-container {\n    background: #3fc59d; }\n    .ui-kit-calendar-container.success .ui-kit-calendar-cal-container:after {\n      border-left: 15px solid #3fc59d; }\n    .ui-kit-calendar-container.success .ui-kit-calendar-cal-container .ui-kit-calendar-day-names {\n      background: #257960; }\n    .ui-kit-calendar-container.success .ui-kit-calendar-cal-container .ui-kit-calendar-days span:hover, .ui-kit-calendar-container.success .ui-kit-calendar-cal-container .ui-kit-calendar-days span.is-active {\n      color: #3fc59d; }\n"
 
 /***/ },
-/* 705 */
+/* 704 */
 /***/ function(module, exports) {
 
 module.exports = ""
 
 /***/ },
-/* 706 */
+/* 705 */
 /***/ function(module, exports) {
 
 module.exports = ".rr-ad-box{\r\n    margin: 0px!important;\r\n}"
+
+/***/ },
+/* 706 */
+/***/ function(module, exports) {
+
+module.exports = ""
 
 /***/ },
 /* 707 */
@@ -69163,25 +69156,25 @@ module.exports = ""
 /* 709 */
 /***/ function(module, exports) {
 
-module.exports = ""
+module.exports = ".rr-dash-menu .active{\r\n  border-bottom: 2px solid #fff!important;\r\n}\r\n"
 
 /***/ },
 /* 710 */
 /***/ function(module, exports) {
 
-module.exports = ".rr-dash-menu .active{\r\n  border-bottom: 2px solid #fff!important;\r\n}\r\n"
+module.exports = ""
 
 /***/ },
 /* 711 */
 /***/ function(module, exports) {
 
-module.exports = ""
+module.exports = ".rr-fileinput-box{\r\n  width: 200px;\r\n  height: 200px;\r\n  border: 1px solid lightblue;\r\n  margin: 10px;\r\n  /*centre div*/\r\n  text-align: center;\r\n  vertical-align: middle;\r\n  line-height: 200px;\r\n}\r\n.inputfile{\r\n  width: 0.1px;\r\n  height: 0.1px;\r\n  opacity: 0;\r\n  overflow: hidden;\r\n  position: absolute;\r\n  z-index: -1;\r\n  cursor: pointer;\r\n}\r\n\r\n.imgbox{\r\n  width: 200px;\r\n  height: 220px;\r\n  margin: 10px;\r\n}\r\n.imgbox img{\r\n  width: 200px;\r\n  height: 200px;\r\n}\r\n"
 
 /***/ },
 /* 712 */
 /***/ function(module, exports) {
 
-module.exports = ".rr-fileinput-box{\r\n  width: 200px;\r\n  height: 200px;\r\n  border: 1px solid lightblue;\r\n  margin: 10px;\r\n  /*centre div*/\r\n  text-align: center;\r\n  vertical-align: middle;\r\n  line-height: 200px;\r\n}\r\n.inputfile{\r\n  width: 0.1px;\r\n  height: 0.1px;\r\n  opacity: 0;\r\n  overflow: hidden;\r\n  position: absolute;\r\n  z-index: -1;\r\n  cursor: pointer;\r\n}\r\n\r\n.imgbox{\r\n  width: 200px;\r\n  height: 220px;\r\n  margin: 10px;\r\n}\r\n.imgbox img{\r\n  width: 200px;\r\n  height: 200px;\r\n}\r\n"
+module.exports = ""
 
 /***/ },
 /* 713 */
@@ -69199,49 +69192,49 @@ module.exports = ""
 /* 715 */
 /***/ function(module, exports) {
 
-module.exports = ""
+module.exports = ".rr-side-step{\r\n  margin-left: 10px;\r\n}\r\n"
 
 /***/ },
 /* 716 */
 /***/ function(module, exports) {
 
-module.exports = ".rr-side-step{\r\n  margin-left: 10px;\r\n}\r\n"
+module.exports = ""
 
 /***/ },
 /* 717 */
 /***/ function(module, exports) {
 
-module.exports = ""
+module.exports = ".box {\r\n    color: #fff;\r\n    font-size: 3vw;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n.module--horizontal {\r\n    width: 100%;\r\n    height: 500px;\r\n    overflow: hidden;\r\n}\r\n.module--horizontal .box {\r\n    width: 100%;\r\n    height: 500px;\r\n}"
 
 /***/ },
 /* 718 */
 /***/ function(module, exports) {
 
-module.exports = ".box {\r\n    color: #fff;\r\n    font-size: 3vw;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n.module--horizontal {\r\n    width: 100%;\r\n    height: 500px;\r\n    overflow: hidden;\r\n}\r\n.module--horizontal .box {\r\n    width: 100%;\r\n    height: 500px;\r\n}"
+module.exports = ".rr-field-title{\n  font-size: 19px;\n  line-height: 20px;\n  line-height: 16px;\n  margin-top: 10px;\n}\n.rr-field-content{\n  font-size: 19px;\n}\n.rr-shape-shift{\n  background-color: #f9f9f9;\n  border-radius: 5px;\n  padding-top: 20px!important;\n  padding-left: 20px!important;\n}\n.rr-shape-shift .side{\n  width: 90%;\n  height: 90%;\n  /*border: 2px solid red;*/\n}\n.rr-shape-shift .shape{\n  width: 100%;\n}\n"
 
 /***/ },
 /* 719 */
 /***/ function(module, exports) {
 
-module.exports = ".rr-field-title{\n  font-size: 19px;\n  line-height: 20px;\n  line-height: 16px;\n  margin-top: 10px;\n}\n.rr-field-content{\n  font-size: 19px;\n}\n.rr-shape-shift{\n  background-color: #f9f9f9;\n  border-radius: 5px;\n  padding-top: 20px!important;\n  padding-left: 20px!important;\n}\n.rr-shape-shift .side{\n  width: 90%;\n  height: 90%;\n  /*border: 2px solid red;*/\n}\n.rr-shape-shift .shape{\n  width: 100%;\n}\n"
+module.exports = ""
 
 /***/ },
 /* 720 */
 /***/ function(module, exports) {
 
-module.exports = ""
+module.exports = ".sub-head{\r\n  font-size: 16px;\r\n  font-weight: normal;\r\n  color: #a8a8a2;\r\n}\r\n\r\n\r\n.wave{\r\n  background:\r\n    linear-gradient(to right, white, white);\r\n  height: 5px;\r\n  position: relative;\r\n}\r\n.wave::before{\r\n  content: \"\";\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 0;\r\n  right: 0;\r\n  background-repeat: repeat;\r\n  height: 10px;\r\n  background-size: 20px 20px;\r\n  background-image:\r\n    radial-gradient(circle at 10px -5px, transparent 12px, lightgreen 13px);\r\n}\r\n.wave::after{\r\n  content: \"\";\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 0;\r\n  right: 0;\r\n  background-repeat: repeat;\r\n  height: 15px;\r\n  background-size: 40px 20px;\r\n  background-image:\r\n    radial-gradient(circle at 10px 15px, lightgreen 12px, transparent 13px);\r\n}\r\n\r\n.rr-success-msg {\r\n  width: 100%;\r\n  text-align: center;\r\n  padding: 0!important;\r\n}\r\n.rr-success-msg .dub{\r\n  text-align: center;\r\n  width: 100%;\r\n  background-color: lightgreen;\r\n  padding: 0!important;\r\n}\r\n.rr-success-msg .top{\r\n  width: 100%;\r\n  background-color: #fff;\r\n  padding: 0!important;\r\n}\r\n\r\n"
 
 /***/ },
 /* 721 */
 /***/ function(module, exports) {
 
-module.exports = ".sub-head{\r\n  font-size: 16px;\r\n  font-weight: normal;\r\n  color: #a8a8a2;\r\n}\r\n\r\n\r\n.wave{\r\n  background:\r\n    linear-gradient(to right, white, white);\r\n  height: 5px;\r\n  position: relative;\r\n}\r\n.wave::before{\r\n  content: \"\";\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 0;\r\n  right: 0;\r\n  background-repeat: repeat;\r\n  height: 10px;\r\n  background-size: 20px 20px;\r\n  background-image:\r\n    radial-gradient(circle at 10px -5px, transparent 12px, lightgreen 13px);\r\n}\r\n.wave::after{\r\n  content: \"\";\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 0;\r\n  right: 0;\r\n  background-repeat: repeat;\r\n  height: 15px;\r\n  background-size: 40px 20px;\r\n  background-image:\r\n    radial-gradient(circle at 10px 15px, lightgreen 12px, transparent 13px);\r\n}\r\n\r\n.rr-success-msg {\r\n  width: 100%;\r\n  text-align: center;\r\n  padding: 0!important;\r\n}\r\n.rr-success-msg .dub{\r\n  text-align: center;\r\n  width: 100%;\r\n  background-color: lightgreen;\r\n  padding: 0!important;\r\n}\r\n.rr-success-msg .top{\r\n  width: 100%;\r\n  background-color: #fff;\r\n  padding: 0!important;\r\n}\r\n\r\n"
+module.exports = ".rr-campaign-tab-box {\n  width: 100%;\n  padding-top: 30px;\n  background-color: #f7f7f9;\n  margin-top: 30px;\n}\n.rr-campaign-page{\n  border-top: 2px solid lightgray;\n  margin-top: 10px;\n  padding-top: 20px;\n}\n.rr-cover-img{\n  width: 100%;\n  height: 370px;\n}\n"
 
 /***/ },
 /* 722 */
 /***/ function(module, exports) {
 
-module.exports = ".rr-campaign-tab-box {\n  width: 100%;\n  padding-top: 30px;\n  background-color: #f7f7f9;\n  margin-top: 30px;\n}\n.rr-campaign-page{\n  border-top: 2px solid lightgray;\n  margin-top: 10px;\n  padding-top: 20px;\n}\n.rr-cover-img{\n  width: 100%;\n  height: 370px;\n}\n"
+module.exports = ""
 
 /***/ },
 /* 723 */
@@ -69265,183 +69258,177 @@ module.exports = ""
 /* 726 */
 /***/ function(module, exports) {
 
-module.exports = ""
+module.exports = "\r\n.wave{\r\n  background:\r\n    linear-gradient(to right, white, white);\r\n  height: 5px;\r\n  position: relative;\r\n}\r\n.wave::before{\r\n  content: \"\";\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 0;\r\n  right: 0;\r\n  background-repeat: repeat;\r\n  height: 10px;\r\n  background-size: 20px 20px;\r\n  background-image:\r\n    radial-gradient(circle at 10px -5px, transparent 12px, lightgreen 13px);\r\n}\r\n.wave::after{\r\n  content: \"\";\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 0;\r\n  right: 0;\r\n  background-repeat: repeat;\r\n  height: 15px;\r\n  background-size: 40px 20px;\r\n  background-image:\r\n    radial-gradient(circle at 10px 15px, lightgreen 12px, transparent 13px);\r\n}\r\n\r\n.rr-success-msg {\r\n  width: 100%;\r\n  text-align: center;\r\n  padding: 0!important;\r\n}\r\n.rr-success-msg .dub{\r\n  text-align: center;\r\n  width: 100%;\r\n  background-color: lightgreen;\r\n  padding: 0!important;\r\n}\r\n.rr-success-msg .top{\r\n  width: 100%;\r\n  background-color: #fff;\r\n  padding: 0!important;\r\n}\r\n"
 
 /***/ },
 /* 727 */
 /***/ function(module, exports) {
 
-module.exports = "\r\n.wave{\r\n  background:\r\n    linear-gradient(to right, white, white);\r\n  height: 5px;\r\n  position: relative;\r\n}\r\n.wave::before{\r\n  content: \"\";\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 0;\r\n  right: 0;\r\n  background-repeat: repeat;\r\n  height: 10px;\r\n  background-size: 20px 20px;\r\n  background-image:\r\n    radial-gradient(circle at 10px -5px, transparent 12px, lightgreen 13px);\r\n}\r\n.wave::after{\r\n  content: \"\";\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 0;\r\n  right: 0;\r\n  background-repeat: repeat;\r\n  height: 15px;\r\n  background-size: 40px 20px;\r\n  background-image:\r\n    radial-gradient(circle at 10px 15px, lightgreen 12px, transparent 13px);\r\n}\r\n\r\n.rr-success-msg {\r\n  width: 100%;\r\n  text-align: center;\r\n  padding: 0!important;\r\n}\r\n.rr-success-msg .dub{\r\n  text-align: center;\r\n  width: 100%;\r\n  background-color: lightgreen;\r\n  padding: 0!important;\r\n}\r\n.rr-success-msg .top{\r\n  width: 100%;\r\n  background-color: #fff;\r\n  padding: 0!important;\r\n}\r\n"
+module.exports = ""
 
 /***/ },
 /* 728 */
 /***/ function(module, exports) {
 
-module.exports = ""
-
-/***/ },
-/* 729 */
-/***/ function(module, exports) {
-
 module.exports = "#rr-editor{\n  height: 300px;\n  width: 100%;\n}\n"
 
 /***/ },
+/* 729 */,
 /* 730 */,
 /* 731 */,
 /* 732 */,
 /* 733 */,
-/* 734 */,
-/* 735 */
+/* 734 */
 /***/ function(module, exports) {
 
 module.exports = "<router-outlet></router-outlet>\r\n"
 
 /***/ },
-/* 736 */
+/* 735 */
 /***/ function(module, exports) {
 
 module.exports = "<!--<div class=\"ui computer only grid rr-donate-cause-desktop\">-->\n  <!--<img src=\"\">-->\n  <!--<div class=\" box\">-->\n    <!--<div class=\"title\">-->\n      <!--Nepal has been seriously devastated by the recent earthquake.-->\n    <!--</div>-->\n    <!--<div class=\"text\">-->\n      <!--Over 8,000 people have died (with death toll rising),-->\n      <!--thousands more are injured, and countless more have been displaced.-->\n      <!--Many homes, temples, and public monuments have been destroyed-->\n      <!--throughout the affected areas.<br><br>-->\n\n      <!--<a class=\"blur ui button\">Donate To Cause</a>-->\n\n    <!--</div>-->\n  <!--</div>-->\n<!--</div>-->\n\n<!--<div class=\"ui stackable mobile only grid rr-donate-cause-mobile\">-->\n  <!--<img class=\"sixteen wide column\" src=\"\">-->\n  <!--<div class=\"sixteen wide column box\">-->\n    <!--<div class=\"title\">-->\n      <!--Nepal has been seriously devastated by the recent earthquake.-->\n    <!--</div>-->\n    <!--<div class=\"text\">-->\n      <!--Over 8,000 people have died (with death toll rising),-->\n      <!--thousands more are injured, and countless more have been displaced.-->\n      <!--Many homes, temples, and public monuments have been destroyed-->\n      <!--throughout the affected areas.-->\n      <!--<br><br>-->\n      <!--<a class=\"ui button\">Donate To Cause</a>-->\n\n    <!--</div>-->\n  <!--</div>-->\n<!--</div>-->\n"
 
 /***/ },
-/* 737 */
+/* 736 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"ui stackable  grid \">\n  <div class=\"one wide column\"></div>\n  <div class=\"fifteen wide column rr-cat-head\">\n    Campaign Categories\n  </div>\n</div>\n<div class=\"ui container stackable grid \">\n  <div class=\"row rr-cat\">\n    <!--single cat-->\n    <div class=\"three wide column\">\n      <img src=\"assets/img/categories/cat-rural.png\">\n      <div class=\"title\">\n        <i class=\"circular large icon home\"></i>\n      </div>\n      <div class=\"name\">Rural</div>\n      <hr>\n    </div>\n    <!--end single cat-->\n    <!--single cat-->\n    <div class=\"three wide column\">\n      <img src=\"assets/img/categories/cat-edu.jpg\">\n      <div class=\"title\">\n        <i class=\"circular large icon book\"></i>\n      </div>\n      <div class=\"name\">Education</div>\n      <hr>\n    </div>\n    <!--end single cat-->\n    <!--single cat-->\n    <div class=\"three wide column\">\n      <img src=\"assets/img/categories/cat-healthcare.jpg\">\n      <div class=\"title\">\n        <i class=\"circular large icon plus\"></i>\n      </div>\n      <div class=\"name\">Rural Health</div>\n      <hr>\n    </div>\n    <!--end single cat-->\n    <!--single cat-->\n    <div class=\"three wide column\">\n      <img src=\"assets/img/categories/cat-farming.jpg\">\n      <div class=\"title\">\n        <i class=\"circular large icon coffee\"></i>\n      </div>\n      <div class=\"name\">Farming</div>\n      <hr>\n    </div>\n    <!--end single cat-->\n    <!--single cat-->\n    <div class=\"three wide column\">\n      <img src=\"assets/img/categories/cat-smallbusiness.jpg\">\n      <div class=\"title\">\n        <i class=\"circular large icon chain\"></i>\n      </div>\n      <div class=\"name\">Small Business</div>\n      <hr>\n    </div>\n    <!--end single cat-->\n    <!--single cat-->\n    <div class=\"three wide column\">\n      <img src=\"assets/img/categories/cat-creativearts.jpg\">\n      <div class=\"title\">\n        <i class=\"circular large icon ship\"></i>\n      </div>\n      <div class=\"name\">Creative Arts</div>\n      <hr>\n    </div>\n    <!--end single cat-->\n    <!--single cat-->\n    <div class=\"three wide column\">\n      <img src=\"assets/img/categories/cat-tech.png\">\n      <div class=\"title\">\n        <i class=\"circular large icon eye\"></i>\n      </div>\n      <div class=\"name\">Technology</div>\n      <hr>\n    </div>\n    <!--end single cat-->\n    <!--single cat-->\n    <div class=\"three wide column\">\n      <img src=\"assets/img/categories/cat-sports.png\">\n      <div class=\"title\">\n        <i class=\"circular large icon road\"></i>\n      </div>\n      <div class=\"name\">Sports</div>\n      <hr>\n    </div>\n    <!--end single cat-->\n        <!--single cat-->\n    <div class=\"three wide column\">\n      <img src=\"assets/img/categories/music.jpg\">\n      <div class=\"title\">\n        <i class=\"circular large icon sound\"></i>\n      </div>\n      <div class=\"name\">Music</div>\n      <hr>\n    </div>\n    <!--end single cat-->\n    <!--single cat-->\n    <div class=\"three wide column\">\n      <img src=\"assets/img/categories/cat-env.jpg\">\n      <div class=\"title\">\n        <i class=\"circular large icon leaf\"></i>\n      </div>\n      <div class=\"name\">Environment</div>\n      <hr>\n    </div>\n    <!--end single cat-->\n\n\n  </div>\n</div>\n"
 
 /***/ },
-/* 738 */
+/* 737 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"ui fluid search selection dropdown cc\">\r\n  <input type=\"hidden\" name=\"country\">\r\n  <!--[(ngModel)]=\"model.country\"-->\r\n  <i class=\"dropdown icon\"></i>\r\n  <div class=\"default text\">Select Country</div>\r\n  <div class=\"menu\">\r\n    <div class=\"item\" data-value=\"af\"><i class=\"af flag\"></i>Afghanistan</div>\r\n    <div class=\"item\" data-value=\"ax\"><i class=\"ax flag\"></i>Aland Islands</div>\r\n    <div class=\"item\" data-value=\"al\"><i class=\"al flag\"></i>Albania</div>\r\n    <div class=\"item\" data-value=\"dz\"><i class=\"dz flag\"></i>Algeria</div>\r\n    <div class=\"item\" data-value=\"as\"><i class=\"as flag\"></i>American Samoa</div>\r\n    <div class=\"item\" data-value=\"ad\"><i class=\"ad flag\"></i>Andorra</div>\r\n    <div class=\"item\" data-value=\"ao\"><i class=\"ao flag\"></i>Angola</div>\r\n    <div class=\"item\" data-value=\"ai\"><i class=\"ai flag\"></i>Anguilla</div>\r\n    <div class=\"item\" data-value=\"ag\"><i class=\"ag flag\"></i>Antigua</div>\r\n    <div class=\"item\" data-value=\"ar\"><i class=\"ar flag\"></i>Argentina</div>\r\n    <div class=\"item\" data-value=\"am\"><i class=\"am flag\"></i>Armenia</div>\r\n    <div class=\"item\" data-value=\"aw\"><i class=\"aw flag\"></i>Aruba</div>\r\n    <div class=\"item\" data-value=\"au\"><i class=\"au flag\"></i>Australia</div>\r\n    <div class=\"item\" data-value=\"at\"><i class=\"at flag\"></i>Austria</div>\r\n    <div class=\"item\" data-value=\"az\"><i class=\"az flag\"></i>Azerbaijan</div>\r\n    <div class=\"item\" data-value=\"bs\"><i class=\"bs flag\"></i>Bahamas</div>\r\n    <div class=\"item\" data-value=\"bh\"><i class=\"bh flag\"></i>Bahrain</div>\r\n    <div class=\"item\" data-value=\"bd\"><i class=\"bd flag\"></i>Bangladesh</div>\r\n    <div class=\"item\" data-value=\"bb\"><i class=\"bb flag\"></i>Barbados</div>\r\n    <div class=\"item\" data-value=\"by\"><i class=\"by flag\"></i>Belarus</div>\r\n    <div class=\"item\" data-value=\"be\"><i class=\"be flag\"></i>Belgium</div>\r\n    <div class=\"item\" data-value=\"bz\"><i class=\"bz flag\"></i>Belize</div>\r\n    <div class=\"item\" data-value=\"bj\"><i class=\"bj flag\"></i>Benin</div>\r\n    <div class=\"item\" data-value=\"bm\"><i class=\"bm flag\"></i>Bermuda</div>\r\n    <div class=\"item\" data-value=\"bt\"><i class=\"bt flag\"></i>Bhutan</div>\r\n    <div class=\"item\" data-value=\"bo\"><i class=\"bo flag\"></i>Bolivia</div>\r\n    <div class=\"item\" data-value=\"ba\"><i class=\"ba flag\"></i>Bosnia</div>\r\n    <div class=\"item\" data-value=\"bw\"><i class=\"bw flag\"></i>Botswana</div>\r\n    <div class=\"item\" data-value=\"bv\"><i class=\"bv flag\"></i>Bouvet Island</div>\r\n    <div class=\"item\" data-value=\"br\"><i class=\"br flag\"></i>Brazil</div>\r\n    <div class=\"item\" data-value=\"vg\"><i class=\"vg flag\"></i>British Virgin Islands</div>\r\n    <div class=\"item\" data-value=\"bn\"><i class=\"bn flag\"></i>Brunei</div>\r\n    <div class=\"item\" data-value=\"bg\"><i class=\"bg flag\"></i>Bulgaria</div>\r\n    <div class=\"item\" data-value=\"bf\"><i class=\"bf flag\"></i>Burkina Faso</div>\r\n    <div class=\"item\" data-value=\"ar\"><i class=\"ar flag\"></i>Burma</div>\r\n    <div class=\"item\" data-value=\"bi\"><i class=\"bi flag\"></i>Burundi</div>\r\n    <div class=\"item\" data-value=\"tc\"><i class=\"tc flag\"></i>Caicos Islands</div>\r\n    <div class=\"item\" data-value=\"kh\"><i class=\"kh flag\"></i>Cambodia</div>\r\n    <div class=\"item\" data-value=\"cm\"><i class=\"cm flag\"></i>Cameroon</div>\r\n    <div class=\"item\" data-value=\"ca\"><i class=\"ca flag\"></i>Canada</div>\r\n    <div class=\"item\" data-value=\"cv\"><i class=\"cv flag\"></i>Cape Verde</div>\r\n    <div class=\"item\" data-value=\"ky\"><i class=\"ky flag\"></i>Cayman Islands</div>\r\n    <div class=\"item\" data-value=\"cf\"><i class=\"cf flag\"></i>Central African Republic</div>\r\n    <div class=\"item\" data-value=\"td\"><i class=\"td flag\"></i>Chad</div>\r\n    <div class=\"item\" data-value=\"cl\"><i class=\"cl flag\"></i>Chile</div>\r\n    <div class=\"item\" data-value=\"cn\"><i class=\"cn flag\"></i>China</div>\r\n    <div class=\"item\" data-value=\"cx\"><i class=\"cx flag\"></i>Christmas Island</div>\r\n    <div class=\"item\" data-value=\"cc\"><i class=\"cc flag\"></i>Cocos Islands</div>\r\n    <div class=\"item\" data-value=\"co\"><i class=\"co flag\"></i>Colombia</div>\r\n    <div class=\"item\" data-value=\"km\"><i class=\"km flag\"></i>Comoros</div>\r\n    <div class=\"item\" data-value=\"cg\"><i class=\"cg flag\"></i>Congo Brazzaville</div>\r\n    <div class=\"item\" data-value=\"cd\"><i class=\"cd flag\"></i>Congo</div>\r\n    <div class=\"item\" data-value=\"ck\"><i class=\"ck flag\"></i>Cook Islands</div>\r\n    <div class=\"item\" data-value=\"cr\"><i class=\"cr flag\"></i>Costa Rica</div>\r\n    <div class=\"item\" data-value=\"ci\"><i class=\"ci flag\"></i>Cote Divoire</div>\r\n    <div class=\"item\" data-value=\"hr\"><i class=\"hr flag\"></i>Croatia</div>\r\n    <div class=\"item\" data-value=\"cu\"><i class=\"cu flag\"></i>Cuba</div>\r\n    <div class=\"item\" data-value=\"cy\"><i class=\"cy flag\"></i>Cyprus</div>\r\n    <div class=\"item\" data-value=\"cz\"><i class=\"cz flag\"></i>Czech Republic</div>\r\n    <div class=\"item\" data-value=\"dk\"><i class=\"dk flag\"></i>Denmark</div>\r\n    <div class=\"item\" data-value=\"dj\"><i class=\"dj flag\"></i>Djibouti</div>\r\n    <div class=\"item\" data-value=\"dm\"><i class=\"dm flag\"></i>Dominica</div>\r\n    <div class=\"item\" data-value=\"do\"><i class=\"do flag\"></i>Dominican Republic</div>\r\n    <div class=\"item\" data-value=\"ec\"><i class=\"ec flag\"></i>Ecuador</div>\r\n    <div class=\"item\" data-value=\"eg\"><i class=\"eg flag\"></i>Egypt</div>\r\n    <div class=\"item\" data-value=\"sv\"><i class=\"sv flag\"></i>El Salvador</div>\r\n    <div class=\"item\" data-value=\"gb\"><i class=\"gb flag\"></i>England</div>\r\n    <div class=\"item\" data-value=\"gq\"><i class=\"gq flag\"></i>Equatorial Guinea</div>\r\n    <div class=\"item\" data-value=\"er\"><i class=\"er flag\"></i>Eritrea</div>\r\n    <div class=\"item\" data-value=\"ee\"><i class=\"ee flag\"></i>Estonia</div>\r\n    <div class=\"item\" data-value=\"et\"><i class=\"et flag\"></i>Ethiopia</div>\r\n    <div class=\"item\" data-value=\"eu\"><i class=\"eu flag\"></i>European Union</div>\r\n    <div class=\"item\" data-value=\"fk\"><i class=\"fk flag\"></i>Falkland Islands</div>\r\n    <div class=\"item\" data-value=\"fo\"><i class=\"fo flag\"></i>Faroe Islands</div>\r\n    <div class=\"item\" data-value=\"fj\"><i class=\"fj flag\"></i>Fiji</div>\r\n    <div class=\"item\" data-value=\"fi\"><i class=\"fi flag\"></i>Finland</div>\r\n    <div class=\"item\" data-value=\"fr\"><i class=\"fr flag\"></i>France</div>\r\n    <div class=\"item\" data-value=\"gf\"><i class=\"gf flag\"></i>French Guiana</div>\r\n    <div class=\"item\" data-value=\"pf\"><i class=\"pf flag\"></i>French Polynesia</div>\r\n    <div class=\"item\" data-value=\"tf\"><i class=\"tf flag\"></i>French Territories</div>\r\n    <div class=\"item\" data-value=\"ga\"><i class=\"ga flag\"></i>Gabon</div>\r\n    <div class=\"item\" data-value=\"gm\"><i class=\"gm flag\"></i>Gambia</div>\r\n    <div class=\"item\" data-value=\"ge\"><i class=\"ge flag\"></i>Georgia</div>\r\n    <div class=\"item\" data-value=\"de\"><i class=\"de flag\"></i>Germany</div>\r\n    <div class=\"item\" data-value=\"gh\"><i class=\"gh flag\"></i>Ghana</div>\r\n    <div class=\"item\" data-value=\"gi\"><i class=\"gi flag\"></i>Gibraltar</div>\r\n    <div class=\"item\" data-value=\"gr\"><i class=\"gr flag\"></i>Greece</div>\r\n    <div class=\"item\" data-value=\"gl\"><i class=\"gl flag\"></i>Greenland</div>\r\n    <div class=\"item\" data-value=\"gd\"><i class=\"gd flag\"></i>Grenada</div>\r\n    <div class=\"item\" data-value=\"gp\"><i class=\"gp flag\"></i>Guadeloupe</div>\r\n    <div class=\"item\" data-value=\"gu\"><i class=\"gu flag\"></i>Guam</div>\r\n    <div class=\"item\" data-value=\"gt\"><i class=\"gt flag\"></i>Guatemala</div>\r\n    <div class=\"item\" data-value=\"gw\"><i class=\"gw flag\"></i>Guinea-Bissau</div>\r\n    <div class=\"item\" data-value=\"gn\"><i class=\"gn flag\"></i>Guinea</div>\r\n    <div class=\"item\" data-value=\"gy\"><i class=\"gy flag\"></i>Guyana</div>\r\n    <div class=\"item\" data-value=\"ht\"><i class=\"ht flag\"></i>Haiti</div>\r\n    <div class=\"item\" data-value=\"hm\"><i class=\"hm flag\"></i>Heard Island</div>\r\n    <div class=\"item\" data-value=\"hn\"><i class=\"hn flag\"></i>Honduras</div>\r\n    <div class=\"item\" data-value=\"hk\"><i class=\"hk flag\"></i>Hong Kong</div>\r\n    <div class=\"item\" data-value=\"hu\"><i class=\"hu flag\"></i>Hungary</div>\r\n    <div class=\"item\" data-value=\"is\"><i class=\"is flag\"></i>Iceland</div>\r\n    <div class=\"item\" data-value=\"in\"><i class=\"in flag\"></i>India</div>\r\n    <div class=\"item\" data-value=\"io\"><i class=\"io flag\"></i>Indian Ocean Territory</div>\r\n    <div class=\"item\" data-value=\"id\"><i class=\"id flag\"></i>Indonesia</div>\r\n    <div class=\"item\" data-value=\"ir\"><i class=\"ir flag\"></i>Iran</div>\r\n    <div class=\"item\" data-value=\"iq\"><i class=\"iq flag\"></i>Iraq</div>\r\n    <div class=\"item\" data-value=\"ie\"><i class=\"ie flag\"></i>Ireland</div>\r\n    <div class=\"item\" data-value=\"il\"><i class=\"il flag\"></i>Israel</div>\r\n    <div class=\"item\" data-value=\"it\"><i class=\"it flag\"></i>Italy</div>\r\n    <div class=\"item\" data-value=\"jm\"><i class=\"jm flag\"></i>Jamaica</div>\r\n    <div class=\"item\" data-value=\"jp\"><i class=\"jp flag\"></i>Japan</div>\r\n    <div class=\"item\" data-value=\"jo\"><i class=\"jo flag\"></i>Jordan</div>\r\n    <div class=\"item\" data-value=\"kz\"><i class=\"kz flag\"></i>Kazakhstan</div>\r\n    <div class=\"item\" data-value=\"ke\"><i class=\"ke flag\"></i>Kenya</div>\r\n    <div class=\"item\" data-value=\"ki\"><i class=\"ki flag\"></i>Kiribati</div>\r\n    <div class=\"item\" data-value=\"kw\"><i class=\"kw flag\"></i>Kuwait</div>\r\n    <div class=\"item\" data-value=\"kg\"><i class=\"kg flag\"></i>Kyrgyzstan</div>\r\n    <div class=\"item\" data-value=\"la\"><i class=\"la flag\"></i>Laos</div>\r\n    <div class=\"item\" data-value=\"lv\"><i class=\"lv flag\"></i>Latvia</div>\r\n    <div class=\"item\" data-value=\"lb\"><i class=\"lb flag\"></i>Lebanon</div>\r\n    <div class=\"item\" data-value=\"ls\"><i class=\"ls flag\"></i>Lesotho</div>\r\n    <div class=\"item\" data-value=\"lr\"><i class=\"lr flag\"></i>Liberia</div>\r\n    <div class=\"item\" data-value=\"ly\"><i class=\"ly flag\"></i>Libya</div>\r\n    <div class=\"item\" data-value=\"li\"><i class=\"li flag\"></i>Liechtenstein</div>\r\n    <div class=\"item\" data-value=\"lt\"><i class=\"lt flag\"></i>Lithuania</div>\r\n    <div class=\"item\" data-value=\"lu\"><i class=\"lu flag\"></i>Luxembourg</div>\r\n    <div class=\"item\" data-value=\"mo\"><i class=\"mo flag\"></i>Macau</div>\r\n    <div class=\"item\" data-value=\"mk\"><i class=\"mk flag\"></i>Macedonia</div>\r\n    <div class=\"item\" data-value=\"mg\"><i class=\"mg flag\"></i>Madagascar</div>\r\n    <div class=\"item\" data-value=\"mw\"><i class=\"mw flag\"></i>Malawi</div>\r\n    <div class=\"item\" data-value=\"my\"><i class=\"my flag\"></i>Malaysia</div>\r\n    <div class=\"item\" data-value=\"mv\"><i class=\"mv flag\"></i>Maldives</div>\r\n    <div class=\"item\" data-value=\"ml\"><i class=\"ml flag\"></i>Mali</div>\r\n    <div class=\"item\" data-value=\"mt\"><i class=\"mt flag\"></i>Malta</div>\r\n    <div class=\"item\" data-value=\"mh\"><i class=\"mh flag\"></i>Marshall Islands</div>\r\n    <div class=\"item\" data-value=\"mq\"><i class=\"mq flag\"></i>Martinique</div>\r\n    <div class=\"item\" data-value=\"mr\"><i class=\"mr flag\"></i>Mauritania</div>\r\n    <div class=\"item\" data-value=\"mu\"><i class=\"mu flag\"></i>Mauritius</div>\r\n    <div class=\"item\" data-value=\"yt\"><i class=\"yt flag\"></i>Mayotte</div>\r\n    <div class=\"item\" data-value=\"mx\"><i class=\"mx flag\"></i>Mexico</div>\r\n    <div class=\"item\" data-value=\"fm\"><i class=\"fm flag\"></i>Micronesia</div>\r\n    <div class=\"item\" data-value=\"md\"><i class=\"md flag\"></i>Moldova</div>\r\n    <div class=\"item\" data-value=\"mc\"><i class=\"mc flag\"></i>Monaco</div>\r\n    <div class=\"item\" data-value=\"mn\"><i class=\"mn flag\"></i>Mongolia</div>\r\n    <div class=\"item\" data-value=\"me\"><i class=\"me flag\"></i>Montenegro</div>\r\n    <div class=\"item\" data-value=\"ms\"><i class=\"ms flag\"></i>Montserrat</div>\r\n    <div class=\"item\" data-value=\"ma\"><i class=\"ma flag\"></i>Morocco</div>\r\n    <div class=\"item\" data-value=\"mz\"><i class=\"mz flag\"></i>Mozambique</div>\r\n    <div class=\"item\" data-value=\"na\"><i class=\"na flag\"></i>Namibia</div>\r\n    <div class=\"item\" data-value=\"nr\"><i class=\"nr flag\"></i>Nauru</div>\r\n    <div class=\"item\" data-value=\"np\"><i class=\"np flag\"></i>Nepal</div>\r\n    <div class=\"item\" data-value=\"an\"><i class=\"an flag\"></i>Netherlands Antilles</div>\r\n    <div class=\"item\" data-value=\"nl\"><i class=\"nl flag\"></i>Netherlands</div>\r\n    <div class=\"item\" data-value=\"nc\"><i class=\"nc flag\"></i>New Caledonia</div>\r\n    <div class=\"item\" data-value=\"pg\"><i class=\"pg flag\"></i>New Guinea</div>\r\n    <div class=\"item\" data-value=\"nz\"><i class=\"nz flag\"></i>New Zealand</div>\r\n    <div class=\"item\" data-value=\"ni\"><i class=\"ni flag\"></i>Nicaragua</div>\r\n    <div class=\"item\" data-value=\"ne\"><i class=\"ne flag\"></i>Niger</div>\r\n    <div class=\"item\" data-value=\"ng\"><i class=\"ng flag\"></i>Nigeria</div>\r\n    <div class=\"item\" data-value=\"nu\"><i class=\"nu flag\"></i>Niue</div>\r\n    <div class=\"item\" data-value=\"nf\"><i class=\"nf flag\"></i>Norfolk Island</div>\r\n    <div class=\"item\" data-value=\"kp\"><i class=\"kp flag\"></i>North Korea</div>\r\n    <div class=\"item\" data-value=\"mp\"><i class=\"mp flag\"></i>Northern Mariana Islands</div>\r\n    <div class=\"item\" data-value=\"no\"><i class=\"no flag\"></i>Norway</div>\r\n    <div class=\"item\" data-value=\"om\"><i class=\"om flag\"></i>Oman</div>\r\n    <div class=\"item\" data-value=\"pk\"><i class=\"pk flag\"></i>Pakistan</div>\r\n    <div class=\"item\" data-value=\"pw\"><i class=\"pw flag\"></i>Palau</div>\r\n    <div class=\"item\" data-value=\"ps\"><i class=\"ps flag\"></i>Palestine</div>\r\n    <div class=\"item\" data-value=\"pa\"><i class=\"pa flag\"></i>Panama</div>\r\n    <div class=\"item\" data-value=\"py\"><i class=\"py flag\"></i>Paraguay</div>\r\n    <div class=\"item\" data-value=\"pe\"><i class=\"pe flag\"></i>Peru</div>\r\n    <div class=\"item\" data-value=\"ph\"><i class=\"ph flag\"></i>Philippines</div>\r\n    <div class=\"item\" data-value=\"pn\"><i class=\"pn flag\"></i>Pitcairn Islands</div>\r\n    <div class=\"item\" data-value=\"pl\"><i class=\"pl flag\"></i>Poland</div>\r\n    <div class=\"item\" data-value=\"pt\"><i class=\"pt flag\"></i>Portugal</div>\r\n    <div class=\"item\" data-value=\"pr\"><i class=\"pr flag\"></i>Puerto Rico</div>\r\n    <div class=\"item\" data-value=\"qa\"><i class=\"qa flag\"></i>Qatar</div>\r\n    <div class=\"item\" data-value=\"re\"><i class=\"re flag\"></i>Reunion</div>\r\n    <div class=\"item\" data-value=\"ro\"><i class=\"ro flag\"></i>Romania</div>\r\n    <div class=\"item\" data-value=\"ru\"><i class=\"ru flag\"></i>Russia</div>\r\n    <div class=\"item\" data-value=\"rw\"><i class=\"rw flag\"></i>Rwanda</div>\r\n    <div class=\"item\" data-value=\"sh\"><i class=\"sh flag\"></i>Saint Helena</div>\r\n    <div class=\"item\" data-value=\"kn\"><i class=\"kn flag\"></i>Saint Kitts and Nevis</div>\r\n    <div class=\"item\" data-value=\"lc\"><i class=\"lc flag\"></i>Saint Lucia</div>\r\n    <div class=\"item\" data-value=\"pm\"><i class=\"pm flag\"></i>Saint Pierre</div>\r\n    <div class=\"item\" data-value=\"vc\"><i class=\"vc flag\"></i>Saint Vincent</div>\r\n    <div class=\"item\" data-value=\"ws\"><i class=\"ws flag\"></i>Samoa</div>\r\n    <div class=\"item\" data-value=\"sm\"><i class=\"sm flag\"></i>San Marino</div>\r\n    <div class=\"item\" data-value=\"gs\"><i class=\"gs flag\"></i>Sandwich Islands</div>\r\n    <div class=\"item\" data-value=\"st\"><i class=\"st flag\"></i>Sao Tome</div>\r\n    <div class=\"item\" data-value=\"sa\"><i class=\"sa flag\"></i>Saudi Arabia</div>\r\n    <div class=\"item\" data-value=\"sn\"><i class=\"sn flag\"></i>Senegal</div>\r\n    <div class=\"item\" data-value=\"cs\"><i class=\"cs flag\"></i>Serbia</div>\r\n    <div class=\"item\" data-value=\"rs\"><i class=\"rs flag\"></i>Serbia</div>\r\n    <div class=\"item\" data-value=\"sc\"><i class=\"sc flag\"></i>Seychelles</div>\r\n    <div class=\"item\" data-value=\"sl\"><i class=\"sl flag\"></i>Sierra Leone</div>\r\n    <div class=\"item\" data-value=\"sg\"><i class=\"sg flag\"></i>Singapore</div>\r\n    <div class=\"item\" data-value=\"sk\"><i class=\"sk flag\"></i>Slovakia</div>\r\n    <div class=\"item\" data-value=\"si\"><i class=\"si flag\"></i>Slovenia</div>\r\n    <div class=\"item\" data-value=\"sb\"><i class=\"sb flag\"></i>Solomon Islands</div>\r\n    <div class=\"item\" data-value=\"so\"><i class=\"so flag\"></i>Somalia</div>\r\n    <div class=\"item\" data-value=\"za\"><i class=\"za flag\"></i>South Africa</div>\r\n    <div class=\"item\" data-value=\"kr\"><i class=\"kr flag\"></i>South Korea</div>\r\n    <div class=\"item\" data-value=\"es\"><i class=\"es flag\"></i>Spain</div>\r\n    <div class=\"item\" data-value=\"lk\"><i class=\"lk flag\"></i>Sri Lanka</div>\r\n    <div class=\"item\" data-value=\"sd\"><i class=\"sd flag\"></i>Sudan</div>\r\n    <div class=\"item\" data-value=\"sr\"><i class=\"sr flag\"></i>Suriname</div>\r\n    <div class=\"item\" data-value=\"sj\"><i class=\"sj flag\"></i>Svalbard</div>\r\n    <div class=\"item\" data-value=\"sz\"><i class=\"sz flag\"></i>Swaziland</div>\r\n    <div class=\"item\" data-value=\"se\"><i class=\"se flag\"></i>Sweden</div>\r\n    <div class=\"item\" data-value=\"ch\"><i class=\"ch flag\"></i>Switzerland</div>\r\n    <div class=\"item\" data-value=\"sy\"><i class=\"sy flag\"></i>Syria</div>\r\n    <div class=\"item\" data-value=\"tw\"><i class=\"tw flag\"></i>Taiwan</div>\r\n    <div class=\"item\" data-value=\"tj\"><i class=\"tj flag\"></i>Tajikistan</div>\r\n    <div class=\"item\" data-value=\"tz\"><i class=\"tz flag\"></i>Tanzania</div>\r\n    <div class=\"item\" data-value=\"th\"><i class=\"th flag\"></i>Thailand</div>\r\n    <div class=\"item\" data-value=\"tl\"><i class=\"tl flag\"></i>Timorleste</div>\r\n    <div class=\"item\" data-value=\"tg\"><i class=\"tg flag\"></i>Togo</div>\r\n    <div class=\"item\" data-value=\"tk\"><i class=\"tk flag\"></i>Tokelau</div>\r\n    <div class=\"item\" data-value=\"to\"><i class=\"to flag\"></i>Tonga</div>\r\n    <div class=\"item\" data-value=\"tt\"><i class=\"tt flag\"></i>Trinidad</div>\r\n    <div class=\"item\" data-value=\"tn\"><i class=\"tn flag\"></i>Tunisia</div>\r\n    <div class=\"item\" data-value=\"tr\"><i class=\"tr flag\"></i>Turkey</div>\r\n    <div class=\"item\" data-value=\"tm\"><i class=\"tm flag\"></i>Turkmenistan</div>\r\n    <div class=\"item\" data-value=\"tv\"><i class=\"tv flag\"></i>Tuvalu</div>\r\n    <div class=\"item\" data-value=\"ug\"><i class=\"ug flag\"></i>Uganda</div>\r\n    <div class=\"item\" data-value=\"ua\"><i class=\"ua flag\"></i>Ukraine</div>\r\n    <div class=\"item\" data-value=\"ae\"><i class=\"ae flag\"></i>United Arab Emirates</div>\r\n    <div class=\"item\" data-value=\"us\"><i class=\"us flag\"></i>United States</div>\r\n    <div class=\"item\" data-value=\"uy\"><i class=\"uy flag\"></i>Uruguay</div>\r\n    <div class=\"item\" data-value=\"um\"><i class=\"um flag\"></i>Us Minor Islands</div>\r\n    <div class=\"item\" data-value=\"vi\"><i class=\"vi flag\"></i>Us Virgin Islands</div>\r\n    <div class=\"item\" data-value=\"uz\"><i class=\"uz flag\"></i>Uzbekistan</div>\r\n    <div class=\"item\" data-value=\"vu\"><i class=\"vu flag\"></i>Vanuatu</div>\r\n    <div class=\"item\" data-value=\"va\"><i class=\"va flag\"></i>Vatican City</div>\r\n    <div class=\"item\" data-value=\"ve\"><i class=\"ve flag\"></i>Venezuela</div>\r\n    <div class=\"item\" data-value=\"vn\"><i class=\"vn flag\"></i>Vietnam</div>\r\n    <div class=\"item\" data-value=\"wf\"><i class=\"wf flag\"></i>Wallis and Futuna</div>\r\n    <div class=\"item\" data-value=\"eh\"><i class=\"eh flag\"></i>Western Sahara</div>\r\n    <div class=\"item\" data-value=\"ye\"><i class=\"ye flag\"></i>Yemen</div>\r\n    <div class=\"item\" data-value=\"zm\"><i class=\"zm flag\"></i>Zambia</div>\r\n    <div class=\"item\" data-value=\"zw\"><i class=\"zw flag\"></i>Zimbabwe</div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ },
-/* 739 */
+/* 738 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"ui large right labeled input curamt\">\n  <input id=\"targetamt\"  name=\"targetamt\" type=\"text\" placeholder=\"currency\">\n  <input name=\"currency\" type=\"hidden\">\n  <div class=\"teal ui dropdown label\">\n    <div class=\"text\">USD</div>\n    <i class=\"dropdown icon\"></i>\n    <div class=\"menu\">\n      <div class=\"item\" data-value=\"USD\">USD</div>\n      <div class=\"item\" data-value=\"CAD\">CAD</div>\n      <div class=\"item\" data-value=\"GBP\" >GBP</div>\n      <div class=\"item\" data-value=\"GHC\">GHC</div>\n      <div class=\"item\" data-value=\"EUR\">EUR</div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ },
-/* 740 */
+/* 739 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"ui top four column stackable grid rr-dash-menu rr-blur\">\n  <div class=\"row\">\n    <div class=\"one wide column\"></div>\n    <div class=\"two wide column rr-logo-box\">\n      <img class=\"res\" src=\"assets/img/logo_defaultnew.png\"/>\n    </div>\n    <div class=\"eight wide column rr-menu-nav\">\n      <div style=\"border: none\" class=\"ui five item secondary pointing stackable menu\">\n        <a routerLink=\"\"  class=\"item\">HOME</a>\n        <a routerLink=\"/campaign\" routerLinkActive=\"active\" class=\"item\">CAMPAIGN</a>\n        <a routerLink=\"/events\" routerLinkActive=\"active\" class=\"item\">EVENTS</a>\n        <a routerLink=\"/blog\" routerLinkActive=\"active\" class=\"item\">BLOG</a>\n        <a class=\"item ui dropdown\">About Us <i class=\"dropdown icon\"></i>\n          <div class=\"menu\">\n            <div routerLink=\"/help\" routerLinkActive=\"active\" class=\"item\">How It Works</div>\n            <div routerLink=\"/team\" routerLinkActive=\"active\" class=\"item\">Team</div>\n            <div routerLink=\"/impact\" routerLinkActive=\"active\" class=\"item\">Our Impact</div>\n          </div>\n        </a>\n      </div>\n    </div>\n    <div class=\"five wide column rr-usermenu\">\n      <div class=\"ui inline dropdown\">\n        <div class=\"inverted text\">\n          {{email}}\n          <i class=\"white large user icon\"></i>\n        </div>\n        <i class=\"inverted dropdown icon\"></i>\n        <div class=\"menu\">\n          <div class=\"item\">\n            <i class=\"red icon user\"></i>\n            Logout\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ },
-/* 741 */
+/* 740 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"rr-causes\">\n  <div class=\"ui stackable two column grid container \">\n    <div class=\"column\">\n      <h2 class=\"heading\">Recommended Campaigns</h2>\n      <div class=\"line\"></div>\n    </div>\n    <div class=\"column\">\n      <p>\n        Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit mi.\n        Aenean imperdiet lacus sit amet elit porta, et malesuada erat bibendum.\n        Cras sed nunc massa. Quisque tempor dolor sit amet tellus malesuada, malesuada iaculis eros dignissim.\n        Aenean vitae diam id lacus fringilla maximus. Mauris auctor efficitur nisl, non blandit urna fermentum\n        nec.\n      </p>\n    </div>\n  </div>\n</div>\n<div class=\"rr-causes-item\">\n  <div class=\"four column ui stackable grid\">\n    <div class=\"row\">\n      <!--//Ultralight Beam-->\n      <div *ngIf=\"projects.meta.total !=0 \">\n        <div style=\"float:left;margin: 0px!important;\" class=\"column ui cards\" *ngFor=\"let project of projects.projects;let i = index;\">\n          <div class=\"ui card\" style=\"margin-left: 20px;height: 430px\">\n            <div class=\"large image\">\n              <img style=\"min-height: 180px; max-height: 180px\" [attr.src]=\"url+project.media[0].filename+'.'+project.media[0].ext\">\n            </div>\n            <div class=\"content\">\n              <div class=\"header\">{{project.info.name}}</div>\n              <div class=\"meta\">\n                <a>{{project.info.enddate | daysleft}} Days Left</a>\n              </div>\n              <div class=\"description\">\n                {{project.display.tagline}}\n              </div>\n            </div>\n            <div class=\"extra content \" style=\"text-align: center\">\n              <div [attr.data-percent]=\"project.account.amtraised / project.account.targetamt * 100\" class=\"ui small teal progress homepercent\" id=\"\">\n                <div class=\"bar\"></div>\n                <div class=\"label\">{{project.account.amtraised}} Donated of\n                  {{loadProgress()}}\n                  ${{project.account.targetamt}}\n                  Goal</div>\n              </div>\n              <a (click)=\"getDetails(project.info.urlcode)\" class=\"ui center labeled button\" tabindex=\"0\">\n                <div class=\"ui blue button\">\n                  <i class=\"heart icon\"></i> Donate\n                </div>\n                <a  class=\"ui basic blue left pointing label\">\n                  {{project.account.donorcount}}\n                </a>\n              </a>\n            </div>\n\n          </div>\n        </div>\n      </div>\n      <div *ngIf=\"projects.meta.total == 0 \">\n        <br><br>\n        <label class=\"ui label\">\n          No Projects.\n        </label>\n      </div>\n      <!--dream-->\n    </div>\n  </div>\n</div>\n<div class=\"ui stackable four column grid rr-stats\" style=\"margin: 0px\">\n  <div class=\"column centered\">\n    <div class=\"ui center statistic\">\n      <div class=\"label rr-stats-label\">\n        SUCCESSFUL PROJECTS\n      </div>\n      <div class=\"value\">\n        0\n      </div>\n    </div>\n  </div>\n  <div class=\"column centered\">\n    <div class=\"ui center statistic\">\n      <div class=\"label rr-stats-label\">\n        PEOPLE IMPACTED\n      </div>\n      <div class=\"value\">\n        0\n      </div>\n    </div>\n  </div>\n  <div class=\"column\">\n    <div class=\"ui center statistic\">\n      <div class=\"label rr-stats-label\">\n        TOTAL AMOUNT RAISED\n      </div>\n      <div class=\"value\">\n        0\n      </div>\n    </div>\n  </div>\n  <div class=\"column\">\n    <div class=\"ui center statistic\">\n      <div class=\"label rr-stats-label\">\n        TOTAL CAMPAIGNS\n      </div>\n      <div class=\"value\">\n        0\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ },
-/* 742 */
+/* 741 */
 /***/ function(module, exports) {
 
 module.exports = "<div  *ngIf=\"simplefile\">\n  <div *ngIf=\"filebox\" class=\"rr-fileinput-box\">\n    <input type=\"file\"\n           (change)=\"fileInfo($event)\"\n           ngFileSelect\n           class=\"inputfile\"\n           id=\"file\"\n           (onPreviewData)=\"handlePreviewData($event)\"\n           [options]=\"basicOptions\"\n           (onUpload)=\"handleUpload($event)\">\n    <label class=\"ui large label icon\" for=\"file\"><i class=\"icon file\"></i> Choose an image</label>\n\n  </div>\n  <div *ngIf=\"!filebox\" class=\"imgbox\">\n    <img [src]=\"previewData\">\n    <button (click)=\"showFileSelect()\" class=\"ui compact icon button\">\n      <i class=\"edit icon\"></i>\n    </button>\n    <button (click)=\"showFileInput()\" class=\"ui compact icon button\">\n      <i class=\"close icon\"></i>\n    </button>\n  </div>\n  <div class=\"prog\">\n    <!--{{ progress }}%-->\n  </div>\n  <!--<div>-->\n    <!--Response: {{ response | json }}-->\n  <!--</div>-->\n</div>\n<div  *ngIf=\"documentfile\">\n\n  <div class=\"rr-docs-box\">\n    <div class=\"four column ui stackable grid\">\n      <div class=\"row\">\n        <div class=\"eight wide column\">\n          <div class=\"ui input\">\n            <input type=\"text\" name=\"title\" placeholder=\"Title\">\n          </div> <br><br/>\n          <div class=\"ui input\">\n            <textarea rows=\"2\" type=\"text\" name=\"description\" placeholder=\"Short Description\"></textarea>\n          </div>\n        </div>\n        <div class=\"four wide column\">\n          <div class=\"teal ui dropdown label\">\n            <div class=\"text\">file type</div>\n            <i class=\"dropdown icon\"></i>\n            <div class=\"menu\">\n              <div class=\"item\">Excel</div>\n              <div class=\"item\">Word</div>\n              <div class=\"item\">image</div>\n              <div class=\"item\">other</div>\n            </div>\n          </div>\n        </div>\n        <div class=\"four wide column\">\n          <input type=\"file\" name=\"file\" id=\"docfile\" class=\"inputfile\"/>\n          <label class=\"ui label icon\" for=\"docfile\"><i class=\"icon file\"></i> select file</label>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>\n\n"
 
 /***/ },
-/* 743 */
+/* 742 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"ui stackable grid \">\r\n  <div class=\"row rr-footer-top\">\r\n    <div class=\"sixteen wide column\">\r\n     <span class=\"txt-head\">FUND RAISING FOR GOOD</span><br>\r\n      <br>\r\n        <span class=\"txt-msg\">Use the Rotaraise Platform to fund a Project</span>  <br>  <br>\r\n      <a class=\"ui button\">Start A Campaign</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"ui stackable grid rr-footer\">\r\n  <div class=\"row first\">\r\n    <div class=\"sixteen wide column logo-txt\">\r\n      <img src=\"assets/img/logo_defaultnew.png\"/>\r\n    </div>\r\n    <div class=\"two wide column\"></div>\r\n    <div class=\"three wide column\">\r\n      <a class=\"ui red ribbon label\">About Rotaraise</a>\r\n      <div class=\"ui link list\">\r\n        <a class=\"item\">How It Works</a>\r\n        <a class=\"item\">About Us</a>\r\n        <a class=\"item\">Blog</a>\r\n        <a class=\"item\">Team</a>\r\n      </div>\r\n    </div>\r\n    <div class=\"four wide column\">\r\n      <a class=\"ui medium blue ribbon label\">Seek Assistance</a>\r\n      <div class=\"ui link list\">\r\n        <a class=\"item\">Help and Support</a>\r\n        <a class=\"item\">Contact Us</a>\r\n      </div>\r\n    </div>\r\n    <div class=\"six wide column\">\r\n      <a class=\"ui medium blue ribbon label\">Follow Us</a>\r\n      <br><br>\r\n      <button class=\"ui facebook button\">\r\n        <i class=\"facebook icon\"></i>\r\n        Facebook\r\n      </button>\r\n      <button class=\"ui twitter button\">\r\n        <i class=\"twitter icon\"></i>\r\n        Twitter\r\n      </button>\r\n      <button class=\"ui google plus button\">\r\n        <i class=\"google plus icon\"></i>\r\n        Google Plus\r\n      </button>\r\n      <br><br>\r\n      <button class=\"ui linkedin button\">\r\n        <i class=\"linkedin icon\"></i>\r\n        LinkedIn\r\n      </button>\r\n      <button class=\"ui instagram button\">\r\n        <i class=\"instagram icon\"></i>\r\n        Instagram\r\n      </button>\r\n      <button class=\"ui youtube button\">\r\n        <i class=\"youtube icon\"></i>\r\n        YouTube\r\n      </button>\r\n    </div>\r\n  </div>\r\n  <div class=\"row second\">\r\n    <div class=\"sixteen wide column\">\r\n      <hr>\r\n    </div>\r\n    <div class=\"seven wide column\" style=\"color: rgba(255,255,255,0.4)\">\r\n      &copy; Copyright 2016, <i class=\"blue icon code\"></i> with <i class=\"red icon heart\"></i> by rotaraise inc.\r\n    </div>\r\n    <div class=\"nine wide column\" style=\"text-align: right\">\r\n      <a>Refund policy</a> / <a>Terms and Conditions</a>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n"
 
 /***/ },
-/* 744 */
+/* 743 */
 /***/ function(module, exports) {
 
 module.exports = "<div *ngIf=\"isLoggedOn == true\">\n  <div class=\"ui top fixed four column stackable grid\">\n    <div class=\"row\">\n      <div class=\"one wide column\"></div>\n      <div class=\"two wide column rr-logo-box\">\n        <img class=\"res\" src=\"assets/img/logo_retina_stk.png\"/>\n      </div>\n      <div class=\"four wide column rr-menu-nav\">\n        <div style=\"border: none\" class=\"ui three item secondary pointing stackable menu\">\n          <a routerLink=\"\" class=\"item\">HOME</a>\n          <a routerLink=\"/campaign\" class=\"item\">DISCOVER</a>\n          <a class=\"item ui rr-about dropdown\">ABOUT US<i class=\"dropdown icon\"></i>\n            <div class=\"menu\">\n              <div routerLink=\"/help\" class=\"item\">How It Works</div>\n              <div routerLink=\"/team\" class=\"item\">Team</div>\n              <div routerLink=\"/impact\" class=\"item\">Our Impact</div>\n            </div>\n          </a>\n        </div>\n      </div>\n      <div class=\"three wide right floated column rr-menu-nav\">\n        <div style=\"border: none\" class=\"ui two item secondary pointing stackable menu\">\n          <a routerLink=\"/dashboard\" class=\"item\"> My Account</a>\n          <a (click)=\"logout()\" class=\"item\">Sign Out</a>\n          <!--fix here-->\n          {{loadJQuery()}}\n        </div>\n      </div>\n      <!--<div class=\"two wide column rr-phone-box\">-->\n      <!--|  <i class=\"blue phone icon\"></i><b>+233 20-344-5933</b>-->\n      <!--</div>-->\n      <!--<div class=\"three wide column rr-logo-box\">-->\n      <!--<div class=\"ui fluid category search\">-->\n      <!--<div class=\"ui icon input\">-->\n      <!--<input class=\"prompt\" type=\"text\" placeholder=\"Search rotaraise\">-->\n      <!--<i class=\"search icon\"></i>-->\n      <!--</div>-->\n      <!--<div class=\"results\"></div>-->\n      <!--</div>-->\n      <!--</div>-->\n    </div>\n  </div>\n</div>\n<div *ngIf=\"isLoggedOn == false\">\n  <div class=\"ui top fixed four column stackable grid\">\n    <div class=\"row\">\n      <div class=\"one wide column\"></div>\n      <div class=\"two wide column rr-logo-box\">\n        <img class=\"res\" src=\"assets/img/logo_retina_stk.png\"/>\n      </div>\n      <div class=\"four wide column rr-menu-nav\">\n        <div style=\"border: none\" class=\"ui three item secondary pointing stackable menu\">\n          <a routerLink=\"\" class=\"item\">HOME</a>\n          <a routerLink=\"/campaign\" class=\"item\">DISCOVER</a>\n          <a class=\"item ui rr-about dropdown\">ABOUT US<i class=\"dropdown icon\"></i>\n            <div class=\"menu\">\n              <div routerLink=\"/help\" class=\"item\">How It Works</div>\n              <div routerLink=\"/team\" class=\"item\">Team</div>\n              <div routerLink=\"/impact\" class=\"item\">Our Impact</div>\n            </div>\n          </a>\n        </div>\n      </div>\n      <div class=\"three wide right floated column rr-menu-nav\">\n        <div style=\"border: none\" class=\"ui two item secondary pointing stackable menu\">\n          <a routerLink=\"/login\" class=\"item\">LOG IN</a>\n          <a routerLink=\"/register\" class=\"item\">SIGN UP</a>\n          <!--fix here-->\n          {{loadJQuery()}}\n        </div>\n      </div>\n      <!--<div class=\"two wide column rr-phone-box\">-->\n      <!--|  <i class=\"blue phone icon\"></i><b>+233 20-344-5933</b>-->\n      <!--</div>-->\n      <!--<div class=\"three wide column rr-logo-box\">-->\n      <!--<div class=\"ui fluid category search\">-->\n      <!--<div class=\"ui icon input\">-->\n      <!--<input class=\"prompt\" type=\"text\" placeholder=\"Search rotaraise\">-->\n      <!--<i class=\"search icon\"></i>-->\n      <!--</div>-->\n      <!--<div class=\"results\"></div>-->\n      <!--</div>-->\n      <!--</div>-->\n    </div>\n  </div>\n</div>\n\n"
 
 /***/ },
-/* 745 */
+/* 744 */
 /***/ function(module, exports) {
 
 module.exports = "<p>\r\n  logo works!\r\n</p>\r\n"
 
 /***/ },
-/* 746 */
+/* 745 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"rr-side-step sidebar\">\n\n  <br>\n  <div class=\"ui vertical menu\">\n    <a class=\"active teal item\">\n      Overview\n    </a>\n    <a (click)=\"goBasic()\" class=\"item\">\n      Basics\n      <!--<div class=\"ui label\"></div>-->\n    </a>\n    <a routerLink=\"/story\" class=\"item\">\n      Story\n      <!--<div class=\"ui label\"></div>-->\n    </a>\n    <a class=\"item\">\n      Updates\n      <!--<div class=\"ui label\"></div>-->\n    </a>\n    <a class=\"item\">\n      Donations\n      <!--<div class=\"ui label\">3</div>-->\n    </a>\n    <a class=\"item\">\n      Settings\n      <!--<div class=\"ui label\">1</div>-->\n    </a>\n  </div>\n\n</div>\n<br>\n<button style=\"margin-left: 10px\" class=\"ui labeled icon button\">\n  <i class=\"left chevron icon\"></i>\n  Back to Projects\n</button>\n"
 
 /***/ },
-/* 747 */
+/* 746 */
 /***/ function(module, exports) {
 
 module.exports = "<p>\n  richtexteditor works!\n</p>\n"
 
 /***/ },
-/* 748 */
+/* 747 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"rr-slider-box\">\n\n    <!--<img class=\"ui image mobile only grid rr-mob\" src=\"assets/img/african_school.jpg\">-->\n    <!--<img class=\"ui image computer only grid rr-desk\" src=\"assets/img/african_school.jpg\">-->\n    <div class=\"module module--horizontal\">\n        <div id=\"Carousel\" class=\"glide\">\n\n            <div class=\"glide__arrows\">\n                <button class=\"glide__arrow prev\" data-glide-dir=\"<\">prev</button>\n                <button class=\"glide__arrow next\" data-glide-dir=\">\">next</button>\n            </div>\n\n            <div class=\"glide__wrapper\">\n                <ul class=\"glide__track\">\n                    <li class=\"glide__slide\">\n                        <img class=\"box ui image computer only\" src=\"assets/img/char1.jpg\">\n                        <img class=\"ui image mobile only  rr-mob\" src=\"assets/img/char1.jpg\">\n                    </li>\n                    <li class=\"glide__slide\">\n                      <img class=\"box ui image computer only\" src=\"assets/img/char2.jpg\">\n                      <img class=\"ui image mobile only  rr-mob\" src=\"assets/img/char2.jpg\">\n                    </li>\n                    <li class=\"glide__slide\">\n                      <img class=\"box ui image computer only\" src=\"assets/img/char3.jpg\">\n                      <img class=\"ui image mobile only  rr-mob\" src=\"assets/img/char3.jpg\">\n                    </li>\n                    <li class=\"glide__slide\">\n                      <img class=\"box ui image computer only\" src=\"assets/img/char4.jpg\">\n                      <img class=\"ui image mobile only  rr-mob\" src=\"assets/img/char4.jpg\">\n                    </li>\n                </ul>\n            </div>\n\n            <div class=\"glide__bullets\"></div>\n        </div>\n    </div>\n    {{loadJQuery()}}\n</div>\n\n<!--<div class=\"ui container stackable three column grid rr-large-menus\">-->\n    <!--<div class=\"ten wide column rr-logo-box\">-->\n        <!--<div class=\"ui fluid category search\">-->\n            <!--<div class=\"ui icon input\">-->\n                <!--<input class=\"prompt\" type=\"text\" placeholder=\"Search rotaraise\">-->\n                <!--<i class=\"search icon\"></i>-->\n            <!--</div>-->\n            <!--<div class=\"results\"></div>-->\n        <!--</div>-->\n    <!--</div>-->\n<!--</div>-->\n<!--<div class=\"ui stackable three column grid rr-large-menus\">-->\n<!--<div class=\"center column rr-one\">-->\n<!--<span>view our causes</span><br>-->\n<!--Donate Now-->\n<!--</div>-->\n<!--<div class=\"column rr-two\">-->\n<!--<span>Become A Volunteer</span><br>-->\n<!--Join Us Now-->\n<!--</div>-->\n<!--<div class=\"column rr-three\">-->\n<!--<span>view our causes</span><br>-->\n<!--Get Involved-->\n<!--</div>-->\n<!--</div>-->\n"
 
 /***/ },
-/* 749 */
+/* 748 */
 /***/ function(module, exports) {
 
 module.exports = "<app-dashheader></app-dashheader>\n<div class=\"rr-project-menu-box \">\n  <div class=\"rr-dash-topbar\">\n    <div class=\"ui stackable grid \">\n      <div class=\"row\">\n        <div class=\"two wide column\"></div>\n        <div class=\"six wide column\">\n          <h1 class=\"ui header rr-font\">Campaign / Basics</h1>\n          <h4 class=\"ui header rr-subtext-color\"></h4>\n        </div>\n        <div class=\"six wide column\">\n          <img src=\"\">\n        </div>\n      </div>\n    </div>\n  </div>\n  <div *ngFor=\"let project of project.projects;let i = index;\">\n    <div class=\"ui  stackable grid\">\n      <div class=\"row\">\n        <div class=\"three wide column\">\n          <app-projectsidebar [projecturl]=\"project.info.urlcode\"></app-projectsidebar>\n        </div>\n        <div class=\"ten wide column\" style=\"margin-top: 40px\">\n          <div class=\"\">\n            <!--le segment-->\n            <div class=\"ui stackable grid\">\n              <div class=\"four wide column\">\n                <div class=\"rr-field-title\">Campaign Title</div>\n              </div>\n              <div class=\"twelve wide column rr-shape-shift\">\n                <div id=\"rrName\" class=\"\">\n                  <div id=\"titlerrName\" class=\"rr-field-content\">{{project.info.name}}</div>\n                  <br>\n                  <hr style=\"color: #fff\">\n                  <a (click)=\"editClick($event,project.info.name)\" class=\"rrName rr-right\"><i\n                    class=\"rrName icon pencil\"></i> </a>\n                </div>\n                <div id=\"editrrName\" class=\"editName\">\n                  <div class=\"ui large fluid input\">\n                    <input type=\"text\" id=\"iEditName\" [attr.value]=\"initstate\">\n                  </div>\n                  <br>\n                  <hr class=\"ui black\">\n                  <a (click)=\"cancel($event)\" class=\"editrrName rr-right ui label\">Cancel</a>\n                  <button (click)=\"save($event,project.info.uuid,'info','#iEditName','name')\"\n                          class=\"editrrName rr-right {{savestate}} ui button label\">Save\n                  </button>\n\n                </div>\n              </div>\n            </div>\n            <!--viva le segment--><br>\n            <!--le segment-->\n            <div style=\"margin-top: 15px\" class=\"ui stackable grid\">\n              <div class=\"four wide column\">\n                <div class=\"rr-field-title\">Campaign Tagline</div>\n              </div>\n              <div class=\"twelve wide column rr-shape-shift\">\n                <div id=\"rrTagline\" class=\"\">\n                  <div id=\"titlerrTagline\" class=\"rr-field-content\">{{project.display.tagline}}</div>\n                  <br>\n                  <hr style=\"color: #fff\">\n                  <a (click)=\"editClick($event,project.display.tagline)\" class=\"rrTagline rr-right\"><i\n                    class=\"rrTagline icon pencil\"></i> </a>\n                </div>\n                <div id=\"editrrTagline\" class=\"editName\">\n                  <div class=\"ui large fluid input\">\n                    <input type=\"text\" id=\"iEditTagline\" [attr.value]=\"initstate\">\n                  </div>\n                  <br>\n                  <hr class=\"ui black\">\n                  <a (click)=\"cancel($event)\" class=\"editrrTagline rr-right ui label\">Cancel</a>\n                  <button (click)=\"save($event,project.info.uuid,'display','#iEditTagline','tagline')\"\n                          class=\"editrrTagline rr-right {{savestate}} ui button label\">Save\n                  </button>\n\n                </div>\n              </div>\n            </div>\n            <!--viva le segment-->\n\n            <!--le segment-->\n            <div style=\"margin-top: 25px\" class=\"ui stackable grid\">\n              <div class=\"four wide column\">\n                <div class=\"rr-field-title\">Campaign City</div>\n              </div>\n              <div class=\"twelve wide column rr-shape-shift\">\n                <div id=\"rrCity\" class=\"\">\n                  <div id=\"titlerrCity\" class=\"rr-field-content\">{{project.info.city}}</div>\n\n                  <br>\n                  <hr style=\"color: #fff\">\n                  <a (click)=\"editClick($event,project.info.city)\" class=\"rrCity rr-right\"><i\n                    class=\"rrCity icon pencil\"></i> </a>\n                </div>\n\n                <div id=\"editrrCity\" class=\"editName\">\n                  <div class=\"ui large fluid input\">\n                    <input type=\"text\" id=\"iEditCity\" [attr.value]=\"initstate\">\n                  </div>\n                  <br>\n                  <hr class=\"ui black\">\n                  <a (click)=\"cancel($event)\" class=\"editrrCity rr-right ui label\">Cancel</a>\n                  <button (click)=\"save($event,project.info.uuid,'info','#iEditCity','city')\"\n                          class=\"editrrCity rr-right {{savestate}} ui button label\">Save\n                  </button>\n\n                </div>\n              </div>\n            </div>\n            <!--viva le segment-->\n\n            <!--le segment-->\n            <div style=\"margin-top: 25px\" class=\"ui stackable grid\">\n              <div class=\"four wide column\">\n                <div class=\"rr-field-title\">Campaign Country</div>\n              </div>\n              <div class=\"twelve wide column rr-shape-shift\">\n                <div id=\"rrCountry\" class=\"\">\n                  <div id=\"titlerrCountry\" class=\"rr-field-content\">{{project.info.country}}</div>\n\n                  <br>\n                  <hr style=\"color: #fff\">\n                  <a (click)=\"editClick($event,project.info.country)\" class=\"rrCountry rr-right\"><i\n                    class=\"rrCountry icon pencil\"></i> </a>\n                </div>\n\n                <div id=\"editrrCountry\" class=\"editName\">\n                  <div class=\"field\">\n                    <input type=\"hidden\" id=\"rrCountryVal\" name=\"country\">\n                    <app-countrylist (country)=\"onCountry($event)\"></app-countrylist>\n                  </div>\n                  <br>\n                  <hr class=\"ui black\">\n                  <a (click)=\"cancel($event)\" class=\"editrrCountry rr-right ui label\">Cancel</a>\n                  <button (click)=\"save($event,project.info.uuid,'info','#rrCountryVal','country')\"\n                          class=\"editrrCountry rr-right {{savestate}} ui button label\">Save\n                  </button>\n\n                </div>\n              </div>\n            </div>\n            <!--viva le segment-->\n\n\n            <!--&lt;!&ndash;le segment&ndash;&gt;-->\n            <!--<div class=\"ui segment\">-->\n            <!--<div class=\"ui stackable grid\">-->\n            <!--<div class=\"four wide column\">-->\n            <!--<div class=\"rr-field-title\">Campaign Tagline</div>-->\n            <!--</div>-->\n            <!--<div class=\"twelve wide column rr-shape-shift\">-->\n            <!--&lt;!&ndash;shape item&ndash;&gt;-->\n            <!--<div class=\"ui text shape\" id=\"editTag\">-->\n            <!--<div class=\"sides\">-->\n            <!--<div class=\"ui active side\">-->\n            <!--<span class=\"rr-field-content\">We love Water</span>-->\n            <!--<button (click)=\"editClick($event)\" class=\"editTag right floated ui icon button\" style=\"margin-left: 20px\">-->\n            <!--<i class=\"editTag edit icon\"></i>-->\n            <!--</button>-->\n            <!--</div>-->\n            <!--<div class=\"ui side\">-->\n            <!--<div class=\"ui input\">-->\n            <!--<input type=\"text\" value=\"We love Water\">-->\n            <!--</div>-->\n            <!--<button (click)=\"editClick($event)\" class=\"editTag right floated mini ui button\"  style=\"margin-left: 20px\">-->\n            <!--save-->\n            <!--</button>-->\n            <!--<button (click)=\"cancel($event)\" class=\"editTag right floated mini ui button\"  style=\"margin-left: 5px\">-->\n            <!--cancel-->\n            <!--</button>-->\n            <!--</div>-->\n            <!--</div>-->\n            <!--</div>-->\n            <!--&lt;!&ndash;end shape item&ndash;&gt;-->\n            <!--</div>-->\n            <!--</div>-->\n            <!--</div>-->\n            <!--&lt;!&ndash;viva le segment&ndash;&gt;-->\n            <!--&lt;!&ndash;le segment&ndash;&gt;-->\n            <!--<div class=\"ui segment\">-->\n            <!--<div class=\"ui stackable grid\">-->\n            <!--<div class=\"four wide column\">-->\n            <!--<div class=\"rr-field-title\">Funding Amount</div>-->\n            <!--</div>-->\n            <!--<div class=\"twelve wide column rr-shape-shift\">-->\n            <!--&lt;!&ndash;shape item&ndash;&gt;-->\n            <!--<div class=\"ui text shape\" id=\"editAmt\">-->\n            <!--<div class=\"sides\">-->\n            <!--<div class=\"ui active side\">-->\n            <!--<label class=\"rr-field-content\">500 USD</label>-->\n            <!--<button (click)=\"editClick($event)\" class=\"editAmt right floated ui icon button\" style=\"margin-left: 20px\">-->\n            <!--<i class=\"editAmt edit icon\"></i>-->\n            <!--</button>-->\n            <!--</div>-->\n            <!--<div class=\"ui side\">-->\n            <!--<app-currency></app-currency>-->\n            <!--<button (click)=\"cancel($event)\" class=\"editAmt right floated mini ui button \"  style=\"margin-left: 5px\">-->\n            <!--cancel-->\n            <!--</button>-->\n            <!--<button (click)=\"editClick($event)\" class=\"editAmt right floated mini ui button\"  style=\"margin-left: 20px\">-->\n            <!--save-->\n            <!--</button>-->\n\n            <!--</div>-->\n            <!--</div>-->\n            <!--</div>-->\n            <!--&lt;!&ndash;end shape item&ndash;&gt;-->\n            <!--</div>-->\n            <!--</div>-->\n            <!--</div>-->\n            <!--&lt;!&ndash;viva le segment&ndash;&gt;-->\n\n            <!--shape item-->\n            <!--<div class=\"ui text shape\" id=\"editName\">-->\n            <!--<div class=\"sides\">-->\n            <!--<div class=\"ui active side\">-->\n\n            <!--<button (click)=\"editClick($event)\" class=\"editName right floated ui icon button\" style=\"margin-left: 20px\">-->\n            <!--<i class=\"editName edit icon\"></i>-->\n            <!--</button>-->\n            <!--</div>-->\n            <!--<div class=\"ui side\">-->\n            <!--<div class=\"ui input\">-->\n            <!--<input type=\"text\" value=\"kankam rules\">-->\n            <!--</div>-->\n            <!--<button (click)=\"editClick($event)\" class=\"editName right floated mini ui button\"  style=\"margin-left: 20px\">-->\n            <!--save-->\n            <!--</button>-->\n            <!--<button (click)=\"cancel($event)\" class=\"editName right floated mini ui button\"  style=\"margin-left: 5px\">-->\n            <!--cancel-->\n            <!--</button>-->\n            <!--</div>-->\n            <!--</div>-->\n            <!--</div>-->\n            <!--end shape item-->\n            {{initViews()}}\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<FooterComponent></FooterComponent>\n"
 
 /***/ },
-/* 750 */
+/* 749 */
 /***/ function(module, exports) {
 
 module.exports = "<app-dashheader></app-dashheader>\n<div class=\"rr-project-menu-box \">\n  <div class=\"rr-dash-topbar\">\n    <div class=\"ui stackable grid \">\n      <div class=\"row\">\n        <div class=\"two wide column\"></div>\n        <div class=\"six wide column\">\n          <h1 class=\"ui header rr-font\">Overview</h1>\n          <h4 class=\"ui header rr-subtext-color\"></h4>\n        </div>\n        <div class=\"six wide column\">\n          <img src=\"\">\n        </div>\n      </div>\n    </div>\n  </div>\n  <div *ngFor=\"let project of project.projects;let i = index;\">\n    <div class=\"ui  stackable grid\">\n      <div class=\"row\">\n        <div class=\"three wide column\">\n          <app-projectsidebar [projecturl]=\"project.info.urlcode\"></app-projectsidebar>\n        </div>\n        <div class=\"eleven wide column\">\n          <div class=\"content\">\n            <div class=\"sixteen wide column body\">\n              <div class=\"ui items\">\n                <div class=\"item\">\n                  <div class=\"large image\">\n                    <img [attr.src]=\"url+project.media[0].filename+'.'+project.media[0].ext\">\n                  </div>\n                  <div class=\"content\">\n                    <a class=\"header\">{{project.info.name}}</a>\n                    <div class=\"meta\">\n                      <span>About Project</span>\n                    </div>\n                    <div class=\"description\">\n                      <p>\n                        {{project.display.description}}\n                      </p>\n                    </div>\n                    <div class=\"extra\">\n                      created 5th January 2016 &nbsp; &nbsp;\n                      <a class=\"green ui tag label\">verified</a> &nbsp; &nbsp;\n                      <a class=\"teal ui tag label\">in progress</a> &nbsp; &nbsp; &nbsp;\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<FooterComponent></FooterComponent>\n"
 
 /***/ },
-/* 751 */
+/* 750 */
 /***/ function(module, exports) {
 
-module.exports = "<app-dashheader></app-dashheader>\n<div class=\"rr-dash-topbar\">\n  <div class=\"ui container stackable grid \">\n    <div class=\"row\">\n      <div class=\"twelve wide column\">\n        <h1 class=\"ui header rr-font\">Start Campaign</h1>\n        <div class=\"six wide column\">\n          <img src=\"\">\n        </div>\n      </div>\n      <div class=\"three wide column\">\n        <a routerLink=\"/dashboard\" class=\"ui right labeled right floated icon submit button\">\n          <i class=\"right arrow icon\"></i>\n          Dashboard\n        </a>\n      </div>\n      <hr/>\n    </div>\n\n  </div>\n</div>\n\n<div class=\"ui container stackable grid rr-addproject\">\n  <div class=\"row\">\n    <div class=\"thirteen wide column\">\n      <!--le first form-->\n      <form id=\"formone\" class=\"ui {{cssClasses.loading}} form\">\n        <!--le basics-->\n        <h2 class=\"ui dividing header\">Basic <span class=\"sub-head\">Introduce Your Campaign</span></h2>\n        <div class=\"ui segment\">\n          <div class=\"ui stackable grid\">\n            <div class=\"ten wide column\">\n              <div class=\"ui error message\"></div>\n              <div class=\"field required\">\n                <label class=\"field-title\">Campaign Title</label>\n                <div class=\"field-sub\">What is the title of your campaign</div>\n                <div class=\"ui large input\">\n                  <input [(ngModel)]=\"model.name\" name=\"name\" placeholder=\"\" type=\"text\">\n                </div>\n              </div><br>\n              <div class=\"field\">\n                <label class=\"field-title\">Tagline</label>\n                <div class=\"field-sub\">Short Campaing Tagline</div>\n                <div class=\"ui large input\">\n                  <input [(ngModel)]=\"model.tagline\" name=\"tagline\" placeholder=\"\" type=\"text\">\n                </div>\n              </div><br>\n              <div class=\"field required\">\n                <label class=\"field-title\">Campaign Description</label>\n                <div class=\"field-sub\">Tell us what this campaign is about.</div>\n                <div class=\"ui large input\">\n                <textarea rows=\"3\" [(ngModel)]=\"model.description\" name=\"description\" placeholder=\"\" type=\"text\"></textarea>\n                  </div>\n              </div>\n                  <br><br>\n              {{model | json}}\n              <div class=\"two fields\">\n                <div class=\"field required\">\n                  <label class=\"field-title\">FundRaising Start Date</label>\n                  <div class=\"field-sub\">When does the fundraising Start</div>\n                  <datepicker [(ngModel)]=\"datemodel.start\" name=\"fundstart\" [expanded]=\"true\"></datepicker>\n                </div>\n                <div class=\"field required\">\n                  <label class=\"field-title\">FundRaising End Date</label>\n                  <div class=\"field-sub\">When does the fundraising End</div>\n                  <datepicker [(ngModel)]=\"datemodel.end\" name=\"fundend\" [expanded]=\"true\"></datepicker>\n                </div>\n              </div>\n\n            </div>\n          </div>\n        </div>\n        <!--fini le basics-->\n        <!--le fund-->\n        <h2 class=\"ui dividing header\">Funding <span class=\"sub-head\"></span></h2>\n        <div class=\"ui segment\">\n          <div class=\"ui grid\">\n            <div class=\"ten wide column\">\n              <div class=\" twelve wide field required\">\n                <label class=\"field-title\">Amount</label>\n                <div class=\"field-sub\">How much money would you like to raise?</div>\n                <!--//TODO move to component-->\n                <div class=\"ui large right labeled input \">\n                  <input [(ngModel)]=\"model.targetamt\"  id=\"targetamt\"  name=\"targetamt\" type=\"text\" placeholder=\"currency\">\n                  <input [(ngModel)]=\"model.currency\" name=\"currency\" type=\"hidden\">\n                  <div class=\"teal ui dropdown label curamt\">\n                    <div class=\"text\">USD</div>\n                    <!--<i class=\"dropdown icon\"></i>-->\n                    <!--<div class=\"menu\">-->\n                      <!--<div class=\"item\" data-value=\"USD\">USD</div>-->\n                      <!--<div class=\"item\" data-value=\"CAD\">CAD</div>-->\n                      <!--<div class=\"item\" data-value=\"GBP\" >GBP</div>-->\n                      <!--<div class=\"item\" data-value=\"GHC\">GHC</div>-->\n                      <!--<div class=\"item\" data-value=\"EUR\">EUR</div>-->\n                    <!--</div>-->\n                  </div>\n                </div>\n                <!--//end-->\n              </div>\n            </div>\n          </div>\n        </div>\n        <!--fini le fund-->\n        <!--le display-->\n        <h2 class=\"ui dividing header\">Display  <span class=\"sub-head\">how to display campaign on Rotaraise</span></h2>\n        <div class=\"ui segment\">\n          <div class=\"ui grid\">\n            <div class=\"ten wide column\">\n              <div class=\"field required\">\n                <label class=\"field-title\">Campaign Display Image</label>\n                <div class=\"field-sub\">Upload an image that represents your campaign.\n                  640 x 640 recommended image size,</div>\n                <app-fileuploader [simplefile]=true [url]=\"projecturl\"></app-fileuploader>\n                <input type=\"hidden\" name=\"uploadimg\" value=\"\">\n              </div><br><br>\n              <div class=\"field required\">\n                <label class=\"field-title\">Location </label>\n                <div class=\"field-sub\">Choose the location where you are running the campaign.\n                  This location will be visible on your campaign page for your audience to see.</div>\n              </div>\n              <div class=\"two fields\">\n                <div class=\"field\">\n                  <input [(ngModel)]=\"model.city\" name=\"city\" class=\"ui large input\" placeholder=\"city\" type=\"text\">\n                </div>\n                <div class=\"field\">\n                  <input type=\"hidden\" [(ngModel)]=\"model.country\" name=\"country\">\n                  <app-countrylist (country)=\"onCountry($event)\"></app-countrylist>\n                </div>\n              </div>\n              <div class=\"field required\">\n                <label class=\"field-title\">Category</label>\n                <div class=\"field-sub\">Select a category that best aligns with your campaign.</div>\n                <div class=\"ui selection dropdown\">\n                  <input type=\"hidden\" [(ngModel)]=\"model.category\" name=\"category\">\n                  <i class=\"dropdown icon\"></i>\n                  <div class=\"default text\">Category</div>\n                  <div class=\"menu\">\n                    <div class=\"item\" data-value=\"Rural\">Rural</div>\n                    <div class=\"item\" data-value=\"Rural Health\">Rural Health</div>\n                    <div class=\"item\" data-value=\"Education\">Education</div>\n                    <div class=\"item\" data-value=\"Farming\">Farming</div>\n                    <div class=\"item\" data-value=\"Small Business\">Small Business</div>\n                    <div class=\"item\" data-value=\"Music\">Music</div>\n                    <div class=\"item\" data-value=\"Creative Arts\"> Creative Arts</div>\n                    <div class=\"item\" data-value=\"Technology\">Technology</div>\n                    <div class=\"item\" data-value=\"Sports\">Sports</div>\n                    <div class=\"item\" data-value=\"Environment\">Environment</div>\n                    <div class=\"item\" data-value=\"Other\">Other</div>\n                  </div>\n                </div>\n              </div>\n              <div class=\"field\">\n                <label class=\"field-title\">Tags</label>\n                <div class=\"field-sub\">Enter keywords that best describe your campaign.separate each keyword with a comma\n                  These tags help with organization and discoverability.</div>\n                <div class=\"ui large input\">\n                  <input [(ngModel)]=\"model.tags\" name=\"tags\" placeholder=\"\" type=\"text\">\n                </div>\n              </div>\n\n              <!--<div class=\"field\">-->\n                <!--<label class=\"field-title\">Upload Additional Documents and Images (optional)</label>-->\n                <!--<div class=\"field-sub\"></div>-->\n              <!--</div>-->\n            </div>\n          </div>\n        </div>\n        <!--fini le display-->\n        <div class=\"field\">\n          <button class=\"ui right labeled right floated icon submit button\">\n            <i class=\"right arrow icon\"></i>\n            Submit\n          </button>\n        </div>\n      </form>\n      <!--fini le first form-->\n\n    </div>\n\n\n  </div>\n</div>\n\n\n<FooterComponent></FooterComponent>\n<div class=\"ui small modal rr-project-modal\">\n  <div class=\"rr-success-msg\">\n    <div class=\"one column ui stackable grid\">\n      <div class=\"column top\">\n        <br>\n        <h1 class=\"ui header\">Project Created</h1>\n        <h5>Your project will go live once approved by Rotaraise</h5><br><br>\n      </div>\n      <div class=\"column wave\"></div>\n      <div class=\"column dub\"><br>\n        <div class=\"actions\">\n          <button  class=\"yellow small positive ui button\">\n            Ok\n          </button>\n        </div>\n\n        <br>\n        <br>\n\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<app-dashheader></app-dashheader>\n<div class=\"rr-dash-topbar\">\n  <div class=\"ui container stackable grid \">\n    <div class=\"row\">\n      <div class=\"twelve wide column\">\n        <h1 class=\"ui header rr-font\">Start Campaign</h1>\n        <div class=\"six wide column\">\n          <img src=\"\">\n        </div>\n      </div>\n      <div class=\"three wide column\">\n        <a routerLink=\"/dashboard\" class=\"ui right labeled right floated icon submit button\">\n          <i class=\"right arrow icon\"></i>\n          Dashboard\n        </a>\n      </div>\n      <hr/>\n    </div>\n\n  </div>\n</div>\n\n<div class=\"ui container stackable grid rr-addproject\">\n  <div class=\"row\">\n    <div class=\"thirteen wide column\">\n      <!--le first form-->\n      <form id=\"formone\" class=\"ui {{cssClasses.loading}} form\">\n        <!--le basics-->\n        <h2 class=\"ui dividing header\">Basic <span class=\"sub-head\">Introduce Your Campaign</span></h2>\n        <div class=\"ui segment\">\n          <div class=\"ui stackable grid\">\n            <div class=\"ten wide column\">\n              <div class=\"ui error message\"></div>\n              <div class=\"field required\">\n                <label class=\"field-title\">Campaign Title</label>\n                <div class=\"field-sub\">What is the title of your campaign</div>\n                <div class=\"ui large input\">\n                  <input [(ngModel)]=\"model.name\" name=\"name\" placeholder=\"\" type=\"text\">\n                </div>\n              </div><br>\n              <div class=\"field\">\n                <label class=\"field-title\">Tagline</label>\n                <div class=\"field-sub\">Short Campaing Tagline</div>\n                <div class=\"ui large input\">\n                  <input [(ngModel)]=\"model.tagline\" name=\"tagline\" placeholder=\"\" type=\"text\">\n                </div>\n              </div><br>\n              <div class=\"field required\">\n                <label class=\"field-title\">Campaign Description</label>\n                <div class=\"field-sub\">Tell us what this campaign is about.</div>\n                <div class=\"ui large input\">\n                <textarea rows=\"3\" [(ngModel)]=\"model.description\" name=\"description\" placeholder=\"\" type=\"text\"></textarea>\n                  </div>\n              </div>\n                  <br><br>\n              <!--{{model | json}}-->\n              <div class=\"two fields\">\n                <div class=\"field required\">\n                  <label class=\"field-title\">FundRaising Start Date</label>\n                  <div class=\"field-sub\">When does the fundraising Start</div>\n                  <datepicker [(ngModel)]=\"datemodel.start\" name=\"fundstart\" [expanded]=\"true\"></datepicker>\n                </div>\n                <div class=\"field required\">\n                  <label class=\"field-title\">FundRaising End Date</label>\n                  <div class=\"field-sub\">When does the fundraising End</div>\n                  <datepicker [(ngModel)]=\"datemodel.end\" name=\"fundend\" [expanded]=\"true\"></datepicker>\n                </div>\n              </div>\n\n            </div>\n          </div>\n        </div>\n        <!--fini le basics-->\n        <!--le fund-->\n        <h2 class=\"ui dividing header\">Funding <span class=\"sub-head\"></span></h2>\n        <div class=\"ui segment\">\n          <div class=\"ui grid\">\n            <div class=\"ten wide column\">\n              <div class=\" twelve wide field required\">\n                <label class=\"field-title\">Amount</label>\n                <div class=\"field-sub\">How much money would you like to raise?</div>\n                <!--//TODO move to component-->\n                <div class=\"ui large right labeled input \">\n                  <input [(ngModel)]=\"model.targetamt\"  id=\"targetamt\"  name=\"targetamt\" type=\"text\" placeholder=\"currency\">\n                  <input [(ngModel)]=\"model.currency\" name=\"currency\" type=\"hidden\">\n                  <div class=\"teal ui dropdown label curamt\">\n                    <div class=\"text\">USD</div>\n                    <!--<i class=\"dropdown icon\"></i>-->\n                    <!--<div class=\"menu\">-->\n                      <!--<div class=\"item\" data-value=\"USD\">USD</div>-->\n                      <!--<div class=\"item\" data-value=\"CAD\">CAD</div>-->\n                      <!--<div class=\"item\" data-value=\"GBP\" >GBP</div>-->\n                      <!--<div class=\"item\" data-value=\"GHC\">GHC</div>-->\n                      <!--<div class=\"item\" data-value=\"EUR\">EUR</div>-->\n                    <!--</div>-->\n                  </div>\n                </div>\n                <!--//end-->\n              </div>\n            </div>\n          </div>\n        </div>\n        <!--fini le fund-->\n        <!--le display-->\n        <h2 class=\"ui dividing header\">Display  <span class=\"sub-head\">how to display campaign on Rotaraise</span></h2>\n        <div class=\"ui segment\">\n          <div class=\"ui grid\">\n            <div class=\"ten wide column\">\n              <div class=\"field required\">\n                <label class=\"field-title\">Campaign Display Image</label>\n                <div class=\"field-sub\">Upload an image that represents your campaign.\n                  640 x 640 recommended image size,</div>\n                <app-fileuploader [simplefile]=true [url]=\"projecturl\"></app-fileuploader>\n                <input type=\"hidden\" name=\"uploadimg\" value=\"\">\n              </div><br><br>\n              <div class=\"field required\">\n                <label class=\"field-title\">Location </label>\n                <div class=\"field-sub\">Choose the location where you are running the campaign.\n                  This location will be visible on your campaign page for your audience to see.</div>\n              </div>\n              <div class=\"two fields\">\n                <div class=\"field\">\n                  <input [(ngModel)]=\"model.city\" name=\"city\" class=\"ui large input\" placeholder=\"city\" type=\"text\">\n                </div>\n                <div class=\"field\">\n                  <input type=\"hidden\" [(ngModel)]=\"model.country\" name=\"country\">\n                  <app-countrylist (country)=\"onCountry($event)\"></app-countrylist>\n                </div>\n              </div>\n              <div class=\"field required\">\n                <label class=\"field-title\">Category</label>\n                <div class=\"field-sub\">Select a category that best aligns with your campaign.</div>\n                <div class=\"ui selection dropdown\">\n                  <input type=\"hidden\" [(ngModel)]=\"model.category\" name=\"category\">\n                  <i class=\"dropdown icon\"></i>\n                  <div class=\"default text\">Category</div>\n                  <div class=\"menu\">\n                    <div class=\"item\" data-value=\"Rural\">Rural</div>\n                    <div class=\"item\" data-value=\"Rural Health\">Rural Health</div>\n                    <div class=\"item\" data-value=\"Education\">Education</div>\n                    <div class=\"item\" data-value=\"Farming\">Farming</div>\n                    <div class=\"item\" data-value=\"Small Business\">Small Business</div>\n                    <div class=\"item\" data-value=\"Music\">Music</div>\n                    <div class=\"item\" data-value=\"Creative Arts\"> Creative Arts</div>\n                    <div class=\"item\" data-value=\"Technology\">Technology</div>\n                    <div class=\"item\" data-value=\"Sports\">Sports</div>\n                    <div class=\"item\" data-value=\"Environment\">Environment</div>\n                    <div class=\"item\" data-value=\"Other\">Other</div>\n                  </div>\n                </div>\n              </div>\n              <div class=\"field\">\n                <label class=\"field-title\">Tags</label>\n                <div class=\"field-sub\">Enter keywords that best describe your campaign.separate each keyword with a comma\n                  These tags help with organization and discoverability.</div>\n                <div class=\"ui large input\">\n                  <input [(ngModel)]=\"model.tags\" name=\"tags\" placeholder=\"\" type=\"text\">\n                </div>\n              </div>\n\n              <!--<div class=\"field\">-->\n                <!--<label class=\"field-title\">Upload Additional Documents and Images (optional)</label>-->\n                <!--<div class=\"field-sub\"></div>-->\n              <!--</div>-->\n            </div>\n          </div>\n        </div>\n        <!--fini le display-->\n        <div class=\"field\">\n          <button class=\"ui right labeled right floated icon submit button\">\n            <i class=\"right arrow icon\"></i>\n            Submit\n          </button>\n        </div>\n      </form>\n      <!--fini le first form-->\n\n    </div>\n\n\n  </div>\n</div>\n\n\n<FooterComponent></FooterComponent>\n<div class=\"ui small modal rr-project-modal\">\n  <div class=\"rr-success-msg\">\n    <div class=\"one column ui stackable grid\">\n      <div class=\"column top\">\n        <br>\n        <h1 class=\"ui header\">Project Created</h1>\n        <h5>Your project will go live once approved by Rotaraise</h5><br><br>\n      </div>\n      <div class=\"column wave\"></div>\n      <div class=\"column dub\"><br>\n        <div class=\"actions\">\n          <button  class=\"yellow small positive ui button\">\n            Ok\n          </button>\n        </div>\n\n        <br>\n        <br>\n\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ },
-/* 752 */
+/* 751 */
 /***/ function(module, exports) {
 
 module.exports = "<HeaderComponent></HeaderComponent>\n<div *ngFor=\"let project of project.projects;let i = index;\">\n  <div class=\"rr-campaign-page\">\n    <div class=\"one column ui container stackable grid \" style=\"text-align: center\">\n      <div class=\"row\">\n        <div class=\"column\">\n          <h1 class=\"ui header rr-head\">\n            {{project.info.name}}\n          </h1>\n          <h5 class=\"ui header rr-suthor\">\n            By {{project.clubinfo.clubname}}\n          </h5>\n        </div>\n      </div>\n    </div>\n    <div class=\"ui container stackable grid\" style=\"text-align: center\">\n      <div class=\"row\">\n        <div class=\"ten wide column\">\n          <img class=\"rr-cover-img\" [attr.src]=\"url+project.media[0].filename+'.'+project.media[0].ext\">\n          <div class=\"ui tall raised segment\">\n            <div class=\"ui icon label left floated\">\n              <i class=\"link icon\"></i>\n              Link : {{link+project.info.urlcode}}\n            </div>\n            <span class=\"rr-url\"></span>\n\n                  <span class=\"right floated\">\n                      <button class=\"ui circular facebook icon button\">\n                        <i class=\"facebook icon\"></i>\n                    </button>\n                    <button class=\"ui circular twitter icon button\">\n                        <i class=\"twitter icon\"></i>\n                    </button>\n                    <button class=\"ui circular linkedin icon button\">\n                        <i class=\"linkedin icon\"></i>\n                    </button>\n                    <button class=\"ui circular google plus icon button\">\n                        <i class=\"google plus icon\"></i>\n                    </button>\n\n                  </span>\n          </div>\n        </div>\n        <div class=\"six wide column\">\n          <h3>{{project.display.tagline}}</h3>\n          <div class=\"ui horizontal statistics\">\n            <div class=\"statistic\">\n              <div class=\"value\">\n                {{project.account.donorcount}}\n              </div>\n              <div class=\"label\">\n                Donors\n              </div>\n            </div>\n            <div class=\"statistic\">\n              <div class=\"value\">\n                ${{project.account.amtraised}}\n              </div>\n              <div class=\"label\">\n                raised\n              </div>\n            </div>\n            <div class=\"statistic\">\n              <div class=\"value\">\n                {{project.info.enddate | daysleft}}\n              </div>\n              <div class=\"label\">\n                Days to Go\n              </div>\n            </div>\n          </div>\n          <div [attr.data-percent]=\"project.account.amtraised / project.account.targetamt * 100\" class=\"ui green progress\" id=\"camprogress\">\n            <div  class=\"bar\">\n              <div class=\"progress\">{{project.account.amtraised / project.account.targetamt * 100}}%</div>\n              <!---->\n            </div>\n            <h3 class=\"label\">${{project.account.targetamt}} Goal</h3>\n          </div>\n          <br><br>\n          <button class=\"large ui button\"><i class=\"icon heart red\"></i>DONATE NOW</button>\n        </div>\n      </div>\n    </div>\n    <div class=\"rr-campaign-tab-box\">\n      <div class=\"ui container stackable grid\">\n        <div class=\"row\">\n          <div class=\"eleven wide column\">\n            <div class=\"ui top attached tabular menu\">\n              <a class=\"active item\" data-tab=\"first\">Story</a>\n              <a class=\"item\" data-tab=\"second\">Updates</a>\n              <a class=\"item\" data-tab=\"third\">Comments</a>\n              <a class=\"item\" data-tab=\"third\">Documents</a>\n            </div>\n            <div class=\"ui bottom attached active tab segment\" data-tab=\"first\">\n\n              {{project.display.description}}\n            </div>\n            <div class=\"ui bottom attached tab segment\" data-tab=\"second\">\n              Second\n            </div>\n            <div class=\"ui bottom attached tab segment\" data-tab=\"third\">\n              Third\n            </div>\n          </div>\n          <div class=\"five wide column\">\n            <br>\n            <h3 class=\"ui horizontal divider header\">\n              <i class=\"heart red icon\"></i>\n              Donors\n            </h3>\n            <div class=\"ui card\">\n              <div class=\"content\">\n                <div class=\"header\">$23 - Jason Depp</div>\n                <div class=\"description\">\n                  <p>10 minutes Ago</p>\n                </div>\n              </div>\n              <div class=\"extra content\">\n                <span class=\"left floated like\"><i class=\"like icon\"></i>Like</span>\n                <span class=\"right floated\"><i class=\"blue facebook icon\"></i>share</span>\n              </div>\n            </div>\n            <div class=\"ui card\">\n              <div class=\"content\">\n                <div class=\"header\">$23 - Araba Stones</div>\n                <div class=\"description\">\n                  <p>10 minutes Ago</p>\n                </div>\n              </div>\n              <div class=\"extra content\">\n                <span class=\"left floated like\"><i class=\"like icon\"></i>Like</span>\n                <span class=\"right floated\"><i class=\"blue facebook icon\"></i>share</span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n {{loadjQuery()}}\n</div>\n<div *ngIf=\"project.meta.total == 0 \">\n  <br><br>\n  <label class=\"ui label\">\n    Sorry Invalid Campaign Url\n  </label>\n</div>\n<FooterComponent></FooterComponent>\n"
 
 /***/ },
-/* 753 */
+/* 752 */
 /***/ function(module, exports) {
 
 module.exports = "<p>\n  campaigns works!\n</p>\n"
 
 /***/ },
-/* 754 */
+/* 753 */
 /***/ function(module, exports) {
 
 module.exports = "<app-dashheader></app-dashheader>\n<div class=\"rr-dash-topbar\">\n  <div class=\"ui stackable grid \">\n    <div class=\"row\">\n      <div class=\"two wide column\"></div>\n      <div class=\"six wide column\">\n        <h1 class=\"ui header rr-font\">Welcome to Rotaraise</h1>\n        <h4 class=\"ui header rr-subtext-color\"> Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit mi.\n          Aenean imperdiet lacus sit amet elit porta, et malesuada erat bibendum.</h4>\n      </div>\n      <div class=\"six wide column\">\n        <img src=\"\">\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"rr-dash-content\">\n  <div class=\"one column ui stackable grid \">\n    <div class=\"column\" style=\"text-align: end\">\n      <button (click)=\"addProjectClick()\" class=\"large red ui labeled icon button\">\n        <i class=\"add icon\"></i>\n        Add New Project\n      </button>\n    </div>\n  </div>\n\n  <div class=\"rr-dash-content-box\">\n    <div class=\"ui stackable grid\">\n      <div class=\"row\">\n        <div class=\"two wide column\"></div>\n        <div class=\"fourteen wide column\">\n          <div class=\"sixteen wide column rr-subtext-color\">\n            Your Current Projects\n          </div>\n          <div class=\"ui stackable grid\">\n            <div class=\"row\">\n                <!--//Ultralight Beam-->\n                <div *ngIf=\"projects.meta.total !=0 \">\n                  <div style=\"float: left\" *ngFor=\"let project of projects.projects;let i = index;\">\n                    <div class=\"ui card\" style=\"height: 250px;margin: 20px;\" >\n                      <div class=\"content\">\n                        <a class=\"header\">{{project.info.name}}</a>\n                        <div class=\"meta\">\n                          <a>{{project.info.enddate | daysleft}} Days Left</a>\n                        </div>\n\n                      </div>\n                      <div class=\"extra centered content\" style=\"text-align: center\">\n                        <a class=\"ui green label\">\n                          Donations\n                          <div class=\"detail\">{{project.account.donorcount}}</div>\n                        </a>\n                        <div class=\"ui blue progress dashpercent\"\n                             [attr.data-percent]=\"project.account.amtraised / project.account.targetamt * 100\" id=\"appexample2\">\n                          <div class=\"bar\"></div>\n                          <div class=\"label\">\n                            ${{project.account.amtraised}}\n\n                            Donated of\n                            {{jQueryEvents()}}\n                            ${{project.account.targetamt}} Goal</div>\n                        </div>\n                        <a (click)=\"manageProjectClick(project.info.urlcode)\" class=\"ui grey mini  button\">\n                          <i class=\"travel icon\"></i> Manage\n                        </a>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n                <div *ngIf=\"projects.meta.total == 0 \">\n                  <br><br>\n                  <label class=\"ui label\">\n                    No Projects.\n                  </label>\n                </div>\n                <!--dream-->\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<FooterComponent></FooterComponent>\n"
 
 /***/ },
-/* 755 */
+/* 754 */
 /***/ function(module, exports) {
 
 module.exports = "<HeaderComponent></HeaderComponent>\n<SliderComponent></SliderComponent>\n<FeaturedCampaignComponent [projects]=\"projects\" ></FeaturedCampaignComponent>\n<CategoryComponent></CategoryComponent>\n<CampaignAdComponent></CampaignAdComponent>\n<FooterComponent></FooterComponent>\n"
 
 /***/ },
-/* 756 */
+/* 755 */
 /***/ function(module, exports) {
 
 module.exports = "<HeaderComponent></HeaderComponent>\n<div class=\"ui stackable grid\" style=\"background-color: #f7f5f2;padding-top: 50px\">\n  <div class=\"row\">\n    <div class=\"five wide centered column rr-reg-body\">\n      <div class=\"rr-reg-head\">\n        Login\n      </div>\n      <h4 class=\"ui dividing header\"></h4>\n      <form class=\"ui form\">\n        <div [ngStyle]=\"{'display':errorClasses.loginerror}\" class=\"ui negative message\">\n          <div class=\"\">\n            Wrong Username / Password Combination\n          </div>\n        </div>\n        <div class=\"field\">\n          <div class=\"ui left action input\">\n            <button class=\"ui blue labeled icon button\">\n              <i class=\"mail icon\"></i>\n\n            </button>\n            <input type=\"text\" [(ngModel)]=\"accountmodel.email\" name=\"email\" placeholder=\"Email\">\n          </div>\n        </div>\n        <div class=\"field\">\n          <div class=\"ui left action input\">\n            <button class=\"ui blue labeled icon button\">\n              <i class=\"lock icon\"></i>\n\n            </button>\n            <input type=\"password\" [(ngModel)]=\"accountmodel.password\" name=\"password\" placeholder=\"Password\">\n          </div>\n        </div>\n        <div class=\"two fields\">\n          <div class=\"field\"><a routerLink=\"/passwordreset\" href=\"\" class=\"link\">forgot Password?</a></div>\n          <div class=\"field\">\n            <div (click)=\"streamLogin($event)\" class=\"right floated ui blue button\" tabindex=\"0\">Login</div></div>\n        </div>\n        <h4 class=\"ui dividing header\"></h4>\n        <div>New to Rotaraise? <a routerLink=\"/register\" class=\"link\"> Sign Up </a></div>\n      </form>\n    </div>\n  </div>\n\n</div>\n<FooterComponent></FooterComponent>\n"
 
 /***/ },
-/* 757 */
+/* 756 */
 /***/ function(module, exports) {
 
 module.exports = "<HeaderComponent></HeaderComponent>\n<div class=\"ui stackable grid\" style=\"background-color: #f7f5f2;padding-top: 50px\">\n\n  <div class=\"row\">\n    <div class=\"ten wide centered column rr-reg-body\">\n      <div class=\"rr-reg-head\">\n        Sign Up\n      </div>\n      <h4 class=\"ui dividing header\"></h4>\n      <div [ngStyle]=\"{'display':errorClasses.loginerror}\" class=\"ui negative message\">\n        <i class=\"close icon\"></i>\n        <div class=\"header\">\n        </div>\n        <p></p></div>\n      <form ngClass=\"{{cssClasses.loading}}\" class=\"ui form\">\n        <div class=\"ui error message\"></div>\n        <!--<h4 class=\"ui dividing header\">Shipping Information</h4>-->\n        <div class=\"field \">\n          <!--<div class=\"grey ui sub header\">-->\n          <div class=\"blue ui pointing below label\">\n            Email Address\n          </div>\n          <div class=\"fields {{errorClasses.emailfieldError}}\">\n            <div class=\"six wide field\">\n              <div class=\"ui small icon input\">\n                <input type=\"text\" (blur)=\"verifyEmail()\" id=\"email\"\n                       [(ngModel)]=\"accountmodel.email\" name=\"email\" placeholder=\"example@gmail.com\">\n\n              </div>\n\n            </div>\n            <div [ngStyle]=\"{'display':cssClasses.loaderhide}\"\n                 class=\"small active ui inline loader\" style=\"margin-top: 5px\"></div>\n   <i [ngStyle]=\"{'display':cssClasses.successicon}\" class=\"icon check green\" style=\"margin-top: 5px\"></i>\n            <div class=\"red ui {{cssClasses.emailtakenhide}} label\">\n              Email Address Already in use\n            </div>\n          </div>\n        </div>\n        <div class=\"two fields\">\n          <div class=\"field\">\n            <div class=\"blue ui pointing below label\">\n              Create a password\n            </div>\n            <div class=\"field\">\n              <div class=\"twelve wide field\">\n                <input class=\"ui input\" data-tooltip=\"minimun six characters\" data-position=\"bottom center\" type=\"password\" [(ngModel)]=\"accountmodel.password\" name=\"password\" placeholder=\"\">\n              </div>\n            </div>\n          </div>\n          <div class=\"field\">\n            <div class=\"blue ui pointing below label\">\n              Confirm your password\n            </div>\n            <div class=\"field\">\n              <div class=\"twelve wide field\">\n                <input type=\"password\" name=\"cpassword\" placeholder=\"\">\n              </div>\n            </div>\n          </div>\n        </div>\n        <h4 class=\"ui dividing header\">Club Information</h4>\n        <div class=\"two fields\">\n          <div class=\"field\">\n            <div class=\"blue ui pointing below label\">\n              Club Name\n            </div>\n            <div class=\"twelve wide field\">\n              <input type=\"text\" [(ngModel)]=\"model.clubname\" name=\"clubname\" placeholder=\"Club Name\">\n            </div>\n          </div>\n          <div class=\"field\">\n            <div class=\"blue ui pointing below label\">\n              President Name\n            </div>\n            <div class=\"twelve wide field\">\n              <input type=\"text\" [(ngModel)]=\"model.president\" name=\"presidentname\" placeholder=\"president name\">\n            </div>\n          </div>\n        </div>\n   <div class=\"two fields\">\n     <div class=\"field\">\n       <div class=\"blue ui pointing below label\">\n         District Name\n       </div>\n       <div class=\"twelve wide field\">\n         <input type=\"text\" [(ngModel)]=\"model.district\" name=\"district\" placeholder=\"district\">\n       </div>\n     </div>\n     <div class=\"field\">\n       <div class=\"blue ui pointing below label\">\n         Rotary Sponsor\n       </div>\n       <div class=\"twelve wide field\">\n         <input type=\"text\" [(ngModel)]=\"model.sponsor\" name=\"sponsor\" placeholder=\"\">\n       </div>\n     </div>\n   </div>\n        <div class=\"two fields\">\n          <div class=\"field\">\n            <div class=\"blue ui pointing below label\">\n              City\n            </div>\n            <div class=\"twelve wide field\">\n              <input type=\"text\" [(ngModel)]=\"model.city\" name=\"city\" placeholder=\"city\">\n            </div>\n          </div>\n          <div class=\"field\">\n            <div class=\"blue ui pointing below label\">\n              Country\n            </div>\n            <div class=\"twelve wide field\">\n              <app-countrylist (country)=\"onCountry($event)\"></app-countrylist>\n            </div>\n          </div>\n        </div>\n       <div class=\"two fields\">\n         <div class=\" field\">\n           <div class=\"blue ui pointing below label\">\n             Phone Number\n           </div>\n           <div class=\"twelve wide field\">\n             <input type=\"text\" [(ngModel)]=\"model.contact1\" name=\"contact2\" placeholder=\"\">\n           </div>\n         </div>\n         <div class=\" field\">\n           <div class=\"blue ui pointing below label\">\n             Alt Phone Number\n           </div>\n           <div class=\"twelve wide field\">\n             <input type=\"text\" [(ngModel)]=\"model.contact2\" name=\"contact2\" placeholder=\"\">\n           </div>\n         </div>\n       </div>\n\n        <div class=\"twelve wide field\">\n          <label>Brief Club Description</label>\n          <textarea rows=\"2\" [(ngModel)]=\"model.intro\" name=\"intro\"></textarea>\n        </div>\n        <h4 class=\"ui dividing header\"></h4>\n        <div class=\"ui submit button\" tabindex=\"0\">Submit</div>\n\n      </form>\n    </div>\n  </div>\n\n</div>\n<FooterComponent></FooterComponent>\n<div class=\"ui small modal rr-register-modal\">\n  <div class=\"rr-success-msg\">\n    <div class=\"one column ui stackable grid\">\n      <div class=\"column top\">\n        <br>\n        <i class=\"check circle huge green icon\"></i>\n\n        <h3 class=\"ui header\">Awesome</h3>\n        <h5>You are ready to start using Rotaraise</h5><br><br>\n      </div>\n      <div class=\"column wave\"></div>\n      <div class=\"column dub\"><br>\n        <div class=\"actions\">\n          <button  class=\"yellow small positive ui button\">\n            Go to Dashboard\n          </button>\n        </div>\n        <br>\n        <br>\n        <br>\n\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ },
-/* 758 */
+/* 757 */
 /***/ function(module, exports) {
 
 module.exports = "<HeaderComponent></HeaderComponent>\n<div class=\"ui stackable grid\" style=\"background-color: #f7f5f2;padding-top: 50px\">\n  <div class=\"row\">\n    <div class=\"five wide centered column rr-reg-body\">\n      <div [ngStyle]=\"{'display':cssClasses.toggleForm}\" class=\"rr-reg-head\">\n        Confirm Email Address\n      </div>\n      <form [ngStyle]=\"{'display':cssClasses.toggleForm}\" class=\"ui form\">\n        <h4 class=\"ui dividing header\"></h4>\n        <div class=\"ui grey sub header\">\n          Forgotten your password? Enter your email address below, and we'll email instructions for setting a new one.\n        </div>\n        <br><br>\n        <div class=\"field\">\n          <div class=\"ui left action input\">\n            <button class=\"ui blue labeled icon button\">\n              <i class=\"mail icon\"></i>\n            </button>\n            <input type=\"text\" [(ngModel)]=\"accountmodel.email\" name=\"email\" placeholder=\"Email\">\n          </div>\n        </div>\n        <div class=\"field\">\n          <div (click)=\"sendEmail()\" ngClass=\"cssClasses.loadingBtn\" class=\"right floated ui blue button\" tabindex=\"0\">Reset My Password</div>\n        </div>\n      </form>\n      <div [ngStyle]=\"{'display':cssClasses.toggleIns}\" class=\"label\">\n        <div  class=\"rr-reg-head\">\n          Reset instructions sent\n        </div>\n        <h4 class=\"ui dividing header\"></h4>\n        We've emailed you instructions for setting your password, if an account exists with the email you entered. You should receive them shortly.\n\n        If you don't receive an email, please make sure you've entered the address you registered with, and check your spam folder.\n      </div>\n    </div>\n  </div>\n\n</div>\n<FooterComponent></FooterComponent>\n"
 
 /***/ },
-/* 759 */
+/* 758 */
 /***/ function(module, exports) {
 
 module.exports = "<app-dashheader></app-dashheader>\n<div class=\"rr-project-menu-box \">\n  <div class=\"rr-dash-topbar\">\n    <div class=\"ui stackable grid \">\n      <div class=\"row\">\n        <div class=\"two wide column\"></div>\n        <div class=\"six wide column\">\n          <h1 class=\"ui header rr-font\">Campaign / Basics</h1>\n          <h4 class=\"ui header rr-subtext-color\"></h4>\n        </div>\n        <div class=\"six wide column\">\n          <img src=\"\">\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"ui  stackable grid\">\n    <div class=\"row\">\n      <div class=\"three wide column\">\n        <app-projectsidebar></app-projectsidebar>\n      </div>\n      <div class=\"ten wide column\" style=\"margin-top: 40px\">\n        <div class=\"ui segments\">\n          <!--le segment-->\n          <div class=\"ui segment\">\n            <div class=\"ui stackable grid\">\n              <div class=\"four wide column\">\n                <div class=\"rr-field-title\">Campaign Description</div>\n              </div>\n              <div class=\"twelve wide column rr-shape-shift\">\n                <!--shape item-->\n                <div class=\"ui text shape\" id=\"editAmt\">\n                  <div class=\"sides\">\n                    <div class=\"ui active side\">\n                      <label class=\"rr-field-content\">\n\n                      </label>\n                      <button (click)=\"editClick($event)\" class=\"editAmt right floated ui icon button\" style=\"margin-left: 20px\">\n                        <i class=\"editAmt edit icon\"></i>\n                      </button>\n                    </div>\n                    <div class=\"ui side\">\n\n                      <button (click)=\"cancel($event)\" class=\"editAmt right floated mini ui button \"  style=\"margin-left: 5px\">\n                        cancel\n                      </button>\n                      <button (click)=\"editClick($event)\" class=\"editAmt right floated mini ui button\"  style=\"margin-left: 20px\">\n                        save\n                      </button>\n\n                    </div>\n                  </div>\n                </div>\n                <!--end shape item-->\n              </div>\n            </div>\n          </div>\n          <!--viva le segment-->\n          <!--le segment-->\n          <div class=\"ui segment\">\n            <div class=\"ui stackable grid\">\n              <div class=\"ten wide column\">\n                <div class=\"rr-field-title\">Campaign Description</div>\n              </div>\n              <div class=\"twelve wide column rr-shape-shift\">\n               <!--quill rich text editor-->\n                <div id=\"rr-editor\">\n                  <p>Hello World!</p>\n                  <p>Some initial <strong>bold</strong> text</p>\n                  <p><br></p>\n                </div>\n              </div>\n            </div>\n          </div>\n          <!--viva le segment-->\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<FooterComponent></FooterComponent>\n"
 
 /***/ },
-/* 760 */
+/* 759 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -69483,7 +69470,7 @@ exports.InnerSubscriber = InnerSubscriber;
 //# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ },
-/* 761 */
+/* 760 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -69616,7 +69603,7 @@ exports.Notification = Notification;
 //# sourceMappingURL=Notification.js.map
 
 /***/ },
-/* 762 */
+/* 761 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -69630,7 +69617,7 @@ exports.empty = {
 //# sourceMappingURL=Observer.js.map
 
 /***/ },
-/* 763 */
+/* 762 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -69676,7 +69663,7 @@ exports.SubjectSubscription = SubjectSubscription;
 //# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ },
-/* 764 */
+/* 763 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -69752,7 +69739,7 @@ exports.ArrayLikeObservable = ArrayLikeObservable;
 //# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ },
-/* 765 */
+/* 764 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -69765,12 +69752,12 @@ var __extends = (this && this.__extends) || function (d, b) {
 var isArray_1 = __webpack_require__(232);
 var isPromise_1 = __webpack_require__(386);
 var PromiseObservable_1 = __webpack_require__(378);
-var IteratorObservable_1 = __webpack_require__(766);
+var IteratorObservable_1 = __webpack_require__(765);
 var ArrayObservable_1 = __webpack_require__(376);
-var ArrayLikeObservable_1 = __webpack_require__(764);
+var ArrayLikeObservable_1 = __webpack_require__(763);
 var iterator_1 = __webpack_require__(228);
 var Observable_1 = __webpack_require__(14);
-var observeOn_1 = __webpack_require__(770);
+var observeOn_1 = __webpack_require__(769);
 var observable_1 = __webpack_require__(229);
 var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 /**
@@ -69874,7 +69861,7 @@ exports.FromObservable = FromObservable;
 //# sourceMappingURL=FromObservable.js.map
 
 /***/ },
-/* 766 */
+/* 765 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -69884,7 +69871,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var root_1 = __webpack_require__(62);
+var root_1 = __webpack_require__(63);
 var Observable_1 = __webpack_require__(14);
 var iterator_1 = __webpack_require__(228);
 /**
@@ -70037,7 +70024,7 @@ function sign(value) {
 //# sourceMappingURL=IteratorObservable.js.map
 
 /***/ },
-/* 767 */
+/* 766 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70108,7 +70095,7 @@ var CatchSubscriber = (function (_super) {
 //# sourceMappingURL=catch.js.map
 
 /***/ },
-/* 768 */
+/* 767 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70262,7 +70249,7 @@ var FirstSubscriber = (function (_super) {
 //# sourceMappingURL=first.js.map
 
 /***/ },
-/* 769 */
+/* 768 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70386,7 +70373,7 @@ var LastSubscriber = (function (_super) {
 //# sourceMappingURL=last.js.map
 
 /***/ },
-/* 770 */
+/* 769 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70397,7 +70384,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(42);
-var Notification_1 = __webpack_require__(761);
+var Notification_1 = __webpack_require__(760);
 /**
  * @see {@link Notification}
  *
@@ -70467,7 +70454,7 @@ exports.ObserveOnMessage = ObserveOnMessage;
 //# sourceMappingURL=observeOn.js.map
 
 /***/ },
-/* 771 */
+/* 770 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70585,12 +70572,12 @@ exports.ReduceSubscriber = ReduceSubscriber;
 //# sourceMappingURL=reduce.js.map
 
 /***/ },
-/* 772 */
+/* 771 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var root_1 = __webpack_require__(62);
+var root_1 = __webpack_require__(63);
 /**
  * @param PromiseCtor
  * @return {Promise<T>}
@@ -70619,7 +70606,7 @@ exports.toPromise = toPromise;
 //# sourceMappingURL=toPromise.js.map
 
 /***/ },
-/* 773 */
+/* 772 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -70650,7 +70637,7 @@ exports.UnsubscriptionError = UnsubscriptionError;
 //# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ },
-/* 774 */
+/* 773 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -70662,7 +70649,7 @@ exports.isObject = isObject;
 //# sourceMappingURL=isObject.js.map
 
 /***/ },
-/* 775 */
+/* 774 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -70674,7 +70661,7 @@ exports.isScheduler = isScheduler;
 //# sourceMappingURL=isScheduler.js.map
 
 /***/ },
-/* 776 */
+/* 775 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70699,7 +70686,7 @@ exports.toSubscriber = toSubscriber;
 //# sourceMappingURL=toSubscriber.js.map
 
 /***/ },
-/* 777 */
+/* 776 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70724,14 +70711,14 @@ exports.tryCatch = tryCatch;
 //# sourceMappingURL=tryCatch.js.map
 
 /***/ },
+/* 777 */,
 /* 778 */,
 /* 779 */,
 /* 780 */,
 /* 781 */,
 /* 782 */,
 /* 783 */,
-/* 784 */,
-/* 785 */
+/* 784 */
 /***/ function(module, exports) {
 
 module.exports = function(module) {
@@ -70757,7 +70744,7 @@ module.exports = function(module) {
 
 
 /***/ },
-/* 786 */
+/* 785 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {/**
@@ -72088,10 +72075,10 @@ if (_global['navigator'] && _global['navigator'].geolocation) {
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(54), __webpack_require__(701)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(54), __webpack_require__(700)))
 
 /***/ },
-/* 787 */
+/* 786 */
 /***/ function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -72100,16 +72087,16 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 787;
+webpackEmptyContext.id = 786;
 
 
 /***/ },
-/* 788 */
+/* 787 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(389);
 
 
 /***/ }
-],[788]);
+],[787]);
 //# sourceMappingURL=main.map
