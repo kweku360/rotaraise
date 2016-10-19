@@ -58,9 +58,10 @@ export class RegisterService {
   postDb(clubinfo:ClubInfo):Observable<string>{
     let body = JSON.stringify(clubinfo);
     let headers = new Headers({ 'Content-Type': 'application/json' });
+    // let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' });
     let options = new RequestOptions({ headers: headers });
 
-    return this.http.post(this.serverUrl, body, options).map(this.extractData)
+    return this.http.post(this.serverUrl+"clubinfo", body, options).map(this.extractData)
      // .catch(this.handleError);
   }
 

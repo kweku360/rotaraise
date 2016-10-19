@@ -153,6 +153,11 @@ body{
 .rr-cat{
   margin-bottom: 70px!important;
 }
+.rr-cat hr{
+  border-color : whitesmoke;
+  background-color : whitesmoke;
+  color : whitesmoke;
+}
 .rr-cat-head{
   margin-top: 50px;
   font-family: 'Playfair Display', serif!important;
@@ -162,6 +167,8 @@ body{
 .rr-cat .column{
   position: relative;
   height: 200px;
+  margin-bottom: 50px!important;
+  cursor: pointer;
 }
 .rr-cat .column img{
   width: 100%;
@@ -178,9 +185,10 @@ body{
 .rr-cat .column .title i{
   padding: 20px;
   background-color: white;
-}.rr-cat .name{
+}
+.rr-cat .name{
    text-align: center;
-   font-size: 22px;
+   font-size: 16px;
  }
 .rr-cat .column .title{
   position: absolute;
@@ -191,14 +199,18 @@ body{
 
 .rr-footer-top{
   margin-top: 40px;
-  height: 100px;
   text-align: center;
-  background-color: #0b97c4;
+  background-color: #f7f7f7;
 }
-.rr-footer-top .txt{
-  font-size: 20px;
-  color: #fff;
+.rr-footer-top .txt-head{
+  font-size: 24px;
+  color: #1B1C1D;
   font-family: 'Playfair Display', serif!important;
+}
+.rr-footer-top .txt-msg{
+  font-size: 18px;
+  color: #1B1C1D;
+  font-weight: bold;
 }
 /*//footer styles*/
 .rr-footer{
@@ -302,4 +314,7 @@ body{
   font-size: 15px;
   color: #a8a8a2;
   padding:5px 0px;
+}
+.rr-right{
+  float: right!important;
 }

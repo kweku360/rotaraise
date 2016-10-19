@@ -11,6 +11,11 @@ export class SliderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+ 
   }
-
+loadJQuery(){
+  jQuery("#Carousel").glide({
+    type: 'slideshow'
+  });
+}
 }

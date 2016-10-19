@@ -24,14 +24,17 @@
         "assets/alerts/alertifyjs/css/alertify.min.css",
         "../node_modules/quill/dist/quill.core.css",
         "../node_modules/quill/dist/quill.snow.css",
-        "../node_modules/quill/dist/quill.bubble.css"
+        "../node_modules/quill/dist/quill.bubble.css",
+        "assets/glidejs/css/glide.core.min.css",
+        "assets/glidejs/css/glide.theme.min.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "assets/js/semantic.min.js",
         "assets/jqfiler/jquery.filer.min.js",
         "assets/alerts/alertifyjs/alertify.min.js",
-        "../node_modules/quill/dist/quill.min.js"
+        "../node_modules/quill/dist/quill.min.js",
+        "assets/glidejs/glide.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

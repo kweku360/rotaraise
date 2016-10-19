@@ -15,7 +15,7 @@ const moment: any = (<any>moment_).default || moment_;
 })
 export class ProjectComponent implements OnInit {
 
-  model = new ProjectModel(0, "", "", "", "","","","","", "", "", "", "", "", 0, 0, 0, 0, "", 0, "");
+  model = new ProjectModel(0, "", "", "", "","","","","", "", "", "", "", "", 0, 0, 0, 0, "USD", 0, "");
   datemodel = {"start" : "","end":""}
   simplefile:boolean = false
   public projecturl: string = this.projectservice.generateProjectUrl();
@@ -67,11 +67,15 @@ export class ProjectComponent implements OnInit {
     this.model.country = evt.name;
     this.model.countrycode = evt.code;
   }
+  onCurrency(evt){
+   console.log(evt)
+  }
 
   validateFormOne() {
 
     var that = this;
     jQuery('.ui.dropdown').dropdown('get text');
+    jQuery('.curamt').dropdown('get text');
     //noinspection TypeScriptValidateTypes
     jQuery('#formone').submit(function (e) {
       e.preventDefault();// usually use this, but below works best here.

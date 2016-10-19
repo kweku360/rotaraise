@@ -7,6 +7,12 @@
 .rr-field-content{
   font-size: 19px;
 }
+.rr-shape-shift{
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding-top: 20px!important;
+  padding-left: 20px!important;
+}
 .rr-shape-shift .side{
   width: 90%;
   height: 90%;

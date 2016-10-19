@@ -1,150 +1,82 @@
-.loader {
-  animation: spin 1.5s linear alternate infinite;
-  background: #B73F41;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-
-.loader:before {
-  background: #B73F41;
-  border-radius: 50%;
-  content: '';
-  display: block;
-  height: 0.5em;
-  width: 0.5em;
-  z-index: 2;
-}
-
-.loader:after {
-  background: #262E2A;
-  border-radius: 50%;
-  box-shadow: 0em -2.60em #262E2A,
-  2.25em -4.02em #262E2A,
-  2.25em -1.25em #262E2A,
-  4.60em 0em #262E2A,
-  2.25em 1.25em #262E2A,
-  2.25em 4.02em #262E2A,
-  0em 2.60em #262E2A,
-  -2.25em 4.02em #262E2A,
-  -2.25em 1.25em #262E2A,
-  -4.60em 0em #262E2A,
-  -2.25em -1.25em #262E2A,
-  -2.25em -4.02em #262E2A;
-  content: '';
-  display: block;
-  height: 2em;
-  width: 2em;
-}
-
-.inner {
-  animation: load 1.5s linear alternate infinite;
-  border: solid 1px #B73F41;
-  border-radius: 50%;
-  height: 1.75em;
-  width: 1.75em;
-  z-index: 1;
-}
-
-.loader, .loader:before, .loader:after, .inner {
-  bottom: 0;
-  left: 0;
-  margin: auto;
+.appstart {
+  width: 40px;
+  height: 40px;
   position: absolute;
-  right: 0;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  animation: colors 4s infinite ease-in, scale 2s infinite ease-in;
 }
 
-@keyframes load {
-  0% {
-    box-shadow: 0em -2.60em #262E2A,
-    2.25em -1.25em #262E2A,
-    2.25em 1.25em #262E2A,
-    0em 2.60em #262E2A,
-    -2.25em 1.25em #262E2A,
-    -2.25em -1.25em #262E2A;
+.appstart:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #ecf0f1;
+  transform-origin: left top;
+  animation: rotate 1s infinite linear;
+  border-radius: 50%;
+}
+
+@keyframes scale {
+  from {
+    width: 40px;
+    height: 40px;
   }
-  15% {
-    box-shadow: 0em -2.60em #262E2A,
-    2.25em -1.25em #262E2A,
-    2.25em 1.25em #262E2A,
-    0em 2.60em #262E2A,
-    -2.25em 1.25em #262E2A,
-    -2.25em -1.25em #B73F41;
+  25% {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
-  30% {
-    box-shadow: 0em -2.60em #262E2A,
-    2.25em -1.25em #262E2A,
-    2.25em 1.25em #262E2A,
-    0em 2.60em #262E2A,
-    -2.25em 1.25em #B73F41,
-    -2.25em -1.25em #B73F41;
-  }
-  45% {
-    box-shadow: 0em -2.60em #262E2A,
-    2.25em -1.25em #262E2A,
-    2.25em 1.25em #262E2A,
-    0em 2.60em #B73F41,
-    -2.25em 1.25em #B73F41,
-    -2.25em -1.25em #B73F41;
-  }
-  60% {
-    box-shadow: 0em -2.60em #262E2A,
-    2.25em -1.25em #262E2A,
-    2.25em 1.25em #B73F41,
-    0em 2.60em #B73F41,
-    -2.25em 1.25em #B73F41,
-    -2.25em -1.25em #B73F41;
+  50% {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
   }
   75% {
-    box-shadow: 0em -2.60em #262E2A,
-    2.25em -1.25em #B73F41,
-    2.25em 1.25em #B73F41,
-    0em 2.60em #B73F41,
-    -2.25em 1.25em #B73F41,
-    -2.25em -1.25em #B73F41;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
-  90% {
-    box-shadow: 0em -2.60em #B73F41,
-    2.25em -1.25em #B73F41,
-    2.25em 1.25em #B73F41,
-    0em 2.60em #B73F41,
-    -2.25em 1.25em #B73F41,
-    -2.25em -1.25em #B73F41;
-  }
-  100% {
-    box-shadow: 0em -2.60em #B73F41,
-    2.25em -1.25em #B73F41,
-    2.25em 1.25em #B73F41,
-    0em 2.60em #B73F41,
-    -2.25em 1.25em #B73F41,
-    -2.25em -1.25em #B73F41;
+  to {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
   }
 }
 
-@keyframes spin {
-  0% {
+@keyframes colors {
+  from {
+    background-color: #2ecc71;
+  }
+  25% {
+    background-color: #e74c3c;
+  }
+  50% {
+    background-color: #3498db;
+  }
+  75% {
+    background-color: #9b59b6;
+  }
+  to {
+    background-color: #2ecc71;
+  }
+}
+
+@keyframes rotate {
+  from {
     transform: rotate(0deg);
   }
-  15% {
-    transform: rotate(60deg);
-  }
-  30% {
-    transform: rotate(120deg);
-  }
-  45% {
-    transform: rotate(180deg);
-  }
-  60% {
-    transform: rotate(240deg);
-  }
-  75% {
-    transform: rotate(300deg);
-  }
-  90% {
+  to {
     transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }

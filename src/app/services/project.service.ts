@@ -28,7 +28,6 @@ export class ProjectService {
     let body = JSON.stringify(project);
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
-    console.log("four")
     return this.http.post(this.serverUrl+"project", body, options).map(this.extractData)
      // .catch(this.handleError);
   }
@@ -51,5 +50,12 @@ export class ProjectService {
     var url:string = this.serverUrl+"project/"+id
     return this.http.get(url).map(this.extractData);
   }
+  updateProject(projectInfo:any):Observable<string>{
+    var url:string = this.serverUrl+"project/"+projectInfo.id
+    let body = JSON.stringify(projectInfo);
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+    let options = new RequestOptions({ headers: headers });
+    return this.http.post(url, body, options).map(this.extractData)
+}
 }
 

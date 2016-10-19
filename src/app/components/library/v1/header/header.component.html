@@ -1,82 +1,87 @@
 <div *ngIf="isLoggedOn == true">
-<div class="ui top fixed four column stackable grid">
-  <div class="row">
-    <div class="one wide column"></div>
-    <div class="two wide column rr-logo-box">
-      <img class="res" src="assets/img/logo_retina_stk.png"/>
-    </div>
-    <div class="eight wide column rr-menu-nav">
-      <div style="border: none" class="ui eight item secondary pointing stackable menu">
-        <a routerLink=""   class="item">HOME</a>
-        <a routerLink="/campaign"  class="item">CAMPAIGN</a>
-        <a routerLink="/events" class="item">EVENTS</a>
-        <a routerLink="/blog"  class="item">BLOG</a>
-        <a class="item ui rr-about dropdown">About Us <i class="dropdown icon"></i>
-          <div class="menu">
-            <div routerLink="/help"  class="item">How It Works</div>
-            <div routerLink="/team"  class="item">Team</div>
-            <div routerLink="/impact"  class="item">Our Impact</div>
-          </div>
-        </a>
-          <a routerLink="/dashboard"  class="item"> My Account</a>
-          <a (click)="logout()" class="item">Sign Out</a>
-        <!--fix here-->
-          {{loadJQuery()}}
+  <div class="ui top fixed four column stackable grid">
+    <div class="row">
+      <div class="one wide column"></div>
+      <div class="two wide column rr-logo-box">
+        <img class="res" src="assets/img/logo_retina_stk.png"/>
       </div>
-    </div>
-    <div class="two wide column rr-phone-box">
-      |  <i class="blue phone icon"></i><b>+233 20-344-5933</b>
-    </div>
-    <div class="three wide column rr-logo-box">
-      <div class="ui fluid category search">
-        <div class="ui icon input">
-          <input class="prompt" type="text" placeholder="Search rotaraise">
-          <i class="search icon"></i>
+      <div class="four wide column rr-menu-nav">
+        <div style="border: none" class="ui three item secondary pointing stackable menu">
+          <a routerLink="" class="item">HOME</a>
+          <a routerLink="/campaign" class="item">DISCOVER</a>
+          <a class="item ui rr-about dropdown">ABOUT US<i class="dropdown icon"></i>
+            <div class="menu">
+              <div routerLink="/help" class="item">How It Works</div>
+              <div routerLink="/team" class="item">Team</div>
+              <div routerLink="/impact" class="item">Our Impact</div>
+            </div>
+          </a>
         </div>
-        <div class="results"></div>
       </div>
+      <div class="three wide right floated column rr-menu-nav">
+        <div style="border: none" class="ui two item secondary pointing stackable menu">
+          <a routerLink="/dashboard" class="item"> My Account</a>
+          <a (click)="logout()" class="item">Sign Out</a>
+          <!--fix here-->
+          {{loadJQuery()}}
+        </div>
+      </div>
+      <!--<div class="two wide column rr-phone-box">-->
+      <!--|  <i class="blue phone icon"></i><b>+233 20-344-5933</b>-->
+      <!--</div>-->
+      <!--<div class="three wide column rr-logo-box">-->
+      <!--<div class="ui fluid category search">-->
+      <!--<div class="ui icon input">-->
+      <!--<input class="prompt" type="text" placeholder="Search rotaraise">-->
+      <!--<i class="search icon"></i>-->
+      <!--</div>-->
+      <!--<div class="results"></div>-->
+      <!--</div>-->
+      <!--</div>-->
     </div>
   </div>
-</div>
 </div>
 <div *ngIf="isLoggedOn == false">
-<div class="ui top fixed four column stackable grid">
-  <div class="row">
-    <div class="one wide column"></div>
-    <div class="two wide column rr-logo-box">
-      <img class="res" src="assets/img/logo_retina_stk.png"/>
-    </div>
-    <div class="eight wide column rr-menu-nav">
-      <div style="border: none" class="ui eight item secondary pointing stackable menu">
-        <a routerLink=""   class="item">HOME</a>
-        <a routerLink="/campaign"  class="item">CAMPAIGN</a>
-        <a routerLink="/events" class="item">EVENTS</a>
-        <a routerLink="/blog"  class="item">BLOG</a>
-        <a class="item ui rr-about dropdown">About Us <i class="dropdown icon"></i>
-          <div class="menu">
-            <div routerLink="/help"  class="item">How It Works</div>
-            <div routerLink="/team"  class="item">Team</div>
-            <div routerLink="/impact"  class="item">Our Impact</div>
-          </div>
-        </a>
-          <a routerLink="/login"  class="item">LOG IN</a>
-          <a routerLink="/register" class="item">SIGN UP</a>
-        <!--fix here-->
-        {{loadJQuery()}}
+  <div class="ui top fixed four column stackable grid">
+    <div class="row">
+      <div class="one wide column"></div>
+      <div class="two wide column rr-logo-box">
+        <img class="res" src="assets/img/logo_retina_stk.png"/>
       </div>
-    </div>
-    <div class="two wide column rr-phone-box">
-      |  <i class="blue phone icon"></i><b>+233 20-344-5933</b>
-    </div>
-    <div class="three wide column rr-logo-box">
-      <div class="ui fluid category search">
-        <div class="ui icon input">
-          <input class="prompt" type="text" placeholder="Search rotaraise">
-          <i class="search icon"></i>
+      <div class="four wide column rr-menu-nav">
+        <div style="border: none" class="ui three item secondary pointing stackable menu">
+          <a routerLink="" class="item">HOME</a>
+          <a routerLink="/campaign" class="item">DISCOVER</a>
+          <a class="item ui rr-about dropdown">ABOUT US<i class="dropdown icon"></i>
+            <div class="menu">
+              <div routerLink="/help" class="item">How It Works</div>
+              <div routerLink="/team" class="item">Team</div>
+              <div routerLink="/impact" class="item">Our Impact</div>
+            </div>
+          </a>
         </div>
-        <div class="results"></div>
       </div>
+      <div class="three wide right floated column rr-menu-nav">
+        <div style="border: none" class="ui two item secondary pointing stackable menu">
+          <a routerLink="/login" class="item">LOG IN</a>
+          <a routerLink="/register" class="item">SIGN UP</a>
+          <!--fix here-->
+          {{loadJQuery()}}
+        </div>
+      </div>
+      <!--<div class="two wide column rr-phone-box">-->
+      <!--|  <i class="blue phone icon"></i><b>+233 20-344-5933</b>-->
+      <!--</div>-->
+      <!--<div class="three wide column rr-logo-box">-->
+      <!--<div class="ui fluid category search">-->
+      <!--<div class="ui icon input">-->
+      <!--<input class="prompt" type="text" placeholder="Search rotaraise">-->
+      <!--<i class="search icon"></i>-->
+      <!--</div>-->
+      <!--<div class="results"></div>-->
+      <!--</div>-->
+      <!--</div>-->
     </div>
   </div>
 </div>
-</div>
+

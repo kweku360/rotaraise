@@ -24,6 +24,8 @@ declare var Quill: QuillStatic;
   shape(options?: any): JQuery;
   form(options?: any): JQuery;
   dimmer(options?: any): JQuery;
+    transition(options?: any): JQuery;
   tab(options?: any): JQuery;
+  glide(options?: any): JQuery;
 
 }

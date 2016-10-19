@@ -17,7 +17,7 @@ export class ProjectModel{
     public country: string = "",
     public countrycode: string = "",
     public tags: string = "",
-
+    
     public targetamt: number = 0,
     public currentamt: number = 0,
     public percentvalue: number = 0,

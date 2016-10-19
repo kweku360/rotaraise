@@ -1,34 +1,82 @@
-/*loader*/
-.loader {
-  color: blue;
-  font-family: Consolas, Menlo, Monaco, monospace;
-  font-weight: bold;
-  font-size: 10vh;
-  opacity: 0.8;
+.appstart {
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top:50%;
-  left: 45%;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  animation: colors 4s infinite ease-in, scale 2s infinite ease-in;
 }
-.loader span {
-  display: inline-block;
-  -webkit-animation: pulse 0.4s alternate infinite ease-in-out;
-  animation: pulse 0.4s alternate infinite ease-in-out;
+
+.appstart:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #ecf0f1;
+  transform-origin: left top;
+  animation: rotate 1s infinite linear;
+  border-radius: 50%;
 }
-.loader span:nth-child(odd) {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-@-webkit-keyframes pulse {
+
+@keyframes scale {
+  from {
+    width: 40px;
+    height: 40px;
+  }
+  25% {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  50% {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  75% {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
   to {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-    opacity: 0.5;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
   }
 }
-@keyframes pulse {
+
+@keyframes colors {
+  from {
+    background-color: #2ecc71;
+  }
+  25% {
+    background-color: #e74c3c;
+  }
+  50% {
+    background-color: #3498db;
+  }
+  75% {
+    background-color: #9b59b6;
+  }
   to {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-    opacity: 0.5;
+    background-color: #2ecc71;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
