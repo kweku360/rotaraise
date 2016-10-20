@@ -5,9 +5,5 @@
 
 export const environment = {
   production: false,
-  projecturl : "http://www.rotaraise.com/demo/",
-  serverUrl : "http://www.rotaraise.com/demo/api/index.php/",
-  serverUploadUrl : "http://www.rotaraise.com/demo/api/upload.php",
-  serverUploadedFile : "http://www.rotaraise.com/demo/api/uploads/",
 
 };
